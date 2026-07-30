@@ -1,0 +1,40 @@
+CURRÍCULO EM PORTUGUÊS — AINDA NÃO ADICIONADO
+=============================================
+
+Como ativar o botão "Baixar currículo (PT)" do site:
+
+1. Coloque o PDF do currículo em português DENTRO desta pasta
+   (assets/curriculos/).
+
+2. Renomeie o arquivo exatamente para:
+
+       curriculo-lais-barroso-pt.pdf
+
+   Atenção: tudo em letra minúscula, sem acentos e sem espaços.
+   O nome precisa ser idêntico, senão o botão não encontra o arquivo.
+
+3. Abra o arquivo script.js (na raiz do projeto) e, na seção
+   "01. LINKS E ARQUIVOS", mude:
+
+       resumesAvailable: false
+
+   para:
+
+       resumesAvailable: true
+
+   Observação: essa mesma chave vale para os DOIS currículos.
+   Só mude para true depois de colocar o PT e o EN nesta pasta.
+
+4. Salve, abra o index.html no navegador e teste os dois botões.
+
+5. Depois de testar, envie para o GitHub:
+
+       git add .
+       git commit -m "chore: add resumes"
+       git push
+
+Enquanto o PDF não estiver aqui, o botão continua aparecendo no site,
+mas exibe um aviso educado dizendo que o arquivo ainda será adicionado —
+ele nunca aponta para um arquivo inexistente.
+
+Este arquivo .txt pode ser apagado depois que o PDF for adicionado.

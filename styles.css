@@ -1,0 +1,1288 @@
+/* ===================================================================
+   Laís Barroso — site profissional
+   CSS puro, sem frameworks e sem dependências externas.
+
+   ÍNDICE
+   01. Variáveis e personalização
+   02. Reset e base
+   03. Acessibilidade
+   04. Utilitários e títulos de seção
+   05. Botões
+   06. Header e navegação
+   07. Hero e faixa de disciplinas
+   08. Sobre
+   09. Áreas de atuação
+   10. Experiência
+   11. Cases
+   12. Projetos
+   13. Competências
+   14. Formação e idiomas
+   15. Faixa de destaque (Objetivo)
+   16. Contato
+   17. Footer
+   18. Animações discretas
+   19. Responsividade
+   20. Impressão
+   =================================================================== */
+
+
+/* ===================================================================
+   01. VARIÁVEIS E PERSONALIZAÇÃO
+   =================================================================== */
+:root {
+  /* PERSONALIZAÇÃO: cor principal do site (vinho profundo).
+     Mudando --wine, todo o destaque do site muda junto. */
+  --wine:        #5E1A2E;
+  --wine-deep:   #3D0E1B;
+  --wine-tint:   #F0E5E7;
+
+  /* PERSONALIZAÇÃO: tons de papel (fundo claro e quente) */
+  --paper:       #F8F5F1;
+  --paper-alt:   #F0EBE4;
+  --surface:     #FFFFFF;
+  --line:        #DFD7CD;
+  --line-soft:   #EAE3DA;
+
+  /* PERSONALIZAÇÃO: cores de texto */
+  --ink:         #191517;
+  --ink-2:       #574F4C;
+  /* --ink-3 é usado em rótulos pequenos em maiúsculas. Não clareie
+     este tom: abaixo disto o contraste cai do mínimo de 4,5:1. */
+  --ink-3:       #6F6763;
+
+  /* Tipografia
+     Serifa de alto contraste quando disponível no computador,
+     com reserva elegante em Georgia. Nenhuma fonte é baixada
+     da internet: o site funciona offline. */
+  --font-display: "Playfair Display", "Bodoni MT", Didot, "Didot LT STD",
+                  "Hoefler Text", "Big Caslon", Garamond, Georgia,
+                  "Times New Roman", serif;
+  --font-sans:    Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                  "Helvetica Neue", Arial, sans-serif;
+
+  /* Layout */
+  --wrap:        1180px;
+  --radius:      4px;
+  --radius-lg:   8px;
+
+  --shadow-sm:   0 1px 2px rgba(25, 21, 23, .04);
+  --shadow-md:   0 14px 40px -22px rgba(25, 21, 23, .35);
+
+  --t:           200ms cubic-bezier(.2, .6, .3, 1);
+}
+
+
+/* ===================================================================
+   02. RESET E BASE
+   =================================================================== */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 92px;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+  font-size: 17px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4 {
+  margin: 0;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: -.01em;
+}
+
+p  { margin: 0 0 1em; }
+ul, ol, dl, dd { margin: 0; padding: 0; }
+ul, ol { list-style: none; }
+
+a {
+  color: var(--wine);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
+  transition: color var(--t);
+}
+a:hover { color: var(--wine-deep); }
+
+img { max-width: 100%; height: auto; display: block; }
+button { font: inherit; color: inherit; }
+
+
+/* ===================================================================
+   03. ACESSIBILIDADE
+   =================================================================== */
+.skip-link {
+  position: absolute;
+  left: 16px;
+  top: -100px;
+  z-index: 999;
+  padding: 12px 18px;
+  background: var(--wine);
+  color: #fff;
+  border-radius: var(--radius);
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: 600;
+  transition: top var(--t);
+}
+.skip-link:focus { top: 16px; color: #fff; }
+
+:where(a, button, [tabindex]):focus-visible {
+  outline: 2px solid var(--wine);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+
+/* ===================================================================
+   04. UTILITÁRIOS E TÍTULOS DE SEÇÃO
+   =================================================================== */
+.wrap {
+  width: 100%;
+  max-width: var(--wrap);
+  margin-inline: auto;
+  padding-inline: 28px;
+}
+
+.section { padding: clamp(72px, 10vw, 132px) 0; }
+
+.section-alt {
+  background: var(--paper-alt);
+  border-block: 1px solid var(--line-soft);
+}
+
+/* Cabeçalho de seção: número + título em serifa grande */
+.sec-head {
+  display: flex;
+  align-items: baseline;
+  gap: 22px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid var(--line);
+}
+
+.sec-num {
+  flex-shrink: 0;
+  font-family: var(--font-display);
+  font-size: 13px;
+  letter-spacing: .22em;
+  color: var(--wine);
+  font-variant-numeric: tabular-nums;
+}
+
+.sec-title {
+  font-family: var(--font-display);
+  font-size: clamp(30px, 5.2vw, 56px);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: .005em;
+  text-transform: uppercase;
+}
+
+.sec-lead {
+  max-width: 60ch;
+  color: var(--ink-2);
+  font-size: 17.5px;
+  margin-bottom: 56px;
+}
+
+.sub-title {
+  font-size: 11.5px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 700;
+  margin-bottom: 26px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--line);
+}
+
+/* Marcações de conteúdo ainda pendente de preenchimento */
+.placeholder-box {
+  display: block;
+  margin: 10px 0 0;
+  padding: 10px 14px;
+  border: 1px dashed rgba(94, 26, 46, .38);
+  border-left: 2px solid var(--wine);
+  border-radius: var(--radius);
+  background: var(--wine-tint);
+  color: var(--wine-deep);
+  font-size: 13.5px;
+  line-height: 1.5;
+}
+
+.placeholder-inline {
+  color: var(--wine);
+  font-size: 13px;
+  font-style: italic;
+}
+
+
+/* ===================================================================
+   05. BOTÕES
+   =================================================================== */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  padding: 13px 30px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background var(--t), color var(--t), border-color var(--t),
+              transform var(--t), box-shadow var(--t);
+}
+.btn:hover { transform: translateY(-2px); }
+.btn:active { transform: translateY(0); }
+
+.btn-primary {
+  background: var(--wine);
+  border-color: var(--wine);
+  color: #fff;
+}
+.btn-primary:hover {
+  background: var(--wine-deep);
+  border-color: var(--wine-deep);
+  color: #fff;
+  box-shadow: var(--shadow-md);
+}
+
+.btn-ghost {
+  background: transparent;
+  border-color: var(--line);
+  color: var(--ink);
+}
+.btn-ghost:hover {
+  border-color: var(--wine);
+  color: var(--wine);
+  background: var(--surface);
+}
+
+/* Links discretos em texto (currículos, LinkedIn no hero) */
+.link-btn {
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: 4px 2px;
+  cursor: pointer;
+  font-size: 13.5px;
+  font-weight: 600;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+  transition: color var(--t), border-color var(--t);
+}
+.link-btn:hover { color: var(--wine); border-bottom-color: var(--wine); }
+
+.link-sep { color: var(--ink-3); font-size: 13px; }
+
+
+/* ===================================================================
+   06. HEADER E NAVEGAÇÃO
+   =================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(248, 245, 241, .93);
+  backdrop-filter: saturate(150%) blur(10px);
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  min-height: 76px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  color: var(--ink);
+  flex-shrink: 0;
+}
+.brand:hover { color: var(--ink); }
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 3px;
+  background: var(--wine);
+  color: #fff;
+  font-family: var(--font-display);
+  font-size: 14px;
+  letter-spacing: .08em;
+}
+
+.brand-name {
+  font-family: var(--font-display);
+  font-size: 17px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.site-nav { margin-left: auto; }
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-list a {
+  color: var(--ink-2);
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  padding: 6px 0;
+  position: relative;
+  white-space: nowrap;
+}
+.nav-list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  background: var(--wine);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform var(--t);
+}
+.nav-list a:hover { color: var(--wine); }
+.nav-list a:hover::after,
+.nav-list a.is-current::after { transform: scaleX(1); }
+.nav-list a.is-current { color: var(--wine); }
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+/* --- Seletor de idioma --- */
+.lang-switch {
+  display: inline-flex;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  overflow: hidden;
+  background: var(--surface);
+}
+
+.lang-btn {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  padding: 8px 13px;
+  min-height: 36px;
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  color: var(--ink-3);
+  cursor: pointer;
+  transition: background var(--t), color var(--t);
+}
+.lang-btn:hover { color: var(--wine); }
+.lang-btn.is-active { background: var(--wine); color: #fff; }
+
+/* --- Botão de menu (celular) --- */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 44px;
+  height: 40px;
+  padding: 0 10px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+.menu-bar {
+  display: block;
+  height: 1.5px;
+  width: 100%;
+  background: var(--ink);
+  transition: transform var(--t), opacity var(--t);
+}
+.menu-toggle[aria-expanded="true"] .menu-bar:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.menu-toggle[aria-expanded="true"] .menu-bar:nth-child(2) { opacity: 0; }
+.menu-toggle[aria-expanded="true"] .menu-bar:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+
+/* ===================================================================
+   07. HERO E FAIXA DE DISCIPLINAS
+   =================================================================== */
+.hero {
+  padding-top: clamp(56px, 9vw, 104px);
+  background:
+    radial-gradient(85% 70% at 50% 0%, rgba(94, 26, 46, .05) 0%, transparent 62%),
+    var(--paper);
+}
+
+.hero-inner {
+  text-align: center;
+  padding-bottom: clamp(56px, 8vw, 92px);
+}
+
+.hero-eyebrow {
+  font-size: 11.5px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 600;
+  margin-bottom: clamp(24px, 4vw, 44px);
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(58px, 13.5vw, 168px);
+  line-height: .86;
+  letter-spacing: .005em;
+  text-transform: uppercase;
+  margin-bottom: clamp(22px, 3vw, 34px);
+}
+.hero-line { display: block; }
+.hero-line-2 { color: var(--wine); }
+
+.hero-headline {
+  font-size: clamp(14px, 1.8vw, 17px);
+  font-weight: 600;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 0;
+}
+
+.hero-rule {
+  width: 56px;
+  height: 1px;
+  background: var(--wine);
+  margin: clamp(26px, 4vw, 40px) auto;
+}
+
+.hero-lead {
+  max-width: 58ch;
+  margin: 0 auto clamp(32px, 4vw, 44px);
+  font-size: clamp(16px, 1.6vw, 18px);
+  color: var(--ink-2);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.hero-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+/* --- Faixa rolante de disciplinas (decorativa) --- */
+.marquee {
+  display: flex;
+  overflow: hidden;
+  padding: 20px 0;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  background: var(--paper);
+  user-select: none;
+}
+.marquee:hover .marquee-track { animation-play-state: paused; }
+
+.marquee-track {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  min-width: 100%;
+  animation: marquee-scroll 52s linear infinite;
+}
+
+.marquee-track span {
+  font-family: var(--font-display);
+  font-size: clamp(15px, 1.8vw, 20px);
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--ink-2);
+  white-space: nowrap;
+}
+.marquee-track i {
+  font-style: normal;
+  color: var(--wine);
+  padding: 0 24px;
+  font-size: 14px;
+}
+
+@keyframes marquee-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-100%); }
+}
+
+
+/* ===================================================================
+   08. SOBRE
+   =================================================================== */
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+  gap: 64px;
+  align-items: start;
+}
+
+.about-opening {
+  font-family: var(--font-display);
+  font-size: clamp(21px, 2.8vw, 30px);
+  line-height: 1.35;
+  color: var(--ink);
+  margin-bottom: 26px;
+}
+
+.about-text p:not(.about-opening) {
+  font-size: 17px;
+  color: var(--ink-2);
+  max-width: 60ch;
+}
+.about-text p:last-child { margin-bottom: 0; }
+
+.about-facts {
+  padding: 32px 30px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+}
+.about-facts .fact + .fact {
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line-soft);
+}
+.about-facts dt {
+  font-size: 10.5px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.about-facts dd {
+  font-size: 15.5px;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.avail-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 56px;
+  padding-top: 32px;
+  border-top: 1px solid var(--line);
+}
+.avail-row li {
+  padding: 7px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  font-size: 13px;
+  color: var(--ink-2);
+}
+
+
+/* ===================================================================
+   09. ÁREAS DE ATUAÇÃO
+   =================================================================== */
+.focus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.focus-card {
+  position: relative;
+  padding: 34px 30px 32px;
+  background: var(--paper-alt);
+  transition: background var(--t);
+}
+.focus-card:hover { background: var(--surface); }
+
+.focus-num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 12px;
+  letter-spacing: .2em;
+  color: var(--wine);
+  margin-bottom: 14px;
+}
+.focus-card h3 {
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+.focus-card p {
+  margin: 0;
+  font-size: 14.5px;
+  color: var(--ink-2);
+  line-height: 1.6;
+}
+
+
+/* ===================================================================
+   10. EXPERIÊNCIA
+   =================================================================== */
+.exp-list { display: grid; gap: 0; }
+
+.exp-item {
+  display: grid;
+  grid-template-columns: 220px minmax(0, 1fr);
+  gap: 48px;
+  padding: 52px 0;
+  border-top: 1px solid var(--line);
+}
+.exp-item:last-child { border-bottom: 1px solid var(--line); }
+
+.exp-company {
+  margin: 0 0 4px;
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 400;
+  color: var(--wine);
+  letter-spacing: .02em;
+}
+.exp-companyfull {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: var(--ink-3);
+  line-height: 1.4;
+}
+.exp-period { margin: 0; }
+
+.exp-role {
+  font-size: clamp(19px, 2.2vw, 24px);
+  font-weight: 600;
+  letter-spacing: -.01em;
+  margin-bottom: 12px;
+}
+
+.exp-summary {
+  font-size: 16px;
+  color: var(--ink-2);
+  max-width: 66ch;
+  margin-bottom: 22px;
+}
+
+.exp-bullets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 4px 36px;
+}
+.exp-bullets li {
+  position: relative;
+  padding-left: 20px;
+  font-size: 15px;
+  color: var(--ink);
+  line-height: 1.55;
+  padding-block: 4px;
+}
+.exp-bullets li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: .82em;
+  width: 8px;
+  height: 1px;
+  background: var(--wine);
+}
+
+.exp-main .placeholder-box { margin-top: 22px; }
+
+
+/* ===================================================================
+   11. CASES
+   =================================================================== */
+.cases-list { display: grid; gap: 0; }
+
+.case {
+  padding: 56px 0;
+  border-top: 1px solid var(--line);
+}
+.case:last-child { border-bottom: 1px solid var(--line); }
+
+.case-head {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr);
+  align-items: start;
+  gap: 0 28px;
+  margin-bottom: 36px;
+}
+
+.case-num {
+  grid-row: 1 / 3;
+  font-family: var(--font-display);
+  font-size: clamp(44px, 6vw, 68px);
+  line-height: .82;
+  color: var(--wine);
+  opacity: .28;
+  font-variant-numeric: tabular-nums;
+}
+
+.case-tag {
+  margin: 0 0 8px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--wine);
+}
+
+.case-title {
+  font-family: var(--font-display);
+  font-size: clamp(25px, 3.4vw, 38px);
+  font-weight: 400;
+  line-height: 1.1;
+}
+
+.case-body {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 32px 56px;
+  padding-left: 118px;
+}
+.case-block-wide { grid-column: 1 / -1; }
+
+.case-block h4 {
+  font-size: 10.5px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 700;
+  margin-bottom: 9px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.case-block p {
+  margin: 0;
+  font-size: 15px;
+  color: var(--ink-2);
+  line-height: 1.62;
+}
+.case-block .placeholder-box + .placeholder-box { margin-top: 8px; }
+
+
+/* ===================================================================
+   12. PROJETOS
+   =================================================================== */
+.proj-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 20px;
+  align-items: stretch;
+}
+
+.proj-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 32px 30px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: border-color var(--t), box-shadow var(--t), transform var(--t);
+}
+.proj-card:hover {
+  border-color: var(--wine);
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+.proj-top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.proj-title {
+  font-family: var(--font-display);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.18;
+}
+
+.proj-status {
+  flex-shrink: 0;
+  padding: 4px 11px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  white-space: nowrap;
+}
+.proj-status.is-live {
+  background: var(--wine);
+  border-color: var(--wine);
+  color: #fff;
+}
+
+.proj-desc {
+  font-size: 15px;
+  color: var(--ink-2);
+  line-height: 1.62;
+  margin-bottom: 18px;
+}
+
+.proj-card .placeholder-box { margin-top: 0; margin-bottom: 18px; }
+
+/* margin-top:auto alinha a lista de ferramentas na base de todos
+   os cartões da mesma linha, independentemente do tamanho do texto */
+.proj-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: auto;
+  padding-top: 18px;
+  border-top: 1px solid var(--line-soft);
+}
+.proj-stack li {
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  background: var(--paper);
+  font-size: 11.5px;
+  letter-spacing: .04em;
+  color: var(--ink-2);
+}
+
+
+/* ===================================================================
+   13. COMPETÊNCIAS
+   =================================================================== */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+}
+
+.skill-group {
+  padding: 30px 28px;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+}
+.skill-group h3 {
+  font-size: 10.5px;
+  letter-spacing: .18em;
+  text-transform: uppercase;
+  color: var(--wine);
+  font-weight: 700;
+  margin-bottom: 20px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--line-soft);
+}
+.skill-group li {
+  font-size: 15px;
+  color: var(--ink);
+  padding: 8px 0;
+  line-height: 1.45;
+}
+.skill-group li + li { border-top: 1px solid var(--line-soft); }
+
+
+/* ===================================================================
+   14. FORMAÇÃO E IDIOMAS
+   =================================================================== */
+.edu-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: 64px;
+}
+
+.edu-list { display: grid; gap: 30px; }
+
+.edu-list li {
+  padding-left: 24px;
+  border-left: 1px solid var(--wine);
+}
+.edu-degree {
+  margin: 0 0 4px;
+  font-family: var(--font-display);
+  font-size: 21px;
+  font-weight: 400;
+}
+.edu-school {
+  margin: 0 0 6px;
+  font-size: 15px;
+  color: var(--ink-2);
+}
+.edu-period { margin: 0; }
+
+.lang-list { display: grid; }
+.lang-list li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--line);
+}
+.lang-name {
+  font-family: var(--font-display);
+  font-size: 18px;
+}
+.lang-level {
+  font-size: 11px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--wine);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+
+/* ===================================================================
+   15. FAIXA DE DESTAQUE (OBJETIVO)
+   =================================================================== */
+.band {
+  background: var(--wine);
+  color: #F2E6E9;
+  padding: clamp(72px, 10vw, 124px) 0;
+}
+
+.band-inner { max-width: 940px; }
+
+.sec-head-invert {
+  border-bottom-color: rgba(255, 255, 255, .22);
+}
+.sec-head-invert .sec-num { color: #E2BFC8; }
+.sec-head-invert .sec-title { color: #fff; }
+
+.band-lead {
+  font-family: var(--font-display);
+  font-size: clamp(23px, 3.4vw, 36px);
+  font-weight: 400;
+  line-height: 1.32;
+  color: #fff;
+  margin-bottom: 32px;
+  max-width: 26ch;
+}
+@media (min-width: 700px) { .band-lead { max-width: 34ch; } }
+
+.band-text {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 12px 48px;
+  max-width: 78ch;
+}
+.band-text p {
+  font-size: 16px;
+  color: #EBD8DD;
+  margin: 0;
+}
+
+
+/* ===================================================================
+   16. CONTATO
+   =================================================================== */
+.section-contact { background: var(--paper); }
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.notice {
+  margin: 20px 0 0;
+  padding: 13px 18px;
+  max-width: 62ch;
+  border: 1px solid var(--wine);
+  border-left-width: 2px;
+  border-radius: var(--radius);
+  background: var(--wine-tint);
+  color: var(--wine-deep);
+  font-size: 14.5px;
+}
+.notice[hidden] { display: none; }
+
+.contact-meta {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-top: 56px;
+  padding-top: 36px;
+  border-top: 1px solid var(--line);
+}
+.meta-label {
+  display: block;
+  font-size: 10.5px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.meta-value {
+  display: block;
+  font-size: 15.5px;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+
+/* ===================================================================
+   17. FOOTER
+   =================================================================== */
+.site-footer {
+  background: var(--ink);
+  color: #C9C0BC;
+  padding: 64px 0 44px;
+}
+.footer-inner { text-align: center; }
+
+.footer-name {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 400;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 12px;
+}
+.footer-tag {
+  font-size: 11.5px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: #D8B9C2;
+  margin-bottom: 10px;
+}
+.footer-note {
+  font-size: 14px;
+  color: #A79D99;
+  margin-bottom: 32px;
+}
+.footer-legal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px 22px;
+  margin: 0;
+  padding-top: 26px;
+  border-top: 1px solid rgba(255, 255, 255, .14);
+  font-size: 13px;
+  color: #8F8681;
+}
+.footer-top {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.footer-top:hover { color: #E2BFC8; }
+.site-footer :where(a):focus-visible { outline: 2px solid #fff; outline-offset: 3px; }
+
+
+/* ===================================================================
+   18. ANIMAÇÕES DISCRETAS
+   =================================================================== */
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 640ms ease, transform 640ms ease;
+}
+.reveal.is-visible { opacity: 1; transform: none; }
+
+/* Se o JavaScript não rodar, nada fica invisível */
+.no-js .reveal { opacity: 1; transform: none; }
+
+/* Evita que o seletor de idioma "anime" sozinho ao abrir a página
+   quando o idioma salvo é diferente do idioma inicial do HTML. */
+.no-transition *,
+.no-transition *::before,
+.no-transition *::after { transition: none !important; }
+
+
+/* ===================================================================
+   19. RESPONSIVIDADE
+   =================================================================== */
+
+/* --- Notebooks menores --- */
+@media (max-width: 1100px) {
+  .nav-list { gap: 16px; }
+  .nav-list a { font-size: 11px; letter-spacing: .08em; }
+  .exp-item { grid-template-columns: 180px minmax(0, 1fr); gap: 36px; }
+  .case-body { padding-left: 0; }
+}
+
+/* --- Tablets e celulares: menu recolhido --- */
+@media (max-width: 940px) {
+  html { scroll-padding-top: 80px; }
+
+  .menu-toggle { display: flex; }
+  .header-inner { position: relative; }
+
+  .site-nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: var(--surface);
+    border-bottom: 1px solid var(--line);
+    box-shadow: var(--shadow-md);
+    display: none;
+    margin-left: 0;
+    max-height: calc(100vh - 76px);
+    overflow-y: auto;
+  }
+  .site-nav.is-open { display: block; }
+
+  .nav-list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 6px 28px 18px;
+  }
+  .nav-list li + li { border-top: 1px solid var(--line-soft); }
+  .nav-list a {
+    display: block;
+    padding: 15px 0;
+    font-size: 13px;
+    letter-spacing: .12em;
+  }
+  .nav-list a::after { display: none; }
+
+  .about-grid,
+  .edu-grid { grid-template-columns: 1fr; gap: 44px; }
+
+  .exp-item {
+    grid-template-columns: 1fr;
+    gap: 18px;
+    padding: 44px 0;
+  }
+
+  .case-head { grid-template-columns: 60px minmax(0, 1fr); gap: 0 18px; }
+  .case-body { grid-template-columns: 1fr; gap: 28px; }
+}
+
+/* --- Celulares grandes --- */
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .wrap { padding-inline: 22px; }
+
+  .sec-head { gap: 14px; }
+  .sec-lead { margin-bottom: 40px; }
+
+  .hero-actions .btn { flex: 1 1 100%; }
+  .contact-actions .btn { flex: 1 1 100%; }
+
+  .focus-card { padding: 28px 24px; }
+  .proj-card { padding: 28px 24px; }
+  .skill-group { padding: 26px 24px; }
+  .about-facts { padding: 26px 24px; }
+
+  .exp-bullets { grid-template-columns: 1fr; }
+  .case { padding: 44px 0; }
+
+  .proj-top { flex-direction: column; align-items: flex-start; gap: 10px; }
+}
+
+/* --- Celulares pequenos (≈320px) --- */
+@media (max-width: 400px) {
+  .wrap { padding-inline: 18px; }
+  .brand-name { display: none; }
+  .header-actions { gap: 8px; }
+  .lang-btn { padding: 8px 10px; }
+
+  .hero-title { font-size: 52px; }
+  .hero-eyebrow { letter-spacing: .16em; font-size: 10.5px; }
+  .avail-row li { font-size: 12.5px; padding: 6px 13px; }
+  .case-head { grid-template-columns: 1fr; }
+  .case-num { grid-row: auto; margin-bottom: 8px; }
+}
+
+/* --- Preferência por menos movimento --- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: .001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .reveal { opacity: 1; transform: none; }
+  .btn:hover,
+  .proj-card:hover { transform: none; }
+  /* A faixa rolante para completamente e vira uma lista estática */
+  .marquee-track { animation: none; }
+  .marquee { overflow-x: auto; }
+}
+
+
+/* ===================================================================
+   20. IMPRESSÃO
+   =================================================================== */
+@media print {
+  .site-header,
+  .hero-actions,
+  .hero-links,
+  .contact-actions,
+  .marquee,
+  .skip-link,
+  .footer-top { display: none !important; }
+
+  body { background: #fff; font-size: 12pt; color: #000; }
+  .section, .hero, .band { padding: 18pt 0; }
+  .band { background: #fff; color: #000; }
+  .band-lead, .sec-head-invert .sec-title { color: #000; }
+  .reveal { opacity: 1 !important; transform: none !important; }
+  .case, .exp-item, .skill-group, .proj-card { break-inside: avoid; box-shadow: none; }
+  .site-footer { background: #fff; color: #000; }
+  .footer-name, .footer-tag, .footer-note, .footer-legal { color: #000; }
+}

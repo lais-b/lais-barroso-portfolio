@@ -1,0 +1,24 @@
+# Sistema operacional
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+._*
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Arquivos temporários
+*.tmp
+*.bak
+*.log
+
+# Rascunhos e arquivos pessoais que não devem ir para o GitHub
+rascunhos/
+*.docx
+*.pages
