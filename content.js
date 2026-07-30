@@ -70,6 +70,7 @@ var CONTENT = {
     "btn.resumeEN": "Currículo EN",
     "btn.linkedin": "LinkedIn",
     "btn.email": "Enviar e-mail",
+    "btn.whatsapp": "WhatsApp",
     "btn.viewProject": "Ver projeto",
     "btn.live": "Ver o produto no ar",
     "btn.close": "Fechar",
@@ -105,7 +106,6 @@ var CONTENT = {
     "work.labelCategory": "Categoria",
     "work.demoData": "dados demonstrativos",
     "work.noResults": "Resultados serão publicados quando validados.",
-    "work.noNumbers": "Resultados descritos em palavras. Números entram no site apenas quando validados.",
 
     /* Trajetória */
     "path.eyebrow": "Trajetória",
@@ -288,6 +288,7 @@ var CONTENT = {
     "btn.resumeEN": "CV (EN)",
     "btn.linkedin": "LinkedIn",
     "btn.email": "Send an email",
+    "btn.whatsapp": "WhatsApp",
     "btn.viewProject": "View project",
     "btn.live": "See it live",
     "btn.close": "Close",
@@ -323,7 +324,6 @@ var CONTENT = {
     "work.labelCategory": "Category",
     "work.demoData": "demonstrative data",
     "work.noResults": "Results will be published once validated.",
-    "work.noNumbers": "Outcomes described in words. Figures go on the site only once validated.",
 
     /* Path */
     "path.eyebrow": "Path",

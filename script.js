@@ -246,7 +246,6 @@
        depois de validados, em content-status.js — nunca estimados aqui. */
     var rb = block("work.labelResults", d.results, false);
     if (rb) {
-      rb.appendChild(el("p", "pv-fine", t("work.noNumbers")));
       pvBody.appendChild(rb);
     } else {
       var rb2 = el("div", "pv-block");
@@ -456,6 +455,9 @@
     if (has(ST.linkedin)) parts.push(link(t("btn.linkedin"), ST.linkedin, false, true));
     if (has(ST.professionalEmail) && opts && opts.email) {
       parts.push(link(t("btn.email"), "mailto:" + ST.professionalEmail, false));
+    }
+    if (has(ST.whatsapp) && opts && opts.email) {
+      parts.push(link(t("btn.whatsapp"), "https://wa.me/" + ST.whatsapp.replace(/\D/g, ""), false, true));
     }
 
     if (!parts.length) {

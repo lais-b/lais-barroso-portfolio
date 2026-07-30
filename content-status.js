@@ -22,6 +22,10 @@ var CONTENT_STATUS = {
   professionalEmail: "lacrubarroso@gmail.com",
   linkedin: "",                   // PREENCHER: ex.: "https://www.linkedin.com/in/lais-barroso/"
 
+  /* WhatsApp: só dígitos, com código do país (55) e DDD.
+     Vazio = o botão não aparece. */
+  whatsapp: "5531982212385",
+
   /* -----------------------------------------------------------------
      2. CURRÍCULOS
      Coloque os PDFs em assets/curriculos/ e mude para true.
