@@ -100,9 +100,10 @@ Para achar tudo de uma vez, abra o arquivo e use `Ctrl + F` procurando por
 
 **Endereços do site — arquivo `index.html`, no topo (dentro de `<head>`)**
 
+> A URL do site já está preenchida: `https://lais-b.github.io/lais-barroso-portfolio/`
+
 | Campo | O que colocar |
 |---|---|
-| `PREENCHER_URL_DO_SITE` (2 lugares) | O endereço final do site, ex.: `https://lais-b.github.io/lais-barroso-portfolio/` |
 | `PREENCHER_URL_IMAGEM_COMPARTILHAMENTO` (2 lugares) | O endereço da imagem de 1200×630 (ver `assets/imagens/README.md`) |
 
 **Datas — arquivo `script.js`, seção "02. TRADUÇÕES"** (lembre de editar em PT **e** EN)
@@ -449,9 +450,8 @@ publicação:
    https://SEU-USUARIO.github.io/lais-barroso-portfolio/
    ```
 
-7. **Importante:** copie esse endereço e cole no `index.html`, nos dois
-   lugares marcados como `PREENCHER_URL_DO_SITE`. Isso é o que faz o link
-   ficar bonito quando compartilhado no LinkedIn e no WhatsApp.
+7. A URL já está preenchida no `index.html` (`canonical` e `og:url`).
+   Só precisa mexer nela se um dia você usar um domínio próprio.
 
 Pelo terminal, o mesmo resultado sai com:
 
