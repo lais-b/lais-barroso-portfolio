@@ -1,8 +1,8 @@
-# Laís Barroso — portfólio
+# Laís Barroso, portfólio
 
 Perfil profissional, currículo digital e portfólio de projetos, em português
 e inglês. Feito em HTML, CSS e JavaScript puro: **sem framework, sem build,
-sem dependência externa e sem nenhuma requisição para fora** — as fontes ficam
+sem dependência externa e sem nenhuma requisição para fora**, as fontes ficam
 dentro do próprio repositório, então o site abre até offline.
 
 **Posicionamento:** Marketing Operations, Growth & Business Operations
@@ -46,7 +46,7 @@ campo está vazio, o componente correspondente simplesmente não é desenhado:
 | Métrica não validada | "Resultados serão publicados quando validados." |
 
 **No seu computador é diferente:** ali o site mostra, em cinza, exatamente qual
-arquivo falta (ex.: "ADICIONAR LAIS-HERO.JPG"). Isso é proposital — serve de
+arquivo falta (ex.: "ADICIONAR LAIS-HERO.JPG"). Isso é proposital, serve de
 lista de tarefas para você e **desaparece sozinho** quando o site está no ar.
 A diferença é detectada pelo endereço, não precisa configurar nada.
 
@@ -82,7 +82,7 @@ Skills & Tools · Formação e idiomas · Quem é Laís · Contato · Rodapé
 
 ## 3. Como abrir no computador
 
-Clique duas vezes em **`index.html`**. Só isso — não precisa instalar nada.
+Clique duas vezes em **`index.html`**. Só isso, não precisa instalar nada.
 
 > Uma observação: abrindo o arquivo direto, o navegador bloqueia o carregamento
 > das fotos em alguns casos. Se quiser ver exatamente como fica no ar, rode um
@@ -96,35 +96,32 @@ Clique duas vezes em **`index.html`**. Só isso — não precisa instalar nada.
 Tudo abaixo está no arquivo **`content-status.js`**.
 
 ### Contato
-- [ ] `professionalEmail` — e-mail profissional
-- [ ] `linkedin` — endereço completo do perfil
+- [x] `professionalEmail`, preenchido a partir do currículo
+- [ ] `linkedin`, endereço completo do perfil
 
 ### Currículos
-- [ ] PDF em `assets/curriculos/curriculo-lais-barroso-pt.pdf`
-- [ ] PDF em `assets/curriculos/curriculo-lais-barroso-en.pdf`
-- [ ] Mudar `resumes.pt` e `resumes.en` para `true`
+- [x] Os dois PDFs já estão no site e os botões funcionam
 
 ### Datas
-- [ ] `plurisPeriod` — período na Pluris Mídia (ex.: `"2022 — 2023"`).
-      Enquanto vazio, a Pluris aparece normalmente na trajetória, só sem data.
+- [x] Todas preenchidas (Pluris: mai. 2023 a mai. 2024)
 
-### Métricas — **só números que você confirmou**
-- [ ] `metrics.betpass` — ex.: `[{ value: "12h", label: "por mês no fechamento" }]`
-- [ ] `metrics.coi` — ex.: `[{ value: "3x", label: "mais leads qualificados" }]`
+### Métricas, **só números que você confirmou**
+- [ ] `metrics.betpass`, ex.: `[{ value: "12h", label: "por mês no fechamento" }]`
+- [ ] `metrics.coi`, ex.: `[{ value: "3x", label: "mais leads qualificados" }]`
 
 Enquanto as listas estiverem vazias, nenhum número aparece. **Nunca preencha
 com estimativa**: um número errado num portfólio é pior do que nenhum número.
 
-### Projetos ainda fechados
-- [ ] `roadmap-digital` — está `published: false`
-- [ ] `consultoria-ia` — está `published: false`
+### Links dos projetos
+- [ ] `link` do site do COI, do Mapa de Oportunidades e do Instagram
 
-Os dois aparecem na home como prévia com selo "Case em breve". Para abrir o case
-completo, escreva `process`, `deliverables` e `learnings` em `content.js` e mude
-para `published: true`.
+Cada projeto pode ter um botão "Ver o produto no ar". Enquanto o campo estiver
+vazio, o botão não aparece.
 
 ### Fotos
-Ver a seção seguinte.
+- [ ] `og-image.jpg` (1200×630) para o link ficar bonito no LinkedIn e WhatsApp
+
+As três fotos pessoais já estão no site.
 
 ---
 
@@ -133,19 +130,22 @@ Ver a seção seguinte.
 Coloque tudo em **`assets/imagens/`** com **exatamente** estes nomes
 (minúsculas, sem acento, sem espaço). Formato `.jpg`.
 
-| Arquivo | Onde aparece | Formato ideal | Sugestão |
-|---|---|---|---|
-| `lais-hero.jpg` | Foto principal do topo | Retrato **4:5**, mín. 900×1125 | Retrato em fundo neutro, luz natural, meio corpo. É a imagem que sustenta a colagem inteira — vale a melhor foto que você tiver. |
-| `lais-secundaria-01.jpg` | Polaroid do topo (esquerda) | **Quadrada 1:1**, mín. 700×700 | Algo mais solto: você trabalhando, num café, em viagem. Contraponto humano à foto principal. |
-| `lais-secundaria-02.jpg` | Polaroid do topo + seção "Quem é Laís" | **Quadrada 1:1**, mín. 700×700 | Outro ângulo, outro ambiente. Aparece em dois lugares, então escolha uma que funcione sozinha. |
-| `coi-mapa.jpg` | Projetos do COI | **16:9**, mín. 1200×675 | Print do Mapa de Oportunidades no desktop. |
-| `coi-conteudo.jpg` | Projeto de conteúdo | **3:4**, mín. 900×1200 | Print de conteúdos do Instagram, em grade ou celular. |
-| `betpass-dashboard.jpg` | Projeto Betpass | **16:9**, mín. 1200×675 | **Atenção: dados fictícios.** Monte uma planilha ou dashboard de demonstração. Nunca use tela com dado real, valor, nome de parceiro ou informação interna. |
-| `automacao-fluxo.jpg` | Projeto de automações | **4:3**, mín. 1000×750 | Diagrama "antes → automação → depois", desenhado por você. Dados fictícios. |
-| `og-image.jpg` | Pré-visualização no LinkedIn e WhatsApp | **1200×630 exatos** | Fundo creme, "Laís Barroso" grande e a linha "Marketing Operations, Growth & Business Operations". |
+| Arquivo | Onde aparece | Situação |
+|---|---|---|
+| `lais-hero.jpg` | Retrato principal do topo | ✅ no site (Salvador, recortada 4:5) |
+| `lais-viagem.jpg` | Polaroid do topo | ✅ no site (Machu Picchu, quadrada) |
+| `lais-lagoa.jpg` | Polaroid da seção "Quem é Laís" | ✅ no site (recortada 4:5) |
+| `og-image.jpg` | Pré-visualização no LinkedIn e WhatsApp | ⬜ **falta**, 1200×630 exatos |
 
-**Enquanto não existirem**, cada espaço mostra o nome do arquivo no seu
-computador e desaparece no site publicado. Nada quebra.
+Os projetos **não usam imagem**: cada um é um cartão tipográfico, com filete
+vinho, categoria, título em serifa e ferramentas. Foi decisão de projeto, não
+falta de arquivo, evita depender de print de dashboard ou de tela de produto.
+
+Para trocar uma foto, basta substituir o arquivo em `assets/imagens/` mantendo
+o mesmo nome. Os recortes originais vieram de fotos maiores; se quiser refazer,
+o site corta sozinho pelo centro, priorizando o topo da imagem (o rosto).
+
+**Se um dia apagar uma foto:** o espaço some no site publicado, sem buraco.
 
 **Cuidado com peso:** deixe cada foto abaixo de ~400 KB. Uma imagem de 5 MB
 deixa o site lento no celular.
@@ -160,7 +160,7 @@ Todo o texto está em **`content.js`**, em dois blocos: `pt:` e `en:`.
 "hero.tagline": "Eu organizo ideias, processos e dados para fazer projetos avançarem.",
 ```
 
-Troque só o que está entre aspas do lado direito — e **sempre edite a mesma
+Troque só o que está entre aspas do lado direito, e **sempre edite a mesma
 chave nos dois idiomas**. Se você mudar só o português, o inglês continua
 mostrando o texto antigo.
 
@@ -193,14 +193,14 @@ Cada projeto é um bloco na lista `PROJECTS`, no fim de **`content.js`**:
 
 - **`size`** controla a composição: `wide` ocupa 2/3, `tall` é vertical,
   `regular` é 1/3 e `full` atravessa a página inteira.
-- **`note`** é a observação em itálico no fim do case — use para deixar claro
+- **`note`** é a observação em itálico no fim do case, use para deixar claro
   o que você **não** fez (ex.: "o desenvolvimento da plataforma é do time de
   tecnologia") ou para avisar que os visuais são demonstrativos.
 - Para o projeto aparecer completo, ele precisa estar como `published: true`
   em `content-status.js`.
 
 Cada case abre num painel lateral e tem endereço próprio
-(`.../#p/coi-mapa`) — dá para mandar o link direto de um projeto numa
+(`.../#p/coi-mapa`), dá para mandar o link direto de um projeto numa
 candidatura.
 
 ---
@@ -235,7 +235,7 @@ o site. Não apague essa pasta.
 
 ## 9. Os adesivos
 
-Os elementos de colagem são feitos em CSS e SVG — **nenhum é imagem**, então
+Os elementos de colagem são feitos em CSS e SVG, **nenhum é imagem**, então
 não pesam e ficam nítidos em qualquer tela. Cada um mora numa seção específica:
 
 | Adesivo | Onde |

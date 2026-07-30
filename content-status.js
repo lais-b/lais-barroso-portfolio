@@ -70,7 +70,6 @@ var CONTENT_STATUS = {
     "coi-agentes":         { published: true,  link: "" },   // PREENCHER: se algum agente tiver painel publico
     "betpass-operacoes":   { published: true  },
     "automacoes":          { published: true  },
-    "roadmap-digital":     { published: false },
     "portfolio":           { published: true,  link: "https://github.com/lais-b/lais-barroso-portfolio" }
   },
 

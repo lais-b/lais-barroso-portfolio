@@ -506,7 +506,7 @@ var PROJECTS = [
     year: "2026",
     size: "wide",
     image: "",
-    gallery: ["coi-mapa.jpg"],
+    gallery: [],
     tools: ["Meta Ads", "Notion", "Claude", "Google Sheets", "Canva"],
     pt: {
       category: "Growth · Product Marketing · Inteligência de mercado",
@@ -565,9 +565,9 @@ var PROJECTS = [
   {
     id: "coi-mapa",
     year: "2026",
-    size: "tall",
-    image: "coi-mapa.jpg",
-    gallery: ["coi-mapa.jpg"],
+    size: "regular",
+    image: "",
+    gallery: [],
     tools: ["Meta Ads", "Landing pages", "WhatsApp", "Google Sheets"],
     pt: {
       category: "Lançamento de produto · Growth Operations",
@@ -626,9 +626,9 @@ var PROJECTS = [
   {
     id: "coi-conteudo",
     year: "2026",
-    size: "tall",
-    image: "coi-conteudo.jpg",
-    gallery: ["coi-conteudo.jpg"],
+    size: "regular",
+    image: "",
+    gallery: [],
     tools: ["Meta Ads", "Claude", "ChatGPT", "CRM", "WhatsApp", "Notion"],
     pt: {
       category: "Marketing Operations",
@@ -751,10 +751,9 @@ var PROJECTS = [
     id: "betpass-operacoes",
     year: "desde 2024",
     size: "wide",
-    image: "betpass-dashboard.jpg",
+    image: "",
     gallery: [],
     tools: ["Google Sheets", "Apps Script", "Excel", "Grafana", "Google Workspace"],
-    mockup: "spreadsheet",
     pt: {
       category: "Business Operations",
       title: "Estruturação operacional na Betpass",
@@ -820,7 +819,6 @@ var PROJECTS = [
     image: "",
     gallery: [],
     tools: ["Google Sheets", "Google Apps Script", "Claude", "ChatGPT"],
-    mockup: "flow",
     pt: {
       category: "Automação · Eficiência operacional",
       title: "Automações em Sheets e Apps Script",
@@ -874,37 +872,12 @@ var PROJECTS = [
   },
 
   {
-    id: "roadmap-digital",
-    year: "2026",
-    size: "half",
-    image: "",
-    gallery: [],
-    tools: ["Análise de negócio", "PowerPoint", "Notion"],
-    pt: {
-      category: "Projeto acadêmico · Estratégia de negócio",
-      title: "Roadmap de transformação digital",
-      challenge: "Analisar onde uma empresa de tecnologia e marketing de afiliados poderia ganhar com integração de dados, automação e IA.",
-      role: "Análise, priorização e construção do roadmap, como trabalho aplicado da pós-graduação na FGV.",
-      context: "Projeto da pós-graduação em Administração, aplicado a um cenário real de empresa de tecnologia e marketing de afiliados. Cobre integração de dados, automação interna, monitoramento, compliance, IA aplicada a campanhas, prevenção de fraude, infraestrutura e a relação entre marketing, operação e gestão.",
-      process: [], deliverables: [], learnings: []
-    },
-    en: {
-      category: "Academic project · Business strategy",
-      title: "Digital transformation roadmap",
-      challenge: "Analyse where a technology and affiliate-marketing company could gain from data integration, automation and AI.",
-      role: "Analysis, prioritisation and roadmap design, as applied coursework for the FGV postgraduate degree.",
-      context: "A postgraduate Business Administration project applied to a real technology and affiliate-marketing scenario. It covers data integration, internal automation, monitoring, compliance, AI applied to campaigns, fraud prevention, infrastructure, and how marketing, operations and management connect.",
-      process: [], deliverables: [], learnings: []
-    }
-  },
-  {
     id: "portfolio",
     year: "2026",
-    size: "half",
+    size: "full",
     image: "",
     gallery: [],
     tools: ["HTML", "CSS", "JavaScript", "Claude Code", "GitHub Pages"],
-    mockup: "browser",
     pt: {
       category: "Marca pessoal · Fluxo com IA · Execução de projeto",
       title: "Este portfólio",

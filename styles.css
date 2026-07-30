@@ -191,6 +191,8 @@ a { color: var(--wine); text-underline-offset: 3px; }
   overflow: hidden;
 }
 .ph img { width: 100%; height: 100%; object-fit: cover; }
+/* quando o recorte apertar, sacrifica o rodapé da foto, nunca o rosto */
+.ph-main img, .polaroid .ph img { object-position: center 22%; }
 
 /* estado local: mostra o que falta. No site publicado isto some. */
 .ph.is-empty::after {
@@ -956,7 +958,9 @@ a { color: var(--wine); text-underline-offset: 3px; }
 /* tablet 1024 → 768 */
 @media (max-width: 1024px) {
   .work-grid { grid-template-columns: repeat(4, 1fr); }
-  .wk-card, .wk-card[data-size="wide"] { grid-column: span 4; }
+  /* o seletor de atributo cobre QUALQUER tamanho novo que apareça:
+     sem isso, um span maior que a grade estoura a largura da página */
+  .wk-card, .wk-card[data-size] { grid-column: span 4; }
   .wk-card[data-size="tall"], .wk-card[data-size="regular"] { grid-column: span 2; }
   .man-body, .edu-grid, .about-grid { grid-template-columns: 1fr; }
   .how-grid { grid-template-columns: repeat(2, 1fr); }
@@ -994,7 +998,8 @@ a { color: var(--wine); text-underline-offset: 3px; }
   .hero { min-height: 0; padding-top: 30px; }
   .hero-grid { grid-template-columns: 1fr; gap: 38px; }
   .hero-collage { min-height: 0; display: grid; grid-template-columns: repeat(2,1fr); gap: 16px; align-items: start; }
-  .ph-main { grid-column: 1 / -1; width: 100%; transform: rotate(.8deg); aspect-ratio: 3/2; }
+  /* mantém o retrato em pé no celular: um corte 3:2 cortaria o rosto */
+  .ph-main { grid-column: 1 / -1; width: 100%; transform: rotate(.8deg); aspect-ratio: 4/5; }
   .polaroid.pol-1, .polaroid.pol-2 { position: static; width: 100%; }
   .polaroid.pol-1 { transform: rotate(-2.4deg); }
   .polaroid.pol-2 { transform: rotate(2deg); }
@@ -1019,7 +1024,7 @@ a { color: var(--wine); text-underline-offset: 3px; }
   .how-grid { grid-template-columns: 1fr; }
   .how-step { margin-right: 0; padding-right: 0; }
   .work-grid { grid-template-columns: 1fr; gap: 40px; }
-  .wk-card, .wk-card[data-size="wide"], .wk-card[data-size="tall"], .wk-card[data-size="regular"] { grid-column: 1 / -1; }
+  .wk-card, .wk-card[data-size] { grid-column: 1 / -1; }
   .wk-card[data-size="tall"] .wk-ph { aspect-ratio: 16/11; }
   .hero-collage { grid-template-columns: 1fr; }
   .langs li { grid-template-columns: 1fr auto; }
