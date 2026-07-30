@@ -19,8 +19,8 @@ var CONTENT_STATUS = {
      1. CONTATO
      Enquanto vazio, os botões de e-mail e LinkedIn não são exibidos.
      ----------------------------------------------------------------- */
-  professionalEmail: "",          // ex.: "lais.barroso@exemplo.com"
-  linkedin: "",                   // ex.: "https://www.linkedin.com/in/lais-barroso/"
+  professionalEmail: "lacrubarroso@gmail.com",
+  linkedin: "",                   // PREENCHER: ex.: "https://www.linkedin.com/in/lais-barroso/"
 
   /* -----------------------------------------------------------------
      2. CURRÍCULOS
@@ -30,8 +30,8 @@ var CONTENT_STATUS = {
        curriculo-lais-barroso-en.pdf
      ----------------------------------------------------------------- */
   resumes: {
-    pt: false,
-    en: false
+    pt: true,
+    en: true
   },
 
   /* -----------------------------------------------------------------
@@ -39,7 +39,7 @@ var CONTENT_STATUS = {
      A Pluris Mídia entra na linha do tempo sem período enquanto
      este campo estiver vazio (o cargo e a atuação aparecem normalmente).
      ----------------------------------------------------------------- */
-  plurisPeriod: "",               // ex.: "2022 — 2023"
+  plurisPeriod: "Mai. 2023 a Mai. 2024",
 
   /* -----------------------------------------------------------------
      4. MÉTRICAS VALIDADAS
@@ -58,16 +58,20 @@ var CONTENT_STATUS = {
      published: true  → aparece completo, com botão "Ver projeto"
      published: false → aparece como prévia com selo "Case em breve"
                         (sem botão, sem conteúdo pela metade)
+
+     `link` é opcional: quando preenchido, o case ganha um botão
+     "Ver o produto no ar" que abre o site em outra aba. Vazio = sem
+     botão (nunca um link quebrado).
      ----------------------------------------------------------------- */
   projects: {
-    "coi-posicionamento":  { published: true  },
-    "coi-mapa":            { published: true  },
-    "coi-conteudo":        { published: true  },
+    "coi-posicionamento":  { published: true,  link: "" },   // PREENCHER: site do COI
+    "coi-mapa":            { published: true,  link: "" },   // PREENCHER: link do Mapa de Oportunidades
+    "coi-conteudo":        { published: true,  link: "" },   // PREENCHER: Instagram do COI, se quiser
+    "coi-agentes":         { published: true,  link: "" },   // PREENCHER: se algum agente tiver painel publico
     "betpass-operacoes":   { published: true  },
     "automacoes":          { published: true  },
     "roadmap-digital":     { published: false },
-    "consultoria-ia":      { published: false },
-    "portfolio":           { published: true  }
+    "portfolio":           { published: true,  link: "https://github.com/lais-b/lais-barroso-portfolio" }
   },
 
   /* -----------------------------------------------------------------

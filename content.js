@@ -2,7 +2,7 @@
    content.js
    -------------------------------------------------------------------
    Todo o texto do site, em português e inglês.
-   Para mudar qualquer palavra do site, mude aqui — sempre nos DOIS
+   Para mudar qualquer palavra do site, mude aqui, sempre nos DOIS
    idiomas. As chaves dos dois blocos precisam ser iguais.
    =================================================================== */
 
@@ -12,12 +12,12 @@ var CONTENT = {
      PORTUGUÊS
      ================================================================ */
   pt: {
-    "doc.title": "Laís Barroso — Marketing Operations, Growth & Business Operations",
+    "doc.title": "Laís Barroso · Marketing Operations, Growth & Business Operations",
     "doc.description": "Laís Barroso trabalha entre marketing, operações, dados e tecnologia. Portfólio de projetos em growth, business operations, inteligência de mercado e automação, em Belo Horizonte.",
 
     /* Acessibilidade */
     "a11y.skip": "Pular para o conteúdo principal",
-    "a11y.brand": "Laís Barroso — início",
+    "a11y.brand": "Laís Barroso, início",
     "a11y.nav": "Navegação principal",
     "a11y.langGroup": "Selecionar idioma",
     "a11y.menuOpen": "Abrir menu",
@@ -71,13 +71,14 @@ var CONTENT = {
     "btn.linkedin": "LinkedIn",
     "btn.email": "Enviar e-mail",
     "btn.viewProject": "Ver projeto",
+    "btn.live": "Ver o produto no ar",
     "btn.close": "Fechar",
 
     /* Manifesto */
     "manifesto.eyebrow": "Manifesto",
-    "manifesto.lead": "Trabalho no meio do caminho entre marketing, operações, dados e tecnologia — que costuma ser exatamente onde os projetos emperram.",
-    "manifesto.p1": "Comecei na ciência, passei por análise técnica em ambiente regulado, fui para rotinas administrativas e financeiras e cheguei em marketing, aquisição e produtos digitais. Cada troca dessas me obrigou a aprender uma linguagem nova — e é isso que hoje me deixa conversar com áreas que raramente falam entre si.",
-    "manifesto.p2": "Gosto de pegar um projeto que ainda está solto e deixá-lo em pé: com etapas claras, responsáveis definidos, números que dá para acompanhar e documentação que sobrevive quando eu não estiver por perto.",
+    "manifesto.lead": "Trabalho no meio do caminho entre marketing, operações, dados e tecnologia, que costuma ser exatamente onde os projetos emperram.",
+    "manifesto.p1": "Comecei na ciência, passei por análise técnica em ambiente regulado, fui para rotinas administrativas e financeiras e cheguei em marketing, aquisição e produtos digitais. Cada troca dessas me obrigou a aprender uma linguagem nova, e é isso que hoje me deixa conversar com áreas que raramente falam entre si.",
+    "manifesto.p2": "Gosto de pegar um projeto que ainda está solto e deixá-lo em pé: com etapas claras, responsáveis definidos, indicadores que a equipe consegue acompanhar e documentação que continua servindo depois que eu saio de perto.",
     "manifesto.availTitle": "Onde eu trabalho",
     "manifesto.avail1": "Remoto no Brasil",
     "manifesto.avail2": "Remoto para empresas internacionais",
@@ -108,7 +109,7 @@ var CONTENT = {
     /* Trajetória */
     "path.eyebrow": "Trajetória",
     "path.title": "O caminho até aqui",
-    "path.lead": "Não foi uma linha reta — e isso virou o meu diferencial.",
+    "path.lead": "Não foi uma linha reta, e isso virou o meu diferencial.",
     "path.ufmg": "Formação científica e analítica",
     "path.pluris": "Análise técnica e trabalho multilíngue",
     "path.betpass": "Operações, dados e automação",
@@ -121,7 +122,7 @@ var CONTENT = {
     /* Experiências */
     "exp.betpass.role": "Business & Administrative Operations",
     "exp.betpass.company": "Betpass",
-    "exp.betpass.period": "Maio de 2024 — atual",
+    "exp.betpass.period": "Maio de 2024 até agora",
     "exp.betpass.context": "Empresa de tecnologia e gestão de afiliados, com muitos parceiros, fluxos financeiros paralelos, contratos e indicadores para acompanhar ao mesmo tempo.",
     "exp.betpass.b1": "Rotinas administrativas, financeiras e operacionais do dia a dia",
     "exp.betpass.b2": "Contas a pagar e receber, conciliações entre contas e plataformas",
@@ -135,8 +136,8 @@ var CONTENT = {
 
     "exp.coi.role": "Growth & Marketing Lead",
     "exp.coi.roleNote": "Projeto paralelo",
-    "exp.coi.company": "COI — Clube de Oportunidades Imobiliárias",
-    "exp.coi.period": "Março de 2026 — atual",
+    "exp.coi.company": "COI, Clube de Oportunidades Imobiliárias",
+    "exp.coi.period": "Março de 2026 até agora",
     "exp.coi.context": "Inteligência imobiliária: anúncios, transações registradas, dados de mercado, análises comparativas e IA para ajudar compradores a encontrar boas oportunidades.",
     "exp.coi.b1": "Posicionamento de marca e estratégia de comunicação",
     "exp.coi.b2": "Planejamento de conteúdo e copywriting",
@@ -148,7 +149,7 @@ var CONTENT = {
     "exp.coi.b8": "Inteligência de mercado aplicada ao conteúdo",
     "exp.coi.b9": "Interface entre marketing, produto, tecnologia e operação",
 
-    "exp.pluris.role": "Junior Pharmaceutical Industry Technical Consultant",
+    "exp.pluris.role": "Consultora Técnica Júnior, Indústria Farmacêutica",
     "exp.pluris.company": "Pluris Mídia",
     "exp.pluris.context": "Onde a minha carreira começou: leitura crítica de documentação farmacêutica em ambiente regulado, com informação sensível e padrão rígido.",
     "exp.pluris.b1": "Leitura e análise de relatos técnicos",
@@ -181,10 +182,10 @@ var CONTENT = {
     "edu.eyebrow": "Formação",
     "edu.title": "Estudo e idiomas",
     "edu.fgv.degree": "Pós-graduação em Administração de Empresas",
-    "edu.fgv.school": "Fundação Getulio Vargas — FGV",
+    "edu.fgv.school": "Fundação Getulio Vargas (FGV)",
     "edu.fgv.period": "Conclusão em janeiro de 2026",
     "edu.ufmg.degree": "Graduação em Farmácia",
-    "edu.ufmg.school": "Universidade Federal de Minas Gerais — UFMG",
+    "edu.ufmg.school": "Universidade Federal de Minas Gerais (UFMG)",
     "edu.ufmg.period": "Conclusão em janeiro de 2023",
     "edu.scienceNote": "A formação científica me deu o que uso todo dia: ler informação densa sem me perder, documentar o que fiz e decidir com base em evidência, não em achismo.",
     "edu.langTitle": "Quatro idiomas",
@@ -200,8 +201,8 @@ var CONTENT = {
     /* Além do currículo */
     "about.ransom": "QUEM É LAÍS",
     "about.eyebrow": "Um pouco além do currículo",
-    "about.p1": "Minha trajetória não foi construída em linha reta — e esse acabou virando um dos meus maiores diferenciais. Passei pela ciência, por contextos técnicos e regulados, por operações, dados, marketing e produtos digitais. Gosto de aprender linguagens novas, entender como as coisas funcionam por dentro e aproximar áreas que costumam trabalhar de costas uma para a outra.",
-    "about.p2": "Fora dos cargos, sou movida por curiosidade, viagens, idiomas, cultura e tecnologia — e pela vontade de pegar uma ideia ainda confusa e deixá-la clara o suficiente para alguém usar.",
+    "about.p1": "Minha trajetória não foi construída em linha reta, e esse acabou virando um dos meus maiores diferenciais. Passei pela ciência, por contextos técnicos e regulados, por operações, dados, marketing e produtos digitais. Gosto de aprender linguagens novas, entender como as coisas funcionam por dentro e aproximar áreas que costumam trabalhar de costas uma para a outra.",
+    "about.p2": "Fora dos cargos, sou movida por curiosidade, viagens, idiomas, cultura e tecnologia, e pela vontade de pegar uma ideia ainda confusa e deixá-la clara o suficiente para alguém usar.",
     "about.tag1": "curiosa",
     "about.tag2": "cosmopolita",
     "about.tag3": "analítica",
@@ -211,7 +212,7 @@ var CONTENT = {
     /* Contato */
     "contact.eyebrow": "Contato",
     "contact.title": "Vamos conversar",
-    "contact.lead": "Aberta a vagas, projetos e processos seletivos — no Brasil ou fora dele.",
+    "contact.lead": "Aberta a vagas, projetos e processos seletivos, no Brasil ou fora dele.",
     "contact.locationLabel": "Base",
     "contact.location": "Belo Horizonte, Minas Gerais, Brasil",
     "contact.availLabel": "Disponibilidade",
@@ -228,12 +229,12 @@ var CONTENT = {
      INGLÊS
      ================================================================ */
   en: {
-    "doc.title": "Laís Barroso — Marketing Operations, Growth & Business Operations",
+    "doc.title": "Laís Barroso · Marketing Operations, Growth & Business Operations",
     "doc.description": "Laís Barroso works across marketing, operations, data and technology. A portfolio of work in growth, business operations, market intelligence and automation, based in Belo Horizonte, Brazil.",
 
     /* Accessibility */
     "a11y.skip": "Skip to main content",
-    "a11y.brand": "Laís Barroso — home",
+    "a11y.brand": "Laís Barroso, home",
     "a11y.nav": "Main navigation",
     "a11y.langGroup": "Select language",
     "a11y.menuOpen": "Open menu",
@@ -287,12 +288,13 @@ var CONTENT = {
     "btn.linkedin": "LinkedIn",
     "btn.email": "Send an email",
     "btn.viewProject": "View project",
+    "btn.live": "See it live",
     "btn.close": "Close",
 
     /* Manifesto */
     "manifesto.eyebrow": "Manifesto",
-    "manifesto.lead": "I work in the space between marketing, operations, data and technology — which tends to be exactly where projects get stuck.",
-    "manifesto.p1": "I started in science, moved through technical analysis in a regulated field, then into administrative and financial routines, and finally into marketing, acquisition and digital products. Every one of those moves forced me to learn a new language — which is why I can now sit between teams that rarely talk to each other.",
+    "manifesto.lead": "I work in the space between marketing, operations, data and technology, which tends to be exactly where projects get stuck.",
+    "manifesto.p1": "I started in science, moved through technical analysis in a regulated field, then into administrative and financial routines, and finally into marketing, acquisition and digital products. Every one of those moves forced me to learn a new language, which is why I can now sit between teams that rarely talk to each other.",
     "manifesto.p2": "What I enjoy is taking a project that is still loose and getting it to stand on its own: clear steps, named owners, numbers you can actually track, and documentation that survives after I leave the room.",
     "manifesto.availTitle": "Where I work",
     "manifesto.avail1": "Remote within Brazil",
@@ -324,7 +326,7 @@ var CONTENT = {
     /* Path */
     "path.eyebrow": "Path",
     "path.title": "How I got here",
-    "path.lead": "Not a straight line — and that turned into the interesting part.",
+    "path.lead": "Not a straight line, and that turned into the interesting part.",
     "path.ufmg": "Scientific and analytical training",
     "path.pluris": "Technical analysis and multilingual work",
     "path.betpass": "Operations, data and automation",
@@ -337,7 +339,7 @@ var CONTENT = {
     /* Experience */
     "exp.betpass.role": "Business & Administrative Operations",
     "exp.betpass.company": "Betpass",
-    "exp.betpass.period": "May 2024 — present",
+    "exp.betpass.period": "May 2024 to now",
     "exp.betpass.context": "A technology and affiliate-management company, with many partners, parallel financial flows, contracts and indicators to keep track of at the same time.",
     "exp.betpass.b1": "Day-to-day administrative, financial and operational routines",
     "exp.betpass.b2": "Accounts payable and receivable, reconciliation across accounts and platforms",
@@ -351,8 +353,8 @@ var CONTENT = {
 
     "exp.coi.role": "Growth & Marketing Lead",
     "exp.coi.roleNote": "Side project",
-    "exp.coi.company": "COI — Clube de Oportunidades Imobiliárias",
-    "exp.coi.period": "March 2026 — present",
+    "exp.coi.company": "COI, Clube de Oportunidades Imobiliárias",
+    "exp.coi.period": "March 2026 to now",
     "exp.coi.context": "Real estate intelligence: listings, registered transactions, market data, comparative analysis and AI to help buyers find genuinely good opportunities.",
     "exp.coi.b1": "Brand positioning and communication strategy",
     "exp.coi.b2": "Content planning and copywriting",
@@ -364,7 +366,7 @@ var CONTENT = {
     "exp.coi.b8": "Market intelligence applied to content",
     "exp.coi.b9": "Sitting between marketing, product, engineering and operations",
 
-    "exp.pluris.role": "Junior Pharmaceutical Industry Technical Consultant",
+    "exp.pluris.role": "Junior Technical Consultant, Pharmaceutical Industry",
     "exp.pluris.company": "Pluris Mídia",
     "exp.pluris.context": "Where my career started: critical reading of pharmaceutical documentation in a regulated environment, handling sensitive information to a strict standard.",
     "exp.pluris.b1": "Reading and analysis of technical case reports",
@@ -397,10 +399,10 @@ var CONTENT = {
     "edu.eyebrow": "Education",
     "edu.title": "Study and languages",
     "edu.fgv.degree": "Postgraduate degree in Business Administration",
-    "edu.fgv.school": "Fundação Getulio Vargas — FGV",
+    "edu.fgv.school": "Fundação Getulio Vargas (FGV)",
     "edu.fgv.period": "Completed January 2026",
     "edu.ufmg.degree": "Bachelor's degree in Pharmacy",
-    "edu.ufmg.school": "Federal University of Minas Gerais — UFMG",
+    "edu.ufmg.school": "Federal University of Minas Gerais (UFMG)",
     "edu.ufmg.period": "Completed January 2023",
     "edu.scienceNote": "The science degree gave me what I still use daily: reading dense information without losing the thread, documenting what I did, and deciding from evidence rather than instinct.",
     "edu.langTitle": "Four languages",
@@ -416,8 +418,8 @@ var CONTENT = {
     /* Beyond the CV */
     "about.ransom": "WHO IS LAÍS",
     "about.eyebrow": "A little beyond the CV",
-    "about.p1": "My path was never a straight line — and that became one of the most useful things about me. I came through science, through technical and regulated work, through operations, data, marketing and digital products. I like learning new languages, understanding how things work underneath, and pulling together teams that usually work back-to-back.",
-    "about.p2": "Outside of job titles, I run on curiosity, travel, languages, culture and technology — and on the urge to take a messy idea and make it clear enough for someone to use.",
+    "about.p1": "My path was never a straight line, and that became one of the most useful things about me. I came through science, through technical and regulated work, through operations, data, marketing and digital products. I like learning new languages, understanding how things work underneath, and pulling together teams that usually work back-to-back.",
+    "about.p2": "Outside of job titles, I run on curiosity, travel, languages, culture and technology, and on the urge to take a messy idea and make it clear enough for someone to use.",
     "about.tag1": "curious",
     "about.tag2": "cosmopolitan",
     "about.tag3": "analytical",
@@ -427,7 +429,7 @@ var CONTENT = {
     /* Contact */
     "contact.eyebrow": "Contact",
     "contact.title": "Let's talk",
-    "contact.lead": "Open to roles, projects and hiring processes — in Brazil or abroad.",
+    "contact.lead": "Open to roles, projects and hiring processes, in Brazil or abroad.",
     "contact.locationLabel": "Based in",
     "contact.location": "Belo Horizonte, Minas Gerais, Brazil",
     "contact.availLabel": "Availability",
@@ -496,15 +498,15 @@ var TIMELINE = [
    -------------------------------------------------------------------
    Cada projeto aparece na home como prévia e abre em detalhe.
    Se `published: false` em content-status.js, mostra só a prévia
-   com o selo "Case em breve" — nunca conteúdo pela metade.
+   com o selo "Case em breve", nunca conteúdo pela metade.
    =================================================================== */
 var PROJECTS = [
   {
     id: "coi-posicionamento",
     year: "2026",
     size: "wide",
-    image: "coi-mapa.jpg",
-    gallery: ["coi-mapa.jpg", "coi-conteudo.jpg"],
+    image: "",
+    gallery: ["coi-mapa.jpg"],
     tools: ["Meta Ads", "Notion", "Claude", "Google Sheets", "Canva"],
     pt: {
       category: "Growth · Product Marketing · Inteligência de mercado",
@@ -537,7 +539,7 @@ var PROJECTS = [
       title: "Positioning and product ecosystem at COI",
       challenge: "Turn a real estate intelligence product into something an ordinary buyer understands, explores and uses before ever visiting a property.",
       role: "Positioning, product narrative, launch planning, content, campaigns and acquisition tracking.",
-      context: "COI combines listings, registered transactions and comparative analysis to surface opportunities in the Belo Horizonte property market. The problem was never technical — it was translation. Without a clear story, the brand competed for attention on the same ground as any property listing, instead of owning the role of helping people decide.",
+      context: "COI combines listings, registered transactions and comparative analysis to surface opportunities in the Belo Horizonte property market. The problem was never technical. It was translation. Without a clear story, the brand competed for attention on the same ground as any property listing, instead of owning the role of helping people decide.",
       process: [
         "Studied the positioning and where the brand could stand apart from a listings portal",
         "Ordered the product portfolio the way a buyer actually moves through a decision",
@@ -554,7 +556,7 @@ var PROJECTS = [
         "Commercial journeys connecting content, campaign and conversation"
       ],
       learnings: [
-        "A data product doesn't sell on the data — it sells on the decision the data unlocks",
+        "A data product doesn't sell on the data. It sells on the decision the data unlocks",
         "Reordering the portfolio did more for comprehension than rewriting individual copy"
       ]
     }
@@ -591,7 +593,7 @@ var PROJECTS = [
         "O ponto de maior perda não era o produto, era a primeira tela sem contexto",
         "Conteúdo que ensina a ler o dado converte melhor do que conteúdo que elogia a ferramenta"
       ],
-      note: "Atuei na apresentação, no lançamento e na aquisição do produto — o desenvolvimento técnico da plataforma é do time de tecnologia."
+      note: "Atuei na apresentação, no lançamento e na aquisição do produto. O desenvolvimento técnico da plataforma é do time de tecnologia."
     },
     en: {
       category: "Product launch · Growth Operations",
@@ -601,7 +603,7 @@ var PROJECTS = [
       context: "The platform organises properties across Belo Horizonte on a map, with market information that supports opportunity analysis. My part was the distance between what the tool does and what a person understands the first time the screen loads.",
       process: [
         "Defined how the product introduces itself and the first line a visitor reads",
-        "Built the educational content explaining what the map does — and does not — show",
+        "Built the educational content explaining what the map does, and does not, show",
         "Designed the discovery journey, from first contact through to WhatsApp",
         "Wrote the CTAs and supporting material",
         "Tracked acquisition and fed communication and experience findings back to the team"
@@ -614,10 +616,10 @@ var PROJECTS = [
         "Acquisition campaigns and tracking"
       ],
       learnings: [
-        "The biggest drop-off wasn't the product — it was a first screen with no context",
+        "The biggest drop-off wasn't the product. It was a first screen with no context",
         "Content that teaches people to read the data converts better than content praising the tool"
       ],
-      note: "I worked on presentation, launch and acquisition — the platform itself is built by the engineering team."
+      note: "I worked on presentation, launch and acquisition. The platform itself is built by the engineering team."
     }
   },
 
@@ -633,7 +635,7 @@ var PROJECTS = [
       title: "Sistema de conteúdo e aquisição",
       challenge: "Parar de produzir post avulso e montar um sistema que transforma dado de mercado e dúvida de comprador em conteúdo, campanha e conversa.",
       role: "Desenho do sistema, calendário editorial, campanhas, jornadas e uso de IA em pesquisa, redação e revisão.",
-      context: "Havia matéria-prima de sobra — dados imobiliários, funcionalidades da plataforma, perguntas recorrentes de quem compra — e nenhum caminho definido entre essa matéria-prima e o que ia para o ar.",
+      context: "Havia matéria-prima de sobra: dados imobiliários, funcionalidades da plataforma, perguntas recorrentes de quem compra. O que faltava era um caminho definido entre essa matéria-prima e o que ia para o ar.",
       process: [
         "Mapeei as dúvidas reais de compradores e liguei cada uma a um dado que o COI tem",
         "Criei o calendário editorial e os formatos recorrentes",
@@ -659,7 +661,7 @@ var PROJECTS = [
       title: "Content and acquisition system",
       challenge: "Stop producing one-off posts and build a system that turns market data and buyer questions into content, campaigns and conversations.",
       role: "System design, editorial calendar, campaigns, journeys, and AI for research, drafting and review.",
-      context: "There was plenty of raw material — property data, platform features, the questions buyers keep asking — and no defined path between that material and what actually went live.",
+      context: "There was plenty of raw material: property data, platform features, the questions buyers keep asking. What was missing was a defined path between that material and what actually went live.",
       process: [
         "Mapped the questions buyers really ask and tied each one to data COI already holds",
         "Built the editorial calendar and the recurring formats",
@@ -683,17 +685,80 @@ var PROJECTS = [
   },
 
   {
+    id: "coi-agentes",
+    year: "2026",
+    size: "wide",
+    image: "",
+    gallery: [],
+    tools: ["Claude", "Claude Code", "Meta Ads API", "Instagram API", "GitHub Actions", "Railway"],
+    pt: {
+      category: "Sistemas de IA \u00b7 Marketing Operations",
+      title: "Agentes de IA na opera\u00e7\u00e3o de marketing",
+      challenge: "Uma opera\u00e7\u00e3o de marketing pequena precisava manter ritmo de time grande: campanhas acompanhadas todo dia, conte\u00fado saindo toda semana e v\u00eddeo pronto sem virar gargalo.",
+      role: "Defini o que cada agente precisava fazer, escrevi as regras de decis\u00e3o, testei as sa\u00eddas e opero o sistema no dia a dia. A constru\u00e7\u00e3o t\u00e9cnica foi feita com Claude Code.",
+      context: "Em vez de contratar gente para cada frente, montamos tr\u00eas agentes que cuidam do trabalho repetitivo e devolvem decis\u00f5es prontas para uma pessoa aprovar. O ponto do projeto n\u00e3o \u00e9 a tecnologia: \u00e9 desenhar onde a m\u00e1quina decide sozinha, onde ela s\u00f3 sugere e onde ela precisa parar e perguntar.",
+      process: [
+        "Mapeei quais tarefas de marketing eram repeti\u00e7\u00e3o pura e quais exigiam julgamento",
+        "Especifiquei cada agente: o que observa, o que decide sozinho e quando aciona uma pessoa",
+        "Escrevi as regras de marca, tom e compliance que o agente precisa respeitar",
+        "Testei as sa\u00eddas at\u00e9 chegarem em qualidade public\u00e1vel sem retrabalho",
+        "Coloquei aprova\u00e7\u00e3o humana como etapa obrigat\u00f3ria antes de qualquer publica\u00e7\u00e3o",
+        "Acompanho o desempenho e ajusto as regras quando o resultado desanda"
+      ],
+      deliverables: [
+        "Agente de tr\u00e1fego: acompanha as campanhas de Meta Ads, cruza custo por lead com o hist\u00f3rico e avisa por e-mail quando algo sai da faixa esperada",
+        "Agente de social media: pesquisa tend\u00eancia, monta a pauta, escreve a copy, gera a arte e agenda o post, sempre com aprova\u00e7\u00e3o humana antes de ir para o Instagram",
+        "Editor de v\u00eddeo autom\u00e1tico: recebe o bruto, transcreve, corta as sobras e devolve o v\u00eddeo curto pronto para revis\u00e3o",
+        "Painel para acompanhar o que cada agente produziu e o que est\u00e1 esperando aprova\u00e7\u00e3o"
+      ],
+      learnings: [
+        "O valor n\u00e3o est\u00e1 em automatizar tudo, e sim em escolher com cuidado o que continua passando por uma pessoa",
+        "Agente sem regra de marca escrita produz volume, n\u00e3o produz qualidade",
+        "Manter uma etapa de aprova\u00e7\u00e3o \u00e9 o que deixa usar IA em canal p\u00fablico sem medo"
+      ],
+      note: "N\u00e3o me apresento como desenvolvedora. Meu papel foi especificar, dirigir, testar e operar os agentes; a implementa\u00e7\u00e3o foi feita com apoio de IA e do time de tecnologia."
+    },
+    en: {
+      category: "AI systems \u00b7 Marketing Operations",
+      title: "AI agents running the marketing operation",
+      challenge: "A small marketing operation needed to keep the pace of a large team: campaigns reviewed daily, content shipping weekly, and video edited without becoming the bottleneck.",
+      role: "I defined what each agent had to do, wrote the decision rules, tested the output and run the system day to day. The technical build was done with Claude Code.",
+      context: "Instead of hiring for each front, we built three agents that absorb the repetitive work and hand back finished decisions for a person to approve. The project is not really about the technology: it is about deciding where the machine acts alone, where it only suggests, and where it has to stop and ask.",
+      process: [
+        "Mapped which marketing tasks were pure repetition and which needed judgement",
+        "Specified each agent: what it watches, what it decides alone, and when it escalates",
+        "Wrote the brand, tone and compliance rules the agent has to respect",
+        "Tested the output until it reached publishable quality without rework",
+        "Made human approval a required step before anything goes public",
+        "Track performance and adjust the rules when results drift"
+      ],
+      deliverables: [
+        "Traffic agent: watches Meta Ads campaigns, compares cost per lead against history and emails an alert when something moves out of range",
+        "Social media agent: researches trends, builds the calendar, drafts the copy, generates the artwork and schedules the post, always with human approval before Instagram",
+        "Automatic video editor: takes the raw footage, transcribes it, cuts the dead air and returns a short video ready for review",
+        "A panel to track what each agent produced and what is waiting for approval"
+      ],
+      learnings: [
+        "The value is not in automating everything, but in choosing carefully what still passes through a person",
+        "An agent without written brand rules produces volume, not quality",
+        "Keeping an approval step is what makes it safe to use AI on a public channel"
+      ],
+      note: "I don't present myself as a developer. My role was to specify, direct, test and operate the agents; the implementation was done with AI support and the engineering team."
+    }
+  },
+
+  {
     id: "betpass-operacoes",
-    year: "2024 —",
+    year: "desde 2024",
     size: "wide",
     image: "betpass-dashboard.jpg",
-    gallery: ["betpass-dashboard.jpg"],
+    gallery: [],
     tools: ["Google Sheets", "Apps Script", "Excel", "Grafana", "Google Workspace"],
     mockup: "spreadsheet",
     pt: {
       category: "Business Operations",
       title: "Estruturação operacional na Betpass",
-      challenge: "Rotinas financeiras e administrativas que passavam por vários sistemas, várias pessoas e várias conferências — e viviam na memória de quem fazia.",
+      challenge: "Rotinas financeiras e administrativas que passavam por vários sistemas, várias pessoas e várias conferências, e viviam na memória de quem fazia.",
       role: "Mapeamento das rotinas, POPs, padronização de relatórios, indicadores, dashboards e automações.",
       context: "Empresa de tecnologia e gestão de afiliados, com muitos parceiros e fluxos financeiros acontecendo em paralelo. Cada fechamento dependia de alguém lembrar a ordem certa das conferências, o que tornava o trabalho difícil de prever e quase impossível de delegar.",
       process: [
@@ -721,7 +786,7 @@ var PROJECTS = [
     en: {
       category: "Business Operations",
       title: "Operational restructuring at Betpass",
-      challenge: "Financial and administrative routines spread across several systems, several people and several manual checks — and living in the memory of whoever ran them.",
+      challenge: "Financial and administrative routines spread across several systems, several people and several manual checks, living in the memory of whoever ran them.",
       role: "Mapping the routines, writing SOPs, standardising reports, defining indicators and dashboards, and automating the repetitive parts.",
       context: "A technology and affiliate-management company with many partners and financial flows running in parallel. Every month-end depended on someone remembering the right order of checks, which made the work hard to predict and nearly impossible to hand over.",
       process: [
@@ -741,7 +806,7 @@ var PROJECTS = [
         "Support on income statement, cash flow statement and balance sheet"
       ],
       learnings: [
-        "Documentation isn't bureaucracy — it's what lets someone take a holiday",
+        "Documentation isn't bureaucracy. It is what lets someone take a holiday",
         "Automating before understanding the real flow only makes the mistake faster"
       ],
       note: "No financial figures, partner names or internal information are shown. The visuals on this page are demonstrative, built with fictional data."
@@ -750,10 +815,10 @@ var PROJECTS = [
 
   {
     id: "automacoes",
-    year: "2024 —",
+    year: "desde 2024",
     size: "regular",
-    image: "automacao-fluxo.jpg",
-    gallery: ["automacao-fluxo.jpg"],
+    image: "",
+    gallery: [],
     tools: ["Google Sheets", "Google Apps Script", "Claude", "ChatGPT"],
     mockup: "flow",
     pt: {
@@ -811,7 +876,7 @@ var PROJECTS = [
   {
     id: "roadmap-digital",
     year: "2026",
-    size: "regular",
+    size: "half",
     image: "",
     gallery: [],
     tools: ["Análise de negócio", "PowerPoint", "Notion"],
@@ -832,36 +897,10 @@ var PROJECTS = [
       process: [], deliverables: [], learnings: []
     }
   },
-
-  {
-    id: "consultoria-ia",
-    year: "",
-    size: "regular",
-    image: "",
-    gallery: [],
-    tools: ["Claude", "ChatGPT", "Google Sheets", "Apps Script"],
-    pt: {
-      category: "IA · Automação · Business Operations",
-      title: "Consultoria de IA para pequenos negócios",
-      challenge: "Ajudar negócios pequenos a usar IA e automação em problemas que eles realmente têm, sem virar refém da ferramenta.",
-      role: "Concepção da proposta, estudo dos cenários e desenho do método. Projeto pessoal, em desenvolvimento.",
-      context: "Uma proposta de consultoria prática, ainda em construção, olhando para financeiro, estoque, clientes, vendas, marketing, operação e documentação. A ideia não é deixar o negócio dependente de IA, e sim usar IA para chegar em processos que continuem claros e utilizáveis no dia a dia.",
-      process: [], deliverables: [], learnings: []
-    },
-    en: {
-      category: "AI · Automation · Business Operations",
-      title: "AI consulting for small businesses",
-      challenge: "Help small businesses apply AI and automation to problems they actually have, without becoming dependent on the tool.",
-      role: "Concept, scenario research and method design. A personal project, currently in development.",
-      context: "A practical consulting proposal, still being built, looking at finance, stock, customers, sales, marketing, operations and documentation. The point isn't to make a business depend on AI — it's to use AI to arrive at processes that stay clear and usable day to day.",
-      process: [], deliverables: [], learnings: []
-    }
-  },
-
   {
     id: "portfolio",
     year: "2026",
-    size: "full",
+    size: "half",
     image: "",
     gallery: [],
     tools: ["HTML", "CSS", "JavaScript", "Claude Code", "GitHub Pages"],
@@ -871,7 +910,7 @@ var PROJECTS = [
       title: "Este portfólio",
       challenge: "Construir uma presença profissional bilíngue do zero, sem editor visual, fora da minha formação original.",
       role: "Direção do projeto: posicionamento, arquitetura de informação, direção criativa, conteúdo nos dois idiomas, testes e publicação.",
-      context: "Usei Claude Code como par de execução técnica, mas as decisões de posicionamento, estrutura, hierarquia, tom e conteúdo são minhas. Serve como demonstração prática de conduzir um projeto digital de ponta a ponta — briefing, iteração, revisão e publicação.",
+      context: "Usei Claude Code como par de execução técnica, mas as decisões de posicionamento, estrutura, hierarquia, tom e conteúdo são minhas. Serve como demonstração prática de conduzir um projeto digital de ponta a ponta: briefing, iteração, revisão e publicação.",
       process: [
         "Defini o posicionamento e para quem o site precisa falar",
         "Desenhei a arquitetura de informação e a ordem das seções",
@@ -897,7 +936,7 @@ var PROJECTS = [
       title: "This portfolio",
       challenge: "Build a bilingual professional presence from scratch, with no page builder, outside my original training.",
       role: "Project direction: positioning, information architecture, creative direction, content in both languages, testing and deployment.",
-      context: "I used Claude Code as a technical execution partner, but the decisions on positioning, structure, hierarchy, tone and content are mine. It stands as a practical demonstration of running a digital project end to end — brief, iteration, review and release.",
+      context: "I used Claude Code as a technical execution partner, but the decisions on positioning, structure, hierarchy, tone and content are mine. It stands as a practical demonstration of running a digital project end to end: brief, iteration, review and release.",
       process: [
         "Defined the positioning and who the site needs to speak to",
         "Designed the information architecture and section order",
@@ -913,7 +952,7 @@ var PROJECTS = [
         "Self-managed deployment and maintenance"
       ],
       learnings: [
-        "AI shortens the distance between idea and published thing — as long as someone knows what they want",
+        "AI shortens the distance between idea and published thing, as long as someone knows what they want",
         "The hard part wasn't the code: it was deciding what to cut"
       ],
       note: "I don't present myself as a developer. What this project shows is project direction, judgement and execution with AI support."

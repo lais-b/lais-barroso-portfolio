@@ -128,11 +128,20 @@
         inner.addEventListener("click", function () { openProject(p.id); });
       }
 
-      var ph = el("div", "ph wk-ph");
-      if (has(p.image)) ph.setAttribute("data-img", p.image);
-      else if (p.mockup) ph.appendChild(mockup(p.mockup));
-      else ph.appendChild(mockup("spreadsheet"));
-      inner.appendChild(ph);
+      /* Sem foto, o cartão não vira uma caixa vazia: ele assume um
+         desenho tipográfico, com o número do projeto no lugar da imagem. */
+      if (has(p.image)) {
+        var ph = el("div", "ph wk-ph");
+        ph.setAttribute("data-img", p.image);
+        inner.appendChild(ph);
+      } else if (p.mockup) {
+        var phm = el("div", "ph wk-ph");
+        phm.appendChild(mockup(p.mockup));
+        inner.appendChild(phm);
+      } else {
+        card.classList.add("is-text");
+        inner.appendChild(el("span", "wk-rule"));
+      }
 
       var meta = el("div", "wk-meta");
       meta.appendChild(el("span", "wk-cat", d.category || ""));
@@ -237,6 +246,16 @@
     rb.appendChild(el("h3", null, t("work.labelResults")));
     rb.appendChild(el("p", null, t("work.noResults")));
     pvBody.appendChild(rb);
+
+    /* botão para o produto no ar — só quando o link existe */
+    var cfg = (ST.projects || {})[p.id] || {};
+    if (has(cfg.link)) {
+      var a = el("a", "btn btn-fill pv-live", t("btn.live"));
+      a.href = cfg.link;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+      pvBody.appendChild(a);
+    }
 
     if (has(d.note)) pvBody.appendChild(el("p", "pv-note", d.note));
 
