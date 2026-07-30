@@ -242,10 +242,18 @@
       pvBody.appendChild(tb);
     }
 
-    var rb = el("div", "pv-block");
-    rb.appendChild(el("h3", null, t("work.labelResults")));
-    rb.appendChild(el("p", null, t("work.noResults")));
-    pvBody.appendChild(rb);
+    /* Resultados: o que mudou, descrito em palavras. Números só entram
+       depois de validados, em content-status.js — nunca estimados aqui. */
+    var rb = block("work.labelResults", d.results, false);
+    if (rb) {
+      rb.appendChild(el("p", "pv-fine", t("work.noNumbers")));
+      pvBody.appendChild(rb);
+    } else {
+      var rb2 = el("div", "pv-block");
+      rb2.appendChild(el("h3", null, t("work.labelResults")));
+      rb2.appendChild(el("p", null, t("work.noResults")));
+      pvBody.appendChild(rb2);
+    }
 
     /* botão para o produto no ar — só quando o link existe */
     var cfg = (ST.projects || {})[p.id] || {};

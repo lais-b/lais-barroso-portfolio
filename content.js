@@ -105,6 +105,7 @@ var CONTENT = {
     "work.labelCategory": "Categoria",
     "work.demoData": "dados demonstrativos",
     "work.noResults": "Resultados serão publicados quando validados.",
+    "work.noNumbers": "Resultados descritos em palavras. Números entram no site apenas quando validados.",
 
     /* Trajetória */
     "path.eyebrow": "Trajetória",
@@ -322,6 +323,7 @@ var CONTENT = {
     "work.labelCategory": "Category",
     "work.demoData": "demonstrative data",
     "work.noResults": "Results will be published once validated.",
+    "work.noNumbers": "Outcomes described in words. Figures go on the site only once validated.",
 
     /* Path */
     "path.eyebrow": "Path",
@@ -510,6 +512,11 @@ var PROJECTS = [
     tools: ["Meta Ads", "Notion", "Claude", "Google Sheets", "Canva"],
     pt: {
       category: "Growth · Product Marketing · Inteligência de mercado",
+      results: [
+        "O portfólio deixou de ser uma lista de funcionalidades e passou a seguir a ordem em que o comprador decide",
+        "A marca passou a ser lembrada pelo que analisa, e não pelo imóvel que anuncia",
+        "Marketing, produto e operação passaram a trabalhar a partir da mesma narrativa"
+      ],
       title: "Posicionamento e ecossistema de produtos do COI",
       challenge: "Fazer um produto de inteligência imobiliária virar algo que um comprador comum entende, explora e usa antes de visitar um imóvel.",
       role: "Posicionamento, narrativa dos produtos, plano de lançamento, conteúdo, campanhas e acompanhamento de aquisição.",
@@ -536,6 +543,11 @@ var PROJECTS = [
     },
     en: {
       category: "Growth · Product Marketing · Market intelligence",
+      results: [
+        "The portfolio stopped being a feature list and started following the order in which buyers actually decide",
+        "The brand began to be remembered for what it analyses, not for the listings it advertises",
+        "Marketing, product and operations started working from the same story"
+      ],
       title: "Positioning and product ecosystem at COI",
       challenge: "Turn a real estate intelligence product into something an ordinary buyer understands, explores and uses before ever visiting a property.",
       role: "Positioning, product narrative, launch planning, content, campaigns and acquisition tracking.",
@@ -571,6 +583,11 @@ var PROJECTS = [
     tools: ["Meta Ads", "Landing pages", "WhatsApp", "Google Sheets"],
     pt: {
       category: "Lançamento de produto · Growth Operations",
+      results: [
+        "A primeira tela deixou de precisar de explicação",
+        "O conteúdo educativo virou porta de entrada, e não material de reforço",
+        "O time de produto passou a receber, pela comunicação, sinais de como as pessoas usam a plataforma"
+      ],
       title: "Mapa de Oportunidades",
       challenge: "Lançar uma plataforma que coloca os imóveis de BH em um mapa e explicar, em poucos segundos, por que aquilo ajuda alguém a comprar melhor.",
       role: "Narrativa e apresentação do produto, plano de lançamento, conteúdo educativo, jornada de descoberta e campanhas.",
@@ -597,6 +614,11 @@ var PROJECTS = [
     },
     en: {
       category: "Product launch · Growth Operations",
+      results: [
+        "The first screen stopped needing an explanation",
+        "Educational content became the entry point rather than a supporting asset",
+        "Product started receiving signals about real usage through communication"
+      ],
       title: "Mapa de Oportunidades",
       challenge: "Launch a platform that puts Belo Horizonte's property market on a map, and explain in seconds why that helps someone buy better.",
       role: "Product narrative and presentation, launch plan, educational content, discovery journey and campaigns.",
@@ -632,6 +654,11 @@ var PROJECTS = [
     tools: ["Meta Ads", "Claude", "ChatGPT", "CRM", "WhatsApp", "Notion"],
     pt: {
       category: "Marketing Operations",
+      results: [
+        "A produção deixou de depender de ideia pontual: ganhou uma fila alimentada por dado de mercado e por dúvida real de comprador",
+        "Conteúdo, campanha e atendimento passaram a contar a mesma história",
+        "Ficou possível saber por qual porta cada lead entrou"
+      ],
       title: "Sistema de conteúdo e aquisição",
       challenge: "Parar de produzir post avulso e montar um sistema que transforma dado de mercado e dúvida de comprador em conteúdo, campanha e conversa.",
       role: "Desenho do sistema, calendário editorial, campanhas, jornadas e uso de IA em pesquisa, redação e revisão.",
@@ -658,6 +685,11 @@ var PROJECTS = [
     },
     en: {
       category: "Marketing Operations",
+      results: [
+        "Production stopped depending on one-off ideas and gained a pipeline fed by market data and real buyer questions",
+        "Content, campaign and conversation started telling the same story",
+        "It became possible to see which door each lead came through"
+      ],
       title: "Content and acquisition system",
       challenge: "Stop producing one-off posts and build a system that turns market data and buyer questions into content, campaigns and conversations.",
       role: "System design, editorial calendar, campaigns, journeys, and AI for research, drafting and review.",
@@ -693,6 +725,11 @@ var PROJECTS = [
     tools: ["Claude", "Claude Code", "Meta Ads API", "Instagram API", "GitHub Actions", "Railway"],
     pt: {
       category: "Sistemas de IA \u00b7 Marketing Operations",
+      results: [
+        "A operação passou a manter frequência de publicação sem aumentar equipe",
+        "O tempo do time saiu da produção repetitiva e foi para decisão e análise",
+        "Nenhuma peça vai ao ar sem revisão humana"
+      ],
       title: "Agentes de IA na opera\u00e7\u00e3o de marketing",
       challenge: "Uma opera\u00e7\u00e3o de marketing pequena precisava manter ritmo de time grande: campanhas acompanhadas todo dia, conte\u00fado saindo toda semana e v\u00eddeo pronto sem virar gargalo.",
       role: "Defini o que cada agente precisava fazer, escrevi as regras de decis\u00e3o, testei as sa\u00eddas e opero o sistema no dia a dia. A constru\u00e7\u00e3o t\u00e9cnica foi feita com Claude Code.",
@@ -720,6 +757,11 @@ var PROJECTS = [
     },
     en: {
       category: "AI systems \u00b7 Marketing Operations",
+      results: [
+        "The operation kept a steady publishing rhythm without growing the team",
+        "The team's time moved out of repetitive production and into decisions and analysis",
+        "Nothing goes public without a human review"
+      ],
       title: "AI agents running the marketing operation",
       challenge: "A small marketing operation needed to keep the pace of a large team: campaigns reviewed daily, content shipping weekly, and video edited without becoming the bottleneck.",
       role: "I defined what each agent had to do, wrote the decision rules, tested the output and run the system day to day. The technical build was done with Claude Code.",
@@ -756,6 +798,12 @@ var PROJECTS = [
     tools: ["Google Sheets", "Apps Script", "Excel", "Grafana", "Google Workspace"],
     pt: {
       category: "Business Operations",
+      results: [
+        "Menos erro nas conferências recorrentes, porque cada etapa ganhou ordem, responsável e ponto de checagem",
+        "O fechamento deixou de depender da memória de quem sempre fez",
+        "Mais visibilidade: passou a dar para acompanhar por indicador, em vez de pedir status",
+        "As rotinas viraram algo que outra pessoa consegue assumir sem treinamento longo"
+      ],
       title: "Estruturação operacional na Betpass",
       challenge: "Rotinas financeiras e administrativas que passavam por vários sistemas, várias pessoas e várias conferências, e viviam na memória de quem fazia.",
       role: "Mapeamento das rotinas, POPs, padronização de relatórios, indicadores, dashboards e automações.",
@@ -784,6 +832,12 @@ var PROJECTS = [
     },
     en: {
       category: "Business Operations",
+      results: [
+        "Fewer errors in recurring checks, because each step gained an order, an owner and a control point",
+        "Month-end stopped depending on the memory of whoever always did it",
+        "More visibility: the work became something you track by indicator instead of asking for status",
+        "The routines became something another person can take over without long training"
+      ],
       title: "Operational restructuring at Betpass",
       challenge: "Financial and administrative routines spread across several systems, several people and several manual checks, living in the memory of whoever ran them.",
       role: "Mapping the routines, writing SOPs, standardising reports, defining indicators and dashboards, and automating the repetitive parts.",
@@ -821,6 +875,11 @@ var PROJECTS = [
     tools: ["Google Sheets", "Google Apps Script", "Claude", "ChatGPT"],
     pt: {
       category: "Automação · Eficiência operacional",
+      results: [
+        "A conferência repetitiva saiu da mao",
+        "Erro de digitação e de cópia praticamente sumiu das etapas automatizadas",
+        "Inconsistência passou a aparecer sozinha, por alerta, em vez de ser descoberta depois"
+      ],
       title: "Automações em Sheets e Apps Script",
       challenge: "Tarefas manuais que voltavam toda semana: consolidar planilha, conferir número, montar o mesmo relatório de novo.",
       role: "Identificação do que valia automatizar, construção das rotinas e documentação para outras pessoas usarem.",
@@ -846,6 +905,11 @@ var PROJECTS = [
     },
     en: {
       category: "Automation · Operational efficiency",
+      results: [
+        "Repetitive checking left the manual pile",
+        "Typing and copy-paste errors all but disappeared from the automated steps",
+        "Inconsistencies now surface on their own through alerts, instead of being found later"
+      ],
       title: "Automation in Sheets and Apps Script",
       challenge: "Manual tasks that came back every week: consolidate the spreadsheet, check the number, rebuild the same report again.",
       role: "Deciding what was worth automating, building the routines, and documenting them so other people could use them.",
@@ -880,6 +944,10 @@ var PROJECTS = [
     tools: ["HTML", "CSS", "JavaScript", "Claude Code", "GitHub Pages"],
     pt: {
       category: "Marca pessoal · Fluxo com IA · Execução de projeto",
+      results: [
+        "Presença profissional própria, em dois idiomas, no ar e sob meu controle",
+        "Um projeto digital conduzido de ponta a ponta fora da minha formação original"
+      ],
       title: "Este portfólio",
       challenge: "Construir uma presença profissional bilíngue do zero, sem editor visual, fora da minha formação original.",
       role: "Direção do projeto: posicionamento, arquitetura de informação, direção criativa, conteúdo nos dois idiomas, testes e publicação.",
@@ -906,6 +974,10 @@ var PROJECTS = [
     },
     en: {
       category: "Personal brand · AI workflow · Project execution",
+      results: [
+        "A professional presence of my own, in two languages, live and under my control",
+        "A digital project run end to end, outside my original training"
+      ],
       title: "This portfolio",
       challenge: "Build a bilingual professional presence from scratch, with no page builder, outside my original training.",
       role: "Project direction: positioning, information architecture, creative direction, content in both languages, testing and deployment.",
