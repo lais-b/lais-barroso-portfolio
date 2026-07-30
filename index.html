@@ -4,45 +4,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- ===================================================================
-       SEO / METADADOS
-       A URL do site ja esta preenchida abaixo. Se um dia voce usar um
-       dominio proprio, troque as duas ocorrencias de
-       https://lais-b.github.io/lais-barroso-portfolio/
-       =================================================================== -->
-  <title>Laís Barroso — Marketing Operations, Growth &amp; Business Operations</title>
-  <meta name="description" content="Laís Barroso — profissional de Marketing Operations, Growth e Business Operations em Belo Horizonte. Conecta estratégia e execução com processos, dados, automação e inteligência artificial.">
+  <title>Laís Barroso · Marketing Operations, Growth &amp; Business Operations</title>
+  <meta name="description" content="Laís Barroso trabalha entre marketing, operações, dados e tecnologia. Portfólio de projetos em growth, business operations, inteligência de mercado e automação, em Belo Horizonte.">
   <meta name="author" content="Laís Barroso">
   <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#5E1A2E">
-
+  <meta name="theme-color" content="#681F36">
   <link rel="canonical" href="https://lais-b.github.io/lais-barroso-portfolio/">
 
-  <!-- Open Graph (LinkedIn, WhatsApp, Facebook) -->
+  <!-- Open Graph -->
   <meta property="og:type" content="profile">
   <meta property="og:site_name" content="Laís Barroso">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:locale:alternate" content="en_US">
-  <meta property="og:title" content="Laís Barroso — Marketing Operations, Growth &amp; Business Operations">
-  <meta property="og:description" content="Profissional multidisciplinar que conecta marketing, operações, dados e automação para transformar demandas complexas em operações organizadas e mensuráveis.">
+  <meta property="og:title" content="Laís Barroso · Marketing Operations, Growth &amp; Business Operations">
+  <meta property="og:description" content="Eu organizo ideias, processos e dados para fazer projetos avançarem. Projetos em growth, operações, inteligência de mercado e automação.">
   <meta property="og:url" content="https://lais-b.github.io/lais-barroso-portfolio/">
-  <!-- PREENCHER: imagem de compartilhamento 1200x630 (ver assets/imagens/README.md) -->
-  <meta property="og:image" content="PREENCHER_URL_IMAGEM_COMPARTILHAMENTO">
-  <meta property="og:image:alt" content="Laís Barroso — Marketing Operations, Growth &amp; Business Operations">
+  <meta property="og:image" content="https://lais-b.github.io/lais-barroso-portfolio/assets/imagens/og-image.jpg">
+  <meta property="og:image:alt" content="Laís Barroso · Marketing Operations, Growth &amp; Business Operations">
   <meta property="profile:first_name" content="Laís">
   <meta property="profile:last_name" content="Barroso">
 
-  <!-- Twitter / X Cards -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Laís Barroso — Marketing Operations, Growth &amp; Business Operations">
-  <meta name="twitter:description" content="Profissional multidisciplinar que conecta marketing, operações, dados e automação para transformar demandas complexas em operações organizadas e mensuráveis.">
-  <!-- PREENCHER: imagem de compartilhamento 1200x630 -->
-  <meta name="twitter:image" content="PREENCHER_URL_IMAGEM_COMPARTILHAMENTO">
+  <meta name="twitter:title" content="Laís Barroso · Marketing Operations, Growth &amp; Business Operations">
+  <meta name="twitter:description" content="Eu organizo ideias, processos e dados para fazer projetos avançarem.">
+  <meta name="twitter:image" content="https://lais-b.github.io/lais-barroso-portfolio/assets/imagens/og-image.jpg">
 
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon/favicon.svg">
   <link rel="alternate icon" href="assets/favicon/favicon.ico">
-  <link rel="mask-icon" href="assets/favicon/favicon.svg" color="#5E1A2E">
+  <link rel="mask-icon" href="assets/favicon/favicon.svg" color="#681F36">
+
+  <!-- Fontes próprias (nenhuma requisição externa) -->
+  <link rel="preload" href="assets/fonts/InstrumentSerif-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/Manrope-var-latin.woff2" as="font" type="font/woff2" crossorigin>
 
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -50,761 +45,395 @@
 <body>
   <a class="skip-link" href="#conteudo" data-i18n="a11y.skip">Pular para o conteúdo principal</a>
 
-  <!-- =============================================================
-       1. HEADER + NAVEGAÇÃO
-       ============================================================= -->
-  <header class="site-header" id="topo">
-    <div class="wrap header-inner">
-      <a class="brand" href="#topo" aria-label="Laís Barroso — início" data-i18n-aria-label="a11y.brand">
-        <span class="brand-mark" aria-hidden="true">LB</span>
-        <span class="brand-name">Laís Barroso</span>
-      </a>
+  <!-- ============================================================
+       HEADER
+       ============================================================ -->
+  <header class="hdr" id="topo">
+    <a class="hdr-brand" href="#topo" data-i18n-aria-label="a11y.brand" aria-label="Laís Barroso, início">
+      <span class="hdr-mark" aria-hidden="true">LB</span>
+      <span class="hdr-name">Laís Barroso</span>
+    </a>
 
-      <nav class="site-nav" id="nav-principal" aria-label="Navegação principal" data-i18n-aria-label="a11y.nav">
-        <ul class="nav-list">
-          <li><a href="#sobre" data-i18n="nav.about">Sobre</a></li>
-          <li><a href="#atuacao" data-i18n="nav.focus">Atuação</a></li>
-          <li><a href="#experiencia" data-i18n="nav.experience">Experiência</a></li>
-          <li><a href="#cases" data-i18n="nav.cases">Cases</a></li>
-          <li><a href="#projetos" data-i18n="nav.projects">Projetos</a></li>
-          <li><a href="#competencias" data-i18n="nav.skills">Competências</a></li>
-          <li><a href="#formacao" data-i18n="nav.education">Formação</a></li>
-          <li><a href="#contato" data-i18n="nav.contact">Contato</a></li>
-        </ul>
-      </nav>
+    <nav class="hdr-nav" id="nav" data-i18n-aria-label="a11y.nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="#projetos"   data-i18n="nav.work">Projetos</a></li>
+        <li><a href="#trajetoria" data-i18n="nav.path">Trajetória</a></li>
+        <li><a href="#metodo"     data-i18n="nav.how">Como trabalho</a></li>
+        <li><a href="#skills"     data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#sobre"      data-i18n="nav.about">Sobre</a></li>
+        <li><a href="#contato"    data-i18n="nav.contact">Contato</a></li>
+      </ul>
+    </nav>
 
-      <div class="header-actions">
-        <div class="lang-switch" role="group" aria-label="Selecionar idioma" data-i18n-aria-label="a11y.langGroup">
-          <button type="button" class="lang-btn is-active" data-lang="pt" aria-pressed="true" lang="pt-BR">PT</button>
-          <button type="button" class="lang-btn" data-lang="en" aria-pressed="false" lang="en">EN</button>
-        </div>
-
-        <button type="button" class="menu-toggle" id="menu-toggle"
-                aria-expanded="false" aria-controls="nav-principal"
-                aria-label="Abrir menu de navegação" data-i18n-aria-label="a11y.menuOpen">
-          <span class="menu-bar" aria-hidden="true"></span>
-          <span class="menu-bar" aria-hidden="true"></span>
-          <span class="menu-bar" aria-hidden="true"></span>
-        </button>
+    <div class="hdr-actions">
+      <div class="lang" role="group" data-i18n-aria-label="a11y.langGroup" aria-label="Selecionar idioma">
+        <button type="button" class="lang-b is-on" data-lang="pt" aria-pressed="true">PT</button>
+        <span class="lang-sep" aria-hidden="true">/</span>
+        <button type="button" class="lang-b" data-lang="en" aria-pressed="false">EN</button>
       </div>
+      <button type="button" class="burger" id="burger" aria-expanded="false" aria-controls="nav"
+              data-i18n-aria-label="a11y.menuOpen" aria-label="Abrir menu">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
     </div>
   </header>
 
   <main id="conteudo">
 
-    <!-- =============================================================
-         2. HERO
-         ============================================================= -->
-    <section class="hero" aria-labelledby="hero-title">
-      <div class="wrap hero-inner">
-        <p class="hero-eyebrow reveal" data-i18n="hero.eyebrow">Belo Horizonte · Brasil · Disponível para trabalho remoto</p>
-
-        <h1 class="hero-title reveal" id="hero-title">
-          <span class="hero-line">Laís</span>
-          <span class="hero-line hero-line-2">Barroso</span>
-        </h1>
-
-        <p class="hero-headline reveal" data-i18n="hero.headline">
-          Marketing Operations, Growth &amp; Business Operations
-        </p>
-
-        <div class="hero-rule reveal" aria-hidden="true"></div>
-
-        <p class="hero-lead reveal" data-i18n="hero.lead">
-          Profissional multidisciplinar com experiência em operações, marketing, processos, dados e automação.
-          Atua conectando estratégia e execução para transformar projetos e demandas complexas em operações
-          mais organizadas, mensuráveis e eficientes.
-        </p>
-
-        <div class="hero-actions reveal">
-          <a class="btn btn-primary" href="#cases" data-i18n="btn.viewCases">Ver cases</a>
-          <a class="btn btn-ghost" href="#contato" data-i18n="btn.getInTouch">Entrar em contato</a>
-        </div>
-
-        <div class="hero-links reveal">
-          <!-- PREENCHER: currículos ainda não adicionados — ver `resumesAvailable` em script.js -->
-          <button type="button" class="link-btn" data-action="resume" data-resume="pt" data-i18n="btn.resumePT">Currículo (PT)</button>
-          <span class="link-sep" aria-hidden="true">/</span>
-          <button type="button" class="link-btn" data-action="resume" data-resume="en" data-i18n="btn.resumeEN">Currículo (EN)</button>
-          <span class="link-sep" aria-hidden="true">/</span>
-          <!-- PREENCHER: adicionar link real do LinkedIn em script.js -->
-          <a class="link-btn" href="#contato" data-action="linkedin" data-i18n="btn.linkedin">LinkedIn</a>
-        </div>
-      </div>
-
-      <!-- Faixa de disciplinas (decorativa: a lista real está em "Áreas de atuação") -->
-      <div class="marquee" aria-hidden="true">
-        <div class="marquee-track">
-          <span data-i18n="focus.1.title">Marketing Operations</span><i>·</i>
-          <span data-i18n="focus.2.title">Growth Marketing</span><i>·</i>
-          <span data-i18n="focus.3.title">CRM e Lifecycle</span><i>·</i>
-          <span data-i18n="focus.4.title">Business Operations</span><i>·</i>
-          <span data-i18n="focus.5.title">Gestão de Projetos</span><i>·</i>
-          <span data-i18n="focus.6.title">Inteligência de Mercado</span><i>·</i>
-          <span data-i18n="focus.7.title">Parcerias e Afiliados</span><i>·</i>
-          <span data-i18n="focus.8.title">Customer Experience</span><i>·</i>
-          <span data-i18n="focus.9.title">Operações Comerciais</span><i>·</i>
-        </div>
-        <div class="marquee-track">
-          <span data-i18n="focus.1.title">Marketing Operations</span><i>·</i>
-          <span data-i18n="focus.2.title">Growth Marketing</span><i>·</i>
-          <span data-i18n="focus.3.title">CRM e Lifecycle</span><i>·</i>
-          <span data-i18n="focus.4.title">Business Operations</span><i>·</i>
-          <span data-i18n="focus.5.title">Gestão de Projetos</span><i>·</i>
-          <span data-i18n="focus.6.title">Inteligência de Mercado</span><i>·</i>
-          <span data-i18n="focus.7.title">Parcerias e Afiliados</span><i>·</i>
-          <span data-i18n="focus.8.title">Customer Experience</span><i>·</i>
-          <span data-i18n="focus.9.title">Operações Comerciais</span><i>·</i>
-        </div>
-      </div>
-    </section>
-
-    <!-- =============================================================
-         3. SOBRE
-         ============================================================= -->
-    <section class="section" id="sobre" aria-labelledby="sobre-title">
-      <div class="wrap">
-        <div class="sec-head reveal">
-          <span class="sec-num" aria-hidden="true">01</span>
-          <h2 class="sec-title" id="sobre-title" data-i18n="about.title">Sobre</h2>
-        </div>
-
-        <div class="about-grid">
-          <div class="about-text reveal">
-            <p class="about-opening" data-i18n="about.opening">
-              Estratégia só vale quando alguém consegue executar. É nesse ponto que eu trabalho.
-            </p>
-            <p data-i18n="about.p1">
-              Minha trajetória começou em uma formação técnica e analítica, na Farmácia, e se desenvolveu na
-              interseção entre operações e marketing. Hoje atuo no ponto em que estratégia vira rotina executável:
-              desenho processos, organizo informação, construo indicadores e automatizo o que não precisa de
-              esforço humano repetido.
-            </p>
-            <p data-i18n="about.p2">
-              Trabalho bem em contextos com muitas frentes abertas e pouca estrutura pronta. Gosto de entrar em
-              uma operação confusa, entender o fluxo real, documentar, priorizar e devolver algo mais simples,
-              mensurável e replicável — sem depender de mim para continuar funcionando.
-            </p>
-            <p data-i18n="about.p3">
-              Uso inteligência artificial como ferramenta de trabalho diária, não como discurso: para acelerar
-              análise, padronizar entregas, gerar documentação e construir automações que sustentam a operação.
-            </p>
-          </div>
-
-          <aside class="about-facts reveal" aria-label="Resumo profissional" data-i18n-aria-label="a11y.summary">
-            <dl>
-              <div class="fact">
-                <dt data-i18n="about.factLevelLabel">Nível de interesse</dt>
-                <dd data-i18n="about.factLevelValue">Trainee, Analista Júnior e Analista Pleno</dd>
-              </div>
-              <div class="fact">
-                <dt data-i18n="about.factBaseLabel">Base</dt>
-                <dd data-i18n="about.factBaseValue">Belo Horizonte, Minas Gerais, Brasil</dd>
-              </div>
-              <div class="fact">
-                <dt data-i18n="about.factModelLabel">Modelo de trabalho</dt>
-                <dd data-i18n="about.factModelValue">Remoto (Brasil e internacional) e híbrido em Belo Horizonte ou Rio de Janeiro</dd>
-              </div>
-              <div class="fact">
-                <dt data-i18n="about.factLangLabel">Idiomas</dt>
-                <dd data-i18n="about.factLangValue">Português, inglês, espanhol e francês</dd>
-              </div>
-            </dl>
-          </aside>
-        </div>
-
-        <ul class="avail-row reveal" aria-label="Disponibilidade" data-i18n-aria-label="a11y.availability">
-          <li data-i18n="avail.remoteBR">Remoto no Brasil</li>
-          <li data-i18n="avail.remoteIntl">Remoto para empresas internacionais</li>
-          <li data-i18n="avail.hybridBH">Híbrido em Belo Horizonte</li>
-          <li data-i18n="avail.hybridRJ">Híbrido no Rio de Janeiro</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- =============================================================
-         4. ÁREAS DE ATUAÇÃO
-         ============================================================= -->
-    <section class="section section-alt" id="atuacao" aria-labelledby="atuacao-title">
-      <div class="wrap">
-        <div class="sec-head reveal">
-          <span class="sec-num" aria-hidden="true">02</span>
-          <h2 class="sec-title" id="atuacao-title" data-i18n="focus.title">Áreas de atuação</h2>
-        </div>
-        <p class="sec-lead reveal" data-i18n="focus.lead">
-          Funções em que minha combinação de marketing, operações, dados e automação gera valor direto.
-        </p>
-
-        <ul class="focus-grid">
-          <li class="focus-card reveal">
-            <span class="focus-num" aria-hidden="true">01</span>
-            <h3 data-i18n="focus.1.title">Marketing Operations</h3>
-            <p data-i18n="focus.1.text">Estruturar a máquina por trás do marketing: processos, rituais, ferramentas, rastreio de desempenho e padronização de entregas.</p>
-          </li>
-          <li class="focus-card reveal">
-            <span class="focus-num" aria-hidden="true">02</span>
-            <h3 data-i18n="focus.2.title">Growth Marketing</h3>
-            <p data-i18n="focus.2.text">Aquisição, campanhas, testes e leitura de funil — do primeiro contato até a conversão, com acompanhamento de desempenho.</p>
-          </li>
-          <li class="focus-card reveal">
-            <span class="focus-num" aria-hidden="true">03</span>
-            <h3 data-i18n="focus.3.title">CRM e Lifecycle</h3>
-            <p data-i18n="focus.3.text">Organização da base, jornadas de relacionamento, segmentações e comunicação certa no momento certo do ciclo do cliente.</p>
-          </li>
-          <li class="focus-card reveal">
-            <span class="focus-num" aria-hidden="true">04</span>
-            <h3 data-i18n="focus.4.title">Business Operations</h3>
-            <p data-i18n="focus.4.text">Rotinas administrativas, financeiras e operacionais organizadas, documentadas e apoiadas por indicadores confiáveis.</p>
-          </li>
-          <li class="focus-card reveal">
-            <span class="focus-num" aria-hidden="true">05</span>
-            <h3 data-i18n="focus.5.title">Gestão de Projetos</h3>
-            <p data-i18n="focus.5.text">Escopo, prazos, responsáveis e acompanhamento — com interface entre áreas e comunicação clara com lideranças.</p>
-          </li>
-          <li class="focus-card reveal">
-            <span class="focus-num" aria-hidden="true">06</span>
-            <h3 data-i18n="focus.6.title">Inteligência de Mercado</h3>
-            <p data-i18n="focus.6.text">Leitura de dados de mercado e de concorrência transformada em material útil para decisão comercial e de comunicação.</p>
-          </li>
-          <li class="focus-card reveal">
-            <span class="focus-num" aria-hidden="true">07</span>
-            <h3 data-i18n="focus.7.title">Parcerias e Afiliados</h3>
-            <p data-i18n="focus.7.text">Estruturação e acompanhamento de parcerias: regras claras, materiais de apoio e mensuração de resultado.</p>
-          </li>
-          <li class="focus-card reveal">
-            <span class="focus-num" aria-hidden="true">08</span>
-            <h3 data-i18n="focus.8.title">Customer Experience</h3>
-            <p data-i18n="focus.8.text">Mapeamento da jornada, redução de atrito e padronização do atendimento em cada ponto de contato.</p>
-          </li>
-          <li class="focus-card reveal">
-            <span class="focus-num" aria-hidden="true">09</span>
-            <h3 data-i18n="focus.9.title">Operações Comerciais</h3>
-            <p data-i18n="focus.9.text">Apoio ao time comercial: organização de pipeline, materiais de venda, relatórios e rotina de acompanhamento.</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- =============================================================
-         5. EXPERIÊNCIA
-         ============================================================= -->
-    <section class="section" id="experiencia" aria-labelledby="experiencia-title">
-      <div class="wrap">
-        <div class="sec-head reveal">
-          <span class="sec-num" aria-hidden="true">03</span>
-          <h2 class="sec-title" id="experiencia-title" data-i18n="exp.title">Experiência</h2>
-        </div>
-
-        <ol class="exp-list">
-
-          <!-- ---------- Betpass ---------- -->
-          <li class="exp-item reveal">
-            <div class="exp-aside">
-              <p class="exp-company">Betpass</p>
-              <!-- PREENCHER: período real -->
-              <p class="exp-period placeholder-inline" data-i18n="exp.betpass.period">[ADICIONAR PERÍODO]</p>
-            </div>
-
-            <div class="exp-main">
-              <h3 class="exp-role" data-i18n="exp.betpass.role">Operações Administrativas e Financeiras</h3>
-
-              <p class="exp-summary" data-i18n="exp.betpass.summary">
-                Atuação nas rotinas que sustentam a operação da empresa, com foco em organização financeira,
-                padronização de processos e informação confiável para decisão.
-              </p>
-
-              <ul class="exp-bullets">
-                <li data-i18n="exp.betpass.b1">Gestão de rotinas administrativas, financeiras e operacionais</li>
-                <li data-i18n="exp.betpass.b2">Contas a pagar e a receber</li>
-                <li data-i18n="exp.betpass.b3">Conciliações e organização de informações financeiras</li>
-                <li data-i18n="exp.betpass.b4">Elaboração e acompanhamento de indicadores</li>
-                <li data-i18n="exp.betpass.b5">Criação e documentação de processos e procedimentos</li>
-                <li data-i18n="exp.betpass.b6">Construção de relatórios gerenciais</li>
-                <li data-i18n="exp.betpass.b7">Automação de tarefas e fluxos</li>
-                <li data-i18n="exp.betpass.b8">Interface entre diferentes áreas e lideranças</li>
-                <li data-i18n="exp.betpass.b9">Apoio à tomada de decisão</li>
-              </ul>
-
-              <!-- PREENCHER: métricas reais da Betpass -->
-              <p class="placeholder-box" data-i18n="exp.betpass.metric">
-                [ADICIONAR MÉTRICA REAL: redução de tempo, volume processado ou melhoria operacional]
-              </p>
-            </div>
-          </li>
-
-          <!-- ---------- COI ---------- -->
-          <li class="exp-item reveal">
-            <div class="exp-aside">
-              <p class="exp-company">COI</p>
-              <p class="exp-companyfull" data-i18n="exp.coi.company">Clube de Oportunidades Imobiliárias</p>
-              <!-- PREENCHER: período real -->
-              <p class="exp-period placeholder-inline" data-i18n="exp.coi.period">[ADICIONAR PERÍODO]</p>
-            </div>
-
-            <div class="exp-main">
-              <h3 class="exp-role" data-i18n="exp.coi.role">Growth &amp; Marketing Lead — Projeto paralelo</h3>
-
-              <p class="exp-summary" data-i18n="exp.coi.about">
-                O COI é uma empresa de inteligência imobiliária que utiliza dados de mercado, informações de
-                transações, análise de imóveis e inteligência artificial para ajudar compradores a identificarem
-                melhores oportunidades.
-              </p>
-
-              <ul class="exp-bullets">
-                <li data-i18n="exp.coi.b1">Posicionamento de marca e comunicação</li>
-                <li data-i18n="exp.coi.b2">Planejamento de conteúdo</li>
-                <li data-i18n="exp.coi.b3">Campanhas e tráfego pago</li>
-                <li data-i18n="exp.coi.b4">Acompanhamento de aquisição e desempenho</li>
-                <li data-i18n="exp.coi.b5">Estruturação da apresentação dos produtos</li>
-                <li data-i18n="exp.coi.b6">Criação de jornadas e materiais comerciais</li>
-                <li data-i18n="exp.coi.b7">Inteligência de mercado aplicada ao conteúdo</li>
-                <li data-i18n="exp.coi.b8">Automação e utilização de inteligência artificial</li>
-                <li data-i18n="exp.coi.b9">Participação no desenvolvimento e lançamento de produtos digitais</li>
-              </ul>
-
-              <!-- PREENCHER: métricas reais do COI -->
-              <p class="placeholder-box" data-i18n="exp.coi.metric">
-                [ADICIONAR MÉTRICA REAL: volume de leads, alcance, custo por lead ou resultado de campanha]
-              </p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- =============================================================
-         6. CASES
-         ============================================================= -->
-    <section class="section section-alt" id="cases" aria-labelledby="cases-title">
-      <div class="wrap">
-        <div class="sec-head reveal">
-          <span class="sec-num" aria-hidden="true">04</span>
-          <h2 class="sec-title" id="cases-title" data-i18n="cases.title">Cases</h2>
-        </div>
-        <p class="sec-lead reveal" data-i18n="cases.lead">
-          Três frentes de trabalho descritas pela mesma estrutura: contexto, problema, atuação e o que ficou.
-          Os campos entre colchetes serão preenchidos com informações e números reais.
-        </p>
-
-        <div class="cases-list">
-
-          <!-- ---------- Case 1 ---------- -->
-          <article class="case reveal" aria-labelledby="case-1-title">
-            <header class="case-head">
-              <span class="case-num" aria-hidden="true">01</span>
-              <p class="case-tag" data-i18n="cases.1.tag">Operações</p>
-              <h3 class="case-title" id="case-1-title" data-i18n="cases.1.title">Estruturação operacional</h3>
-            </header>
-
-            <div class="case-body">
-              <div class="case-block">
-                <h4 data-i18n="cases.label.context">Contexto</h4>
-                <p data-i18n="cases.1.context">Rotinas administrativas e financeiras executadas sem padrão documentado, dependendo de memória individual e de conferências manuais recorrentes.</p>
-                <p class="placeholder-box" data-i18n="cases.1.contextPh">[DESCREVER PROCESSO ORIGINAL]</p>
-              </div>
-
-              <div class="case-block">
-                <h4 data-i18n="cases.label.problem">Problema</h4>
-                <p data-i18n="cases.1.problem">Sem processo escrito e sem indicadores, cada demanda era tratada como exceção — o que dificultava previsibilidade, delegação e acompanhamento.</p>
-                <p class="placeholder-box" data-i18n="cases.1.problemPh">[ADICIONAR PRINCIPAL DESAFIO]</p>
-              </div>
-
-              <div class="case-block">
-                <h4 data-i18n="cases.label.role">Minha atuação</h4>
-                <p data-i18n="cases.1.role">Mapeei o fluxo real de ponta a ponta, escrevi os procedimentos, defini responsáveis e pontos de controle e criei uma rotina de acompanhamento por indicadores.</p>
-              </div>
-
-              <div class="case-block">
-                <h4 data-i18n="cases.label.tools">Ferramentas utilizadas</h4>
-                <p class="placeholder-box" data-i18n="cases.1.toolsPh">[ADICIONAR FERRAMENTAS UTILIZADAS]</p>
-              </div>
-
-              <div class="case-block case-block-wide">
-                <h4 data-i18n="cases.label.results">Resultados ou aprendizados</h4>
-                <p class="placeholder-box" data-i18n="cases.1.resultPh">[ADICIONAR RESULTADO OU APRENDIZADO REAL]</p>
-                <p class="placeholder-box" data-i18n="cases.1.metricPh">[ADICIONAR MÉTRICA VALIDADA]</p>
-              </div>
-            </div>
-          </article>
-
-          <!-- ---------- Case 2 ---------- -->
-          <article class="case reveal" aria-labelledby="case-2-title">
-            <header class="case-head">
-              <span class="case-num" aria-hidden="true">02</span>
-              <p class="case-tag" data-i18n="cases.2.tag">Growth</p>
-              <h3 class="case-title" id="case-2-title" data-i18n="cases.2.title">Posicionamento e crescimento do COI</h3>
-            </header>
-
-            <div class="case-body">
-              <div class="case-block">
-                <h4 data-i18n="cases.label.context">Contexto</h4>
-                <p data-i18n="cases.2.context">Um produto de inteligência imobiliária precisando comunicar valor para um público que ainda não busca esse tipo de solução pelo nome.</p>
-                <p class="placeholder-box" data-i18n="cases.2.contextPh">[ADICIONAR SITUAÇÃO INICIAL: ponto de partida, canais existentes e base de audiência]</p>
-              </div>
-
-              <div class="case-block">
-                <h4 data-i18n="cases.label.problem">Problema</h4>
-                <p data-i18n="cases.2.problem">Sem um posicionamento claro, a comunicação competia por atenção no mesmo campo de qualquer anúncio de imóvel, em vez de ocupar o território de análise e decisão.</p>
-                <p class="placeholder-box" data-i18n="cases.2.objectivePh">[ADICIONAR OBJETIVO DEFINIDO PARA O PERÍODO]</p>
-              </div>
-
-              <div class="case-block">
-                <h4 data-i18n="cases.label.role">Minha atuação</h4>
-                <p data-i18n="cases.2.role">Conduzi o posicionamento, o planejamento de conteúdo, as campanhas de aquisição e a estruturação da apresentação dos produtos, acompanhando desempenho e ajustando a rota.</p>
-              </div>
-
-              <div class="case-block">
-                <h4 data-i18n="cases.label.strategy">Estratégia</h4>
-                <p class="placeholder-box" data-i18n="cases.2.strategyPh">[ADICIONAR ESTRATÉGIA DE POSICIONAMENTO]</p>
-                <p class="placeholder-box" data-i18n="cases.2.channelsPh">[ADICIONAR CANAIS UTILIZADOS]</p>
-                <p class="placeholder-box" data-i18n="cases.2.productsPh">[ADICIONAR PRODUTOS TRABALHADOS]</p>
-              </div>
-
-              <div class="case-block case-block-wide">
-                <h4 data-i18n="cases.label.results">Resultados ou aprendizados</h4>
-                <p class="placeholder-box" data-i18n="cases.2.resultPh">[ADICIONAR RESULTADOS REAIS]</p>
-                <p class="placeholder-box" data-i18n="cases.2.learningPh">[ADICIONAR APRENDIZADOS]</p>
-              </div>
-            </div>
-          </article>
-
-          <!-- ---------- Case 3 ---------- -->
-          <article class="case reveal" aria-labelledby="case-3-title">
-            <header class="case-head">
-              <span class="case-num" aria-hidden="true">03</span>
-              <p class="case-tag" data-i18n="cases.3.tag">Automação</p>
-              <h3 class="case-title" id="case-3-title" data-i18n="cases.3.title">Automações e inteligência artificial</h3>
-            </header>
-
-            <div class="case-body">
-              <div class="case-block">
-                <h4 data-i18n="cases.label.context">Contexto</h4>
-                <p data-i18n="cases.3.context">Tarefas recorrentes de organização de dados, conferência e produção de relatórios consumindo tempo que deveria ir para análise e decisão.</p>
-                <p class="placeholder-box" data-i18n="cases.3.previousPh">[ADICIONAR PROCESSO MANUAL ANTERIOR]</p>
-              </div>
-
-              <div class="case-block">
-                <h4 data-i18n="cases.label.previous">Processo anterior</h4>
-                <p class="placeholder-box" data-i18n="cases.3.problemPh">[ADICIONAR PROBLEMA IDENTIFICADO]</p>
-              </div>
-
-              <div class="case-block">
-                <h4 data-i18n="cases.label.solution">Solução desenvolvida</h4>
-                <p data-i18n="cases.3.solution">Padronizei as entradas, automatizei as etapas repetitivas e passei a usar inteligência artificial para acelerar leitura, organização e redação dos materiais recorrentes.</p>
-                <p class="placeholder-box" data-i18n="cases.3.solutionPh">[ADICIONAR SOLUÇÃO CRIADA]</p>
-              </div>
-
-              <div class="case-block">
-                <h4 data-i18n="cases.label.tools">Ferramentas</h4>
-                <p class="placeholder-box" data-i18n="cases.3.toolsPh">[ADICIONAR FERRAMENTAS UTILIZADAS]</p>
-              </div>
-
-              <div class="case-block case-block-wide">
-                <h4 data-i18n="cases.label.impact">Impacto ou aprendizado</h4>
-                <p class="placeholder-box" data-i18n="cases.3.timePh">[ADICIONAR TEMPO ECONOMIZADO]</p>
-                <p class="placeholder-box" data-i18n="cases.3.impactPh">[ADICIONAR IMPACTO OPERACIONAL]</p>
-                <p class="placeholder-box" data-i18n="cases.3.learningPh">[ADICIONAR APRENDIZADOS]</p>
-              </div>
-            </div>
-          </article>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- =============================================================
-         7. PROJETOS PESSOAIS
-         ============================================================= -->
-    <section class="section" id="projetos" aria-labelledby="projetos-title">
-      <div class="wrap">
-        <div class="sec-head reveal">
-          <span class="sec-num" aria-hidden="true">05</span>
-          <h2 class="sec-title" id="projetos-title" data-i18n="projects.title">Projetos</h2>
-        </div>
-        <p class="sec-lead reveal" data-i18n="projects.lead">
-          Iniciativas próprias, construídas fora de qualquer demanda de trabalho — normalmente para resolver
-          um problema real de organização, comunicação ou automação.
-        </p>
-
-        <div class="proj-grid">
-
-          <!-- Projeto 1 — este site -->
-          <article class="proj-card reveal" aria-labelledby="proj-1-title">
-            <div class="proj-top">
-              <span class="proj-status is-live" data-i18n="projects.1.status">No ar</span>
-              <h3 class="proj-title" id="proj-1-title" data-i18n="projects.1.title">Este site</h3>
-            </div>
-            <p class="proj-desc" data-i18n="projects.1.desc">
-              Perfil profissional bilíngue construído do zero, sem editor visual e sem framework: estrutura,
-              conteúdo, versão em inglês, acessibilidade e publicação. Serve como exemplo prático de como uso
-              inteligência artificial para executar algo fora da minha formação original.
-            </p>
-            <ul class="proj-stack" aria-label="Ferramentas" data-i18n-aria-label="a11y.tools">
-              <li>HTML</li><li>CSS</li><li>JavaScript</li><li>Claude Code</li><li>GitHub Pages</li>
-            </ul>
-          </article>
-
-          <!-- Projeto 2 -->
-          <article class="proj-card reveal" aria-labelledby="proj-2-title">
-            <div class="proj-top">
-              <span class="proj-status" data-i18n="projects.2.status">Projeto paralelo</span>
-              <h3 class="proj-title" id="proj-2-title" data-i18n="projects.2.title">Produtos digitais do COI</h3>
-            </div>
-            <p class="proj-desc" data-i18n="projects.2.desc">
-              Participação no desenvolvimento e no lançamento dos produtos digitais do COI — da definição de
-              como o produto se apresenta até os materiais que sustentam a jornada comercial.
-            </p>
-            <p class="placeholder-box" data-i18n="projects.2.ph">[ADICIONAR: qual produto, seu papel e o que foi entregue]</p>
-            <ul class="proj-stack" aria-label="Ferramentas" data-i18n-aria-label="a11y.tools">
-              <li data-i18n="projects.2.stackPh">[ADICIONAR FERRAMENTAS]</li>
-            </ul>
-          </article>
-
-          <!-- Projeto 3 -->
-          <article class="proj-card reveal" aria-labelledby="proj-3-title">
-            <div class="proj-top">
-              <span class="proj-status" data-i18n="projects.3.status">Contínuo</span>
-              <h3 class="proj-title" id="proj-3-title" data-i18n="projects.3.title">Automações de rotina</h3>
-            </div>
-            <p class="proj-desc" data-i18n="projects.3.desc">
-              Pequenas automações criadas para eliminar trabalho manual repetitivo em planilhas, relatórios e
-              conferências — cada uma nasceu de uma tarefa que eu estava cansada de refazer.
-            </p>
-            <p class="placeholder-box" data-i18n="projects.3.ph">[ADICIONAR: qual rotina foi automatizada e o que mudou depois]</p>
-            <ul class="proj-stack" aria-label="Ferramentas" data-i18n-aria-label="a11y.tools">
-              <li>Google Sheets</li><li>Google Apps Script</li><li data-i18n="projects.3.stackPh">[ADICIONAR OUTRAS]</li>
-            </ul>
-          </article>
-
-          <!-- ===========================================================
-               PARA ADICIONAR UM NOVO PROJETO:
-               copie o bloco abaixo, cole logo acima deste comentário,
-               troque "proj-4-title" por um id único e escreva os textos
-               direto aqui (sem data-i18n) ou crie as chaves no script.js.
-
-          <article class="proj-card reveal" aria-labelledby="proj-4-title">
-            <div class="proj-top">
-              <span class="proj-status">Status</span>
-              <h3 class="proj-title" id="proj-4-title">Nome do projeto</h3>
-            </div>
-            <p class="proj-desc">O que é, qual problema resolve e qual foi o seu papel.</p>
-            <ul class="proj-stack" aria-label="Ferramentas">
-              <li>Ferramenta 1</li><li>Ferramenta 2</li>
-            </ul>
-          </article>
-
-               =========================================================== -->
-
-        </div>
-      </div>
-    </section>
-
-    <!-- =============================================================
-         8. COMPETÊNCIAS
-         ============================================================= -->
-    <section class="section section-alt" id="competencias" aria-labelledby="competencias-title">
-      <div class="wrap">
-        <div class="sec-head reveal">
-          <span class="sec-num" aria-hidden="true">06</span>
-          <h2 class="sec-title" id="competencias-title" data-i18n="skills.title">Competências</h2>
-        </div>
-        <p class="sec-lead reveal" data-i18n="skills.lead">
-          Agrupadas por área de aplicação, sem escalas ou notas de proficiência.
-        </p>
-
-        <div class="skills-grid">
-          <section class="skill-group reveal" aria-labelledby="skill-g1">
-            <h3 id="skill-g1" data-i18n="skills.g1.title">Marketing e Growth</h3>
-            <ul>
-              <li data-i18n="skills.g1.i1">Planejamento de campanhas</li>
-              <li data-i18n="skills.g1.i2">Conteúdo e posicionamento</li>
-              <li data-i18n="skills.g1.i3">Tráfego pago</li>
-              <li data-i18n="skills.g1.i4">Aquisição</li>
-              <li data-i18n="skills.g1.i5">Jornada do cliente</li>
-              <li data-i18n="skills.g1.i6">Análise de funil</li>
-              <li data-i18n="skills.g1.i7">Estratégia digital</li>
-            </ul>
-          </section>
-
-          <section class="skill-group reveal" aria-labelledby="skill-g2">
-            <h3 id="skill-g2" data-i18n="skills.g2.title">Operações e Projetos</h3>
-            <ul>
-              <li data-i18n="skills.g2.i1">Gestão de processos</li>
-              <li data-i18n="skills.g2.i2">Documentação</li>
-              <li data-i18n="skills.g2.i3">Gestão de projetos</li>
-              <li data-i18n="skills.g2.i4">Organização de fluxos</li>
-              <li data-i18n="skills.g2.i5">Interface entre áreas</li>
-              <li data-i18n="skills.g2.i6">Planejamento e execução</li>
-            </ul>
-          </section>
-
-          <section class="skill-group reveal" aria-labelledby="skill-g3">
-            <h3 id="skill-g3" data-i18n="skills.g3.title">Dados e Inteligência</h3>
-            <ul>
-              <li data-i18n="skills.g3.i1">Indicadores</li>
-              <li data-i18n="skills.g3.i2">Relatórios</li>
-              <li data-i18n="skills.g3.i3">Análise de desempenho</li>
-              <li data-i18n="skills.g3.i4">Google Sheets</li>
-              <li data-i18n="skills.g3.i5">Dashboards</li>
-              <li data-i18n="skills.g3.i6">Inteligência de mercado</li>
-            </ul>
-          </section>
-
-          <section class="skill-group reveal" aria-labelledby="skill-g4">
-            <h3 id="skill-g4" data-i18n="skills.g4.title">Automação e Tecnologia</h3>
-            <ul>
-              <li data-i18n="skills.g4.i1">Inteligência artificial</li>
-              <li data-i18n="skills.g4.i2">Claude Code</li>
-              <li data-i18n="skills.g4.i3">ChatGPT</li>
-              <li data-i18n="skills.g4.i4">Google Apps Script</li>
-              <li data-i18n="skills.g4.i5">Automação de tarefas</li>
-              <li data-i18n="skills.g4.i6">Criação de fluxos operacionais</li>
-            </ul>
-          </section>
-        </div>
-      </div>
-    </section>
-
-    <!-- =============================================================
-         9. FORMAÇÃO E IDIOMAS
-         ============================================================= -->
-    <section class="section" id="formacao" aria-labelledby="formacao-title">
-      <div class="wrap">
-        <div class="sec-head reveal">
-          <span class="sec-num" aria-hidden="true">07</span>
-          <h2 class="sec-title" id="formacao-title" data-i18n="edu.title">Formação e idiomas</h2>
-        </div>
-
-        <div class="edu-grid">
-          <div class="edu-col reveal">
-            <h3 class="sub-title" data-i18n="edu.academicTitle">Formação acadêmica</h3>
-            <ul class="edu-list">
-              <li>
-                <p class="edu-degree" data-i18n="edu.1.degree">Pós-graduação em Administração</p>
-                <p class="edu-school" data-i18n="edu.1.school">Fundação Getulio Vargas — FGV</p>
-                <!-- PREENCHER: período real -->
-                <p class="edu-period placeholder-inline" data-i18n="edu.1.period">[ADICIONAR PERÍODO]</p>
-              </li>
-              <li>
-                <p class="edu-degree" data-i18n="edu.2.degree">Graduação em Farmácia</p>
-                <p class="edu-school" data-i18n="edu.2.school">Universidade Federal de Minas Gerais — UFMG</p>
-                <!-- PREENCHER: período real -->
-                <p class="edu-period placeholder-inline" data-i18n="edu.2.period">[ADICIONAR PERÍODO]</p>
-              </li>
-            </ul>
-          </div>
-
-          <div class="edu-col reveal">
-            <h3 class="sub-title" data-i18n="edu.langTitle">Idiomas</h3>
-            <ul class="lang-list">
-              <li>
-                <span class="lang-name" data-i18n="edu.lang1.name">Português</span>
-                <span class="lang-level" data-i18n="edu.lang1.level">Nativo</span>
-              </li>
-              <li>
-                <span class="lang-name" data-i18n="edu.lang2.name">Inglês</span>
-                <span class="lang-level" data-i18n="edu.lang2.level">Avançado</span>
-              </li>
-              <li>
-                <span class="lang-name" data-i18n="edu.lang3.name">Espanhol</span>
-                <span class="lang-level" data-i18n="edu.lang3.level">Avançado</span>
-              </li>
-              <li>
-                <span class="lang-name" data-i18n="edu.lang4.name">Francês</span>
-                <span class="lang-level" data-i18n="edu.lang4.level">Avançado</span>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =============================================================
-         10. OBJETIVO PROFISSIONAL — faixa de destaque
-         ============================================================= -->
-    <section class="band" id="objetivo" aria-labelledby="objetivo-title">
-      <div class="wrap band-inner">
-        <div class="sec-head sec-head-invert reveal">
-          <span class="sec-num" aria-hidden="true">08</span>
-          <h2 class="sec-title" id="objetivo-title" data-i18n="goal.title">Objetivo profissional</h2>
-        </div>
-
-        <p class="band-lead reveal" data-i18n="goal.lead">
-          Busco uma posição de trainee, analista júnior ou analista pleno em times que tratam marketing e
-          operações como um sistema — e não como tarefas soltas.
-        </p>
-        <div class="band-text reveal">
-          <p data-i18n="goal.p1">
-            Meu interesse está em funções que exigem transitar entre estratégia e execução: entender o objetivo
-            de negócio, desenhar o processo, acompanhar os números e automatizar o que trava a operação.
+    <!-- ============================================================
+         1. HERO — COLAGEM
+         ============================================================ -->
+    <section class="hero" aria-labelledby="hero-h1">
+      <div class="hero-grid">
+
+        <!-- coluna de texto -->
+        <div class="hero-text">
+          <p class="hero-avail an" data-an="1">
+            <span class="dot" aria-hidden="true"></span>
+            <span data-i18n="hero.available">Disponível para novas oportunidades</span>
           </p>
-          <p data-i18n="goal.p2">
-            Estou disponível para trabalho remoto no Brasil, remoto para empresas internacionais e híbrido em
-            Belo Horizonte ou no Rio de Janeiro.
+
+          <h1 class="hero-name" id="hero-h1">
+            <span class="hero-n1 an" data-an="2" data-i18n="hero.first">Laís</span>
+            <span class="hero-n2 an" data-an="3" data-i18n="hero.last">Barroso</span>
+          </h1>
+
+          <p class="hero-role an" data-an="4" data-i18n="hero.headline">Marketing Operations, Growth &amp; Business Operations</p>
+
+          <p class="hero-tag an" data-an="5" data-i18n="hero.tagline">Eu organizo ideias, processos e dados para fazer projetos avançarem.</p>
+
+          <div class="hero-cta an" data-an="6">
+            <a class="btn btn-fill" href="#projetos" data-i18n="btn.work">Ver projetos</a>
+            <a class="btn btn-line" href="#contato" data-i18n="btn.contact">Falar comigo</a>
+          </div>
+
+          <div class="hero-files an" data-an="7" id="hero-files"></div>
+        </div>
+
+        <!-- coluna de colagem -->
+        <div class="hero-collage">
+          <div class="ph ph-main an" data-an="3" data-img="lais-hero.jpg" data-ratio="4/5"></div>
+
+          <div class="polaroid pol-1 an" data-an="5">
+            <div class="ph" data-img="lais-viagem.jpg" data-ratio="1/1"></div>
+          </div>
+
+          <!-- etiqueta de bagagem -->
+          <div class="stk luggage an" data-an="6" aria-hidden="true">
+            <svg class="lug-string" viewBox="0 0 40 30" fill="none"><path d="M2 2C12 6 20 12 30 26" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>
+            <span class="lug-tag">
+              <span class="lug-hole"></span>
+              <b data-i18n="hero.locationTag">BH, Brazil</b>
+              <i data-i18n="stk.mapPin">Belo Horizonte</i>
+            </span>
+          </div>
+
+          <span class="tape tape-1" aria-hidden="true"></span>
+          <span class="tape tape-2" aria-hidden="true"></span>
+
+          <div class="postit an" data-an="7" aria-hidden="true">
+            <span data-i18n="about.postit">strategy → execution</span>
+          </div>
+
+          <p class="scrawl scrawl-hero an" data-an="8" aria-hidden="true">
+            <span data-i18n="hero.note">sempre ligando os pontos</span>
+            <svg class="arrow" viewBox="0 0 90 40" fill="none" aria-hidden="true">
+              <path d="M2 6C22 30 52 36 84 26" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+              <path d="M72 18c6 4 10 6 12 8-4 1-8 3-12 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
           </p>
+
+          <ul class="stamps an" data-an="8" aria-hidden="true">
+            <li data-i18n="hero.stamp1">marketing</li>
+            <li data-i18n="hero.stamp2">operations</li>
+            <li data-i18n="hero.stamp3">data</li>
+            <li data-i18n="hero.stamp4">AI</li>
+          </ul>
+        </div>
+      </div>
+
+      <p class="hero-scroll an" data-an="9" aria-hidden="true"><span data-i18n="hero.scroll">Role para ver os projetos</span></p>
+    </section>
+
+    <!-- ============================================================
+         2. MANIFESTO
+         ============================================================ -->
+    <section class="sec manifesto" aria-labelledby="man-h">
+      <p class="eyebrow rv" data-i18n="manifesto.eyebrow">Manifesto</p>
+      <h2 class="man-lead rv" id="man-h" data-i18n="manifesto.lead">Trabalho no meio do caminho entre marketing, operações, dados e tecnologia, que costuma ser exatamente onde os projetos emperram.</h2>
+      <div class="man-body">
+        <div class="man-col rv">
+          <p data-i18n="manifesto.p1">Comecei na ciência, passei por análise técnica em ambiente regulado, fui para rotinas administrativas e financeiras e cheguei em marketing, aquisição e produtos digitais.</p>
+          <p data-i18n="manifesto.p2">Gosto de pegar um projeto que ainda está solto e deixá-lo em pé.</p>
+        </div>
+        <aside class="man-side rv">
+          <div class="man-block">
+            <h3 data-i18n="manifesto.availTitle">Onde eu trabalho</h3>
+            <ul>
+              <li data-i18n="manifesto.avail1">Remoto no Brasil</li>
+              <li data-i18n="manifesto.avail2">Remoto para empresas internacionais</li>
+              <li data-i18n="manifesto.avail3">Híbrido em Belo Horizonte</li>
+              <li data-i18n="manifesto.avail4">Híbrido no Rio de Janeiro</li>
+            </ul>
+          </div>
+          <div class="man-block">
+            <h3 data-i18n="manifesto.levelTitle">Nível</h3>
+            <p data-i18n="manifesto.level">Trainee · Analista júnior · Analista pleno</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         3. SELECTED WORK
+         ============================================================ -->
+    <section class="sec work" id="projetos" aria-labelledby="work-h">
+      <div class="work-head">
+        <div class="sec-head rv">
+          <p class="scrawl" aria-hidden="true"><span data-i18n="work.eyebrow">selected work</span></p>
+          <h2 class="sec-title" id="work-h" data-i18n="work.title">Projetos</h2>
+          <p class="sec-lead" data-i18n="work.lead">Um recorte do que construí em growth, operações, dados e automação.</p>
+        </div>
+
+        <div class="work-stk rv" aria-hidden="true">
+          <!-- pasta "ongoing projects" -->
+          <div class="stk folder">
+            <span class="fld-tab" data-i18n="stk.ongoing">ongoing projects</span>
+            <span class="fld-body"><i></i><i></i><i></i></span>
+          </div>
+          <!-- funil desenhado à mão -->
+          <div class="stk funnel">
+            <svg viewBox="0 0 92 76" fill="none">
+              <path d="M6 8h80M14 26h64M26 44h40M36 62h20" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+              <path d="M6 8L36 68M86 8L56 68" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity=".55"/>
+            </svg>
+            <span data-i18n="stk.funnel">funil</span>
+          </div>
+        </div>
+      </div>
+      <div class="work-grid" id="work-grid"></div>
+    </section>
+
+    <!-- ============================================================
+         4. TRAJETÓRIA
+         ============================================================ -->
+    <section class="sec path" id="trajetoria" aria-labelledby="path-h">
+      <div class="sec-head rv">
+        <p class="eyebrow" data-i18n="path.eyebrow">Trajetória</p>
+        <h2 class="sec-title" id="path-h" data-i18n="path.title">O caminho até aqui</h2>
+        <p class="sec-lead" data-i18n="path.lead">Não foi uma linha reta, e isso virou o meu diferencial.</p>
+      </div>
+
+      <ol class="tl rv" id="timeline" data-i18n-aria-label="a11y.timeline" aria-label="Linha do tempo profissional"></ol>
+
+      <div class="xp" id="xp-list"></div>
+    </section>
+
+    <!-- ============================================================
+         5. COMO EU TRABALHO
+         ============================================================ -->
+    <section class="sec how" id="metodo" aria-labelledby="how-h">
+      <div class="sec-head rv">
+        <p class="eyebrow" data-i18n="how.eyebrow">Método</p>
+        <h2 class="sec-title" id="how-h" data-i18n="how.title">Como eu trabalho</h2>
+      </div>
+
+      <!-- bloquinho de checklist -->
+      <div class="stk pad rv" aria-hidden="true">
+        <span class="pad-rings"><i></i><i></i><i></i><i></i></span>
+        <b data-i18n="stk.checkTitle">to do</b>
+        <ul>
+          <li><svg viewBox="0 0 16 12" fill="none"><path d="M1 6l4.5 4.5L15 1.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="stk.check1">mapear o fluxo real</span></li>
+          <li><svg viewBox="0 0 16 12" fill="none"><path d="M1 6l4.5 4.5L15 1.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="stk.check2">escrever o processo</span></li>
+          <li><svg viewBox="0 0 16 12" fill="none"><path d="M1 6l4.5 4.5L15 1.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-i18n="stk.check3">automatizar o resto</span></li>
+        </ul>
+      </div>
+      <ol class="how-grid">
+        <li class="how-step rv"><span class="how-n" aria-hidden="true">01</span>
+          <h3 data-i18n="how.1.title">Entender</h3>
+          <p data-i18n="how.1.text">Investigo o contexto, o objetivo e o fluxo real antes de propor qualquer coisa.</p></li>
+        <li class="how-step rv"><span class="how-n" aria-hidden="true">02</span>
+          <h3 data-i18n="how.2.title">Organizar</h3>
+          <p data-i18n="how.2.text">Transformo informação espalhada em prioridades, responsáveis, documentos e etapas claras.</p></li>
+        <li class="how-step rv"><span class="how-n" aria-hidden="true">03</span>
+          <h3 data-i18n="how.3.title">Construir</h3>
+          <p data-i18n="how.3.text">Crio as campanhas, jornadas, relatórios e automações que sustentam o dia a dia.</p></li>
+        <li class="how-step rv"><span class="how-n" aria-hidden="true">04</span>
+          <h3 data-i18n="how.4.title">Ajustar</h3>
+          <p data-i18n="how.4.text">Acompanho sinais, resultados e feedback para corrigir a rota sem drama.</p></li>
+      </ol>
+    </section>
+
+    <!-- ============================================================
+         6. SKILLS & TOOLS
+         ============================================================ -->
+    <section class="sec skills" id="skills" aria-labelledby="skills-h">
+      <div class="sec-head rv">
+        <p class="eyebrow" data-i18n="skills.eyebrow">Skills &amp; tools</p>
+        <h2 class="sec-title" id="skills-h" data-i18n="skills.title">No que eu sou boa</h2>
+      </div>
+      <div class="pillars" id="pillars"></div>
+      <div class="tools-row">
+        <div class="tools rv">
+          <h3 data-i18n="skills.toolsTitle">Ferramentas do dia a dia</h3>
+          <ul id="tools-list"></ul>
+          <p class="tools-note" data-i18n="skills.toolsNote">HTML, CSS e JavaScript aparecem aqui apenas no contexto deste portfólio.</p>
+        </div>
+
+        <div class="tools-stk rv" aria-hidden="true">
+          <!-- mini planilha -->
+          <div class="stk sheet">
+            <span class="sh-head"><i></i><i></i><i></i></span>
+            <span class="sh-grid"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+            <em data-i18n="stk.sheet">planilha</em>
+          </div>
+          <!-- janelinha de dashboard -->
+          <div class="stk dash">
+            <span class="dw-bar"><i></i><i></i><i></i></span>
+            <span class="dw-plot"><i style="height:34%"></i><i style="height:62%"></i><i style="height:46%"></i><i style="height:82%"></i><i style="height:56%"></i></span>
+            <em data-i18n="stk.dash">dashboard</em>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- =============================================================
-         11. CONTATO
-         ============================================================= -->
-    <section class="section section-contact" id="contato" aria-labelledby="contato-title">
-      <div class="wrap">
-        <div class="sec-head reveal">
-          <span class="sec-num" aria-hidden="true">09</span>
-          <h2 class="sec-title" id="contato-title" data-i18n="contact.title">Contato</h2>
-        </div>
-        <p class="sec-lead reveal" data-i18n="contact.lead">
-          Aberta a conversas sobre vagas, projetos e processos seletivos. O caminho mais rápido é o e-mail.
-        </p>
-
-        <div class="contact-actions reveal">
-          <!-- PREENCHER: adicionar e-mail profissional em script.js -->
-          <a class="btn btn-primary" href="#contato" data-action="email" data-i18n="btn.sendEmail">Enviar e-mail</a>
-          <!-- PREENCHER: adicionar link real do LinkedIn em script.js -->
-          <a class="btn btn-ghost" href="#contato" data-action="linkedin" data-i18n="btn.openLinkedin">Abrir LinkedIn</a>
-          <button type="button" class="btn btn-ghost" data-action="resume" data-resume="pt" data-i18n="btn.resumePT">Currículo (PT)</button>
-          <button type="button" class="btn btn-ghost" data-action="resume" data-resume="en" data-i18n="btn.resumeEN">Currículo (EN)</button>
-        </div>
-
-        <!-- Área de aviso acessível: mensagens de "ainda não disponível" aparecem aqui -->
-        <p class="notice" id="notice" role="status" aria-live="polite" hidden></p>
-
-        <ul class="contact-meta reveal">
-          <li>
-            <span class="meta-label" data-i18n="contact.locationLabel">Localização</span>
-            <span class="meta-value" data-i18n="contact.locationValue">Belo Horizonte, Minas Gerais, Brasil</span>
-          </li>
-          <li>
-            <span class="meta-label" data-i18n="contact.availLabel">Disponibilidade</span>
-            <span class="meta-value" data-i18n="contact.availValue">Remoto (Brasil e internacional) · Híbrido em Belo Horizonte e Rio de Janeiro</span>
-          </li>
-          <li>
-            <span class="meta-label" data-i18n="contact.emailLabel">E-mail</span>
-            <!-- O e-mail exibido é preenchido pelo script.js -->
-            <span class="meta-value" id="email-display" data-i18n="contact.emailPh">[ADICIONAR E-MAIL PROFISSIONAL]</span>
-          </li>
-        </ul>
+    <!-- ============================================================
+         7. FORMAÇÃO E IDIOMAS
+         ============================================================ -->
+    <section class="sec edu" aria-labelledby="edu-h">
+      <div class="sec-head rv">
+        <p class="eyebrow" data-i18n="edu.eyebrow">Formação</p>
+        <h2 class="sec-title" id="edu-h" data-i18n="edu.title">Estudo e idiomas</h2>
       </div>
+
+      <div class="edu-grid">
+        <div class="edu-col rv">
+          <article class="edu-item">
+            <h3 data-i18n="edu.fgv.degree">Pós-graduação em Administração de Empresas</h3>
+            <p class="edu-school" data-i18n="edu.fgv.school">Fundação Getulio Vargas (FGV)</p>
+            <p class="edu-when" data-i18n="edu.fgv.period">Conclusão em janeiro de 2026</p>
+          </article>
+          <article class="edu-item">
+            <h3 data-i18n="edu.ufmg.degree">Graduação em Farmácia</h3>
+            <p class="edu-school" data-i18n="edu.ufmg.school">Universidade Federal de Minas Gerais (UFMG)</p>
+            <p class="edu-when" data-i18n="edu.ufmg.period">Conclusão em janeiro de 2023</p>
+          </article>
+          <p class="edu-note" data-i18n="edu.scienceNote">A formação científica me deu o que uso todo dia.</p>
+        </div>
+
+        <div class="langs rv">
+          <!-- carimbo de passaporte -->
+          <div class="stk passport" aria-hidden="true">
+            <span class="pp-ring">
+              <b data-i18n="stk.langs">PT · EN · ES · FR</b>
+              <i data-i18n="stk.passport">quatro idiomas</i>
+            </span>
+          </div>
+          <h3 class="langs-t" data-i18n="edu.langTitle">Quatro idiomas</h3>
+          <ul>
+            <li><span class="lg-word" lang="pt">Olá</span><span class="lg-name" data-i18n="edu.lang1.name">Português</span><span class="lg-lv" data-i18n="edu.lang1.level">Nativo</span></li>
+            <li><span class="lg-word" lang="en">Hello</span><span class="lg-name" data-i18n="edu.lang2.name">Inglês</span><span class="lg-lv" data-i18n="edu.lang2.level">Avançado</span></li>
+            <li><span class="lg-word" lang="es">Hola</span><span class="lg-name" data-i18n="edu.lang3.name">Espanhol</span><span class="lg-lv" data-i18n="edu.lang3.level">Avançado</span></li>
+            <li><span class="lg-word" lang="fr">Bonjour</span><span class="lg-name" data-i18n="edu.lang4.name">Francês</span><span class="lg-lv" data-i18n="edu.lang4.level">Avançado · DELF B2</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         8. ALÉM DO CURRÍCULO
+         ============================================================ -->
+    <section class="sec about" id="sobre" aria-labelledby="about-h">
+      <h2 class="ransom rv" id="about-h" data-ransom="about.ransom">
+        <span class="sr-only">Quem é Laís</span>
+        <span class="ransom-wrap" aria-hidden="true"></span>
+      </h2>
+
+      <div class="about-grid">
+        <div class="about-text rv">
+          <p data-i18n="about.p1">Minha trajetória não foi construída em linha reta.</p>
+          <p data-i18n="about.p2">Fora dos cargos, sou movida por curiosidade, viagens, idiomas, cultura e tecnologia.</p>
+          <ul class="about-tags">
+            <li data-i18n="about.tag1">curiosa</li>
+            <li data-i18n="about.tag2">cosmopolita</li>
+            <li data-i18n="about.tag3">analítica</li>
+            <li data-i18n="about.tag4">mão na massa</li>
+          </ul>
+        </div>
+        <div class="about-collage rv">
+          <div class="polaroid pol-3">
+            <div class="ph" data-img="lais-lagoa.jpg" data-ratio="4/5"></div>
+          </div>
+          <span class="tape tape-3" aria-hidden="true"></span>
+
+          <!-- mini mapa com pino -->
+          <div class="stk minimap" aria-hidden="true">
+            <svg viewBox="0 0 120 96" fill="none">
+              <path d="M8 26 38 12l34 12 36-12v58l-36 14-34-14-30 12z" fill="currentColor" opacity=".13"/>
+              <path d="M8 26 38 12l34 12 36-12v58l-36 14-34-14-30 12z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/>
+              <path d="M38 12v58M72 24v60" stroke="currentColor" stroke-width="1" opacity=".5"/>
+              <path d="M20 52c14-8 26 6 40-4s28 2 44-8" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 4" opacity=".75"/>
+            </svg>
+            <span class="mm-pin"></span>
+            <em data-i18n="stk.mapPin">Belo Horizonte</em>
+          </div>
+
+          <div class="coords" aria-hidden="true">
+            <span>19°55′ S</span><span>43°56′ W</span>
+          </div>
+
+          <!-- etiquetas -->
+          <span class="stk label lb-1" aria-hidden="true" data-i18n="stk.curious">curious by nature</span>
+          <span class="stk label lb-2" aria-hidden="true">
+            <svg class="lb-heart" viewBox="0 0 20 18" aria-hidden="true"><path d="M10 17S1.5 11.6 1.5 6.3A4.8 4.8 0 0110 3.4a4.8 4.8 0 018.5 2.9C18.5 11.6 10 17 10 17z" fill="currentColor"/></svg>
+            <span data-i18n="stk.science">from science to business</span>
+          </span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         9. CONTATO
+         ============================================================ -->
+    <section class="sec contact" id="contato" aria-labelledby="contact-h">
+      <div class="sec-head rv">
+        <p class="eyebrow" data-i18n="contact.eyebrow">Contato</p>
+        <h2 class="sec-title big" id="contact-h" data-i18n="contact.title">Vamos conversar</h2>
+        <p class="sec-lead" data-i18n="contact.lead">Aberta a vagas, projetos e processos seletivos.</p>
+      </div>
+      <div class="contact-actions rv" id="contact-actions"></div>
+      <dl class="contact-meta rv">
+        <div><dt data-i18n="contact.locationLabel">Base</dt><dd data-i18n="contact.location">Belo Horizonte, Minas Gerais, Brasil</dd></div>
+        <div><dt data-i18n="contact.availLabel">Disponibilidade</dt><dd data-i18n="contact.avail">Remoto no Brasil e internacional · Híbrido em BH e Rio</dd></div>
+      </dl>
     </section>
   </main>
 
-  <!-- =============================================================
-       12. FOOTER
-       ============================================================= -->
-  <footer class="site-footer">
-    <div class="wrap footer-inner">
-      <p class="footer-name">Laís Barroso</p>
-      <p class="footer-tag" data-i18n="footer.tag">Marketing Operations, Growth &amp; Business Operations</p>
-      <p class="footer-note" data-i18n="footer.note">Belo Horizonte, Brasil · Disponível para trabalho remoto e híbrido</p>
-      <p class="footer-legal">
-        <span data-i18n="footer.built">Site pessoal desenvolvido em HTML, CSS e JavaScript.</span>
-        <a href="#topo" class="footer-top" data-i18n="footer.backToTop">Voltar ao topo</a>
-      </p>
-    </div>
+  <!-- ============================================================
+       FOOTER
+       ============================================================ -->
+  <footer class="ftr">
+    <p class="ftr-name">Laís Barroso</p>
+    <p class="ftr-tag" data-i18n="footer.tag">Marketing Operations, Growth &amp; Business Operations</p>
+    <p class="ftr-legal">
+      <span data-i18n="footer.built">Feito à mão em HTML, CSS e JavaScript.</span>
+      <a href="#topo" data-i18n="footer.top">Voltar ao topo</a>
+    </p>
   </footer>
 
+  <!-- Painel de projeto -->
+  <div class="pv" id="pv" hidden>
+    <div class="pv-back" data-pv-close></div>
+    <article class="pv-panel" role="dialog" aria-modal="true" aria-labelledby="pv-title" tabindex="-1">
+      <button type="button" class="pv-x" data-pv-close data-i18n-aria-label="a11y.closeProject" aria-label="Fechar projeto">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+      <div class="pv-body" id="pv-body"></div>
+    </article>
+  </div>
+
+  <script src="content-status.js"></script>
+  <script src="content.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
