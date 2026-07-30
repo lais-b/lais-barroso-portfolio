@@ -1,518 +1,304 @@
-# Laís Barroso — site profissional
+# Laís Barroso — portfólio
 
-Site pessoal que funciona como perfil profissional, currículo digital,
-portfólio de cases e página de contato para candidaturas — em português
-e inglês, com troca de idioma instantânea.
+Perfil profissional, currículo digital e portfólio de projetos, em português
+e inglês. Feito em HTML, CSS e JavaScript puro: **sem framework, sem build,
+sem dependência externa e sem nenhuma requisição para fora** — as fontes ficam
+dentro do próprio repositório, então o site abre até offline.
 
-**Posicionamento:** Marketing Operations, Growth & Business Operations.
-**Nível-alvo:** trainee, analista júnior e analista pleno.
-**Disponibilidade:** remoto no Brasil, remoto internacional e híbrido em
-Belo Horizonte ou no Rio de Janeiro.
-
-Feito com HTML, CSS e JavaScript puro. **Sem frameworks, sem bibliotecas,
-sem instalação e sem processo de build.** Basta abrir o arquivo `index.html`.
+**Posicionamento:** Marketing Operations, Growth & Business Operations
+**Nível:** trainee · analista júnior · analista pleno
+**Disponibilidade:** remoto no Brasil, remoto internacional, híbrido em BH e Rio
 
 ---
 
 ## Índice
 
-1. [Estrutura de arquivos](#1-estrutura-de-arquivos)
-2. [Como abrir o site no computador](#2-como-abrir-o-site-no-computador)
-3. [O que ainda precisa ser preenchido](#3-o-que-ainda-precisa-ser-preenchido) ← **comece por aqui**
-4. [Como trocar os links (LinkedIn e e-mail)](#4-como-trocar-os-links-linkedin-e-e-mail)
-5. [Como adicionar os currículos em PDF](#5-como-adicionar-os-currículos-em-pdf)
-6. [Como editar os textos](#6-como-editar-os-textos)
-7. [Como editar as traduções](#7-como-editar-as-traduções)
-8. [Como atualizar os cases](#8-como-atualizar-os-cases)
-9. [Como alterar as cores](#9-como-alterar-as-cores)
-10. [Como adicionar uma foto profissional](#10-como-adicionar-uma-foto-profissional)
-11. [Como gerar o favicon `.ico`](#11-como-gerar-o-favicon-ico)
-12. [Como testar antes de publicar](#12-como-testar-antes-de-publicar)
-13. [Como publicar no GitHub Pages](#13-como-publicar-no-github-pages)
-14. [Como atualizar o site depois de publicado](#14-como-atualizar-o-site-depois-de-publicado)
-15. [Como usar um domínio próprio no futuro](#15-como-usar-um-domínio-próprio-no-futuro)
+1. [A regra mais importante](#1-a-regra-mais-importante)
+2. [Arquivos](#2-arquivos)
+3. [Como abrir no computador](#3-como-abrir-no-computador)
+4. [Checklist do que falta preencher](#4-checklist-do-que-falta-preencher) ← **comece aqui**
+5. [Fotografias: quais são e onde entram](#5-fotografias-quais-são-e-onde-entram)
+6. [Como editar textos e traduções](#6-como-editar-textos-e-traduções)
+7. [Como editar os projetos](#7-como-editar-os-projetos)
+8. [Como mudar cores e fontes](#8-como-mudar-cores-e-fontes)
+9. [Os adesivos](#9-os-adesivos)
+10. [Como testar](#10-como-testar)
+11. [Como publicar](#11-como-publicar)
+12. [Domínio próprio](#12-domínio-próprio)
 
 ---
 
-## 1. Estrutura de arquivos
+## 1. A regra mais importante
+
+**O site publicado nunca mostra `[ADICIONAR...]`, `PREENCHER` ou link quebrado.**
+
+Tudo que ainda não existe fica registrado em **`content-status.js`**. Quando um
+campo está vazio, o componente correspondente simplesmente não é desenhado:
+
+| Situação | O que o visitante vê |
+|---|---|
+| E-mail em branco | O botão de e-mail não aparece |
+| LinkedIn em branco | O botão de LinkedIn não aparece |
+| Nenhum contato preenchido | Uma frase discreta: "Canais de contato em atualização" |
+| Currículo não enviado | O link de download não aparece |
+| Projeto com `published: false` | Só a prévia, com o selo "Case em breve" |
+| Foto ainda não colocada | O espaço some, sem buraco no layout |
+| Métrica não validada | "Resultados serão publicados quando validados." |
+
+**No seu computador é diferente:** ali o site mostra, em cinza, exatamente qual
+arquivo falta (ex.: "ADICIONAR LAIS-HERO.JPG"). Isso é proposital — serve de
+lista de tarefas para você e **desaparece sozinho** quando o site está no ar.
+A diferença é detectada pelo endereço, não precisa configurar nada.
+
+---
+
+## 2. Arquivos
 
 ```text
 lais-barroso-portfolio/
-├── index.html          → todo o conteúdo e a estrutura das seções
-├── styles.css          → toda a aparência (cores, espaçamentos, responsividade)
-├── script.js           → links, traduções PT/EN, menu do celular
-├── README.md           → este manual
-├── .gitignore          → arquivos que não vão para o GitHub
+├── index.html            estrutura das seções
+├── styles.css            toda a aparência
+├── content.js            TODO o texto, em PT e EN, + os projetos
+├── content-status.js     o que já está pronto para aparecer  ← você mexe aqui
+├── script.js             comportamentos (idioma, menu, projetos, animação)
+├── README.md
+├── .gitignore
 └── assets/
-    ├── curriculos/     → os PDFs do currículo entram aqui
-    │   ├── ADICIONAR-CURRICULO-PT-AQUI.txt
-    │   └── ADICIONAR-CURRICULO-EN-AQUI.txt
-    ├── imagens/        → foto e imagem de compartilhamento (ver README interno)
-    │   └── README.md
-    └── favicon/        → ícone que aparece na aba do navegador
-        ├── favicon.svg
-        └── favicon.ico
+    ├── fonts/            Instrument Serif + Manrope (não mexer)
+    ├── imagens/          as fotos entram aqui
+    ├── curriculos/       os PDFs entram aqui
+    └── favicon/
 ```
 
-**Só existem três arquivos para editar:** `index.html`, `styles.css` e `script.js`.
-Abra qualquer um deles com o Bloco de Notas, o VS Code ou qualquer editor de texto.
+Na prática você só precisa mexer em **`content-status.js`** (o que está pronto)
+e **`content.js`** (as palavras).
 
-### Seções do site
+### Seções
 
-Header · Hero · Sobre · Áreas de atuação · Experiência · Cases · **Projetos** ·
-Competências · Formação e idiomas · Objetivo profissional · Contato · Rodapé.
+Hero em colagem · Manifesto · Projetos · Trajetória · Como eu trabalho ·
+Skills & Tools · Formação e idiomas · Quem é Laís · Contato · Rodapé
 
 ---
 
-## 2. Como abrir o site no computador
+## 3. Como abrir no computador
 
-Clique duas vezes no arquivo **`index.html`**. Ele abre no navegador padrão.
+Clique duas vezes em **`index.html`**. Só isso — não precisa instalar nada.
 
-É só isso — não precisa instalar nada, não precisa de servidor e não precisa
-de internet. Depois de qualquer edição, salve o arquivo e aperte `F5` no
-navegador para ver o resultado.
-
-> Se o navegador abrir uma janela de "escolher programa", clique com o botão
-> direito no `index.html` → **Abrir com** → Chrome, Edge ou Firefox.
+> Uma observação: abrindo o arquivo direto, o navegador bloqueia o carregamento
+> das fotos em alguns casos. Se quiser ver exatamente como fica no ar, rode um
+> servidor local: abra o terminal na pasta do projeto e digite
+> `python -m http.server 8899`, depois acesse `http://127.0.0.1:8899`.
 
 ---
 
-## 3. O que ainda precisa ser preenchido
+## 4. Checklist do que falta preencher
 
-Tudo que falta está marcado de duas formas:
+Tudo abaixo está no arquivo **`content-status.js`**.
 
-- No **site**, aparece dentro de uma caixinha vinho, entre colchetes:
-  `[ADICIONAR MÉTRICA REAL]`.
-- No **código**, aparece como comentário: `PREENCHER:`.
+### Contato
+- [ ] `professionalEmail` — e-mail profissional
+- [ ] `linkedin` — endereço completo do perfil
 
-Para achar tudo de uma vez, abra o arquivo e use `Ctrl + F` procurando por
-`PREENCHER` e por `[ADICIONAR`.
+### Currículos
+- [ ] PDF em `assets/curriculos/curriculo-lais-barroso-pt.pdf`
+- [ ] PDF em `assets/curriculos/curriculo-lais-barroso-en.pdf`
+- [ ] Mudar `resumes.pt` e `resumes.en` para `true`
 
-### Lista completa dos campos pendentes
+### Datas
+- [ ] `plurisPeriod` — período na Pluris Mídia (ex.: `"2022 — 2023"`).
+      Enquanto vazio, a Pluris aparece normalmente na trajetória, só sem data.
 
-**Links e contato — arquivo `script.js`, seção "01. LINKS E ARQUIVOS"**
+### Métricas — **só números que você confirmou**
+- [ ] `metrics.betpass` — ex.: `[{ value: "12h", label: "por mês no fechamento" }]`
+- [ ] `metrics.coi` — ex.: `[{ value: "3x", label: "mais leads qualificados" }]`
 
-| Campo | O que colocar |
-|---|---|
-| `linkedin` | O endereço completo do perfil, ex.: `https://www.linkedin.com/in/.../` |
-| `email` | O e-mail profissional de contato |
-| `resumesAvailable` | Trocar `false` por `true` depois de subir os dois PDFs |
+Enquanto as listas estiverem vazias, nenhum número aparece. **Nunca preencha
+com estimativa**: um número errado num portfólio é pior do que nenhum número.
 
-**Endereços do site — arquivo `index.html`, no topo (dentro de `<head>`)**
+### Projetos ainda fechados
+- [ ] `roadmap-digital` — está `published: false`
+- [ ] `consultoria-ia` — está `published: false`
 
-> A URL do site já está preenchida: `https://lais-b.github.io/lais-barroso-portfolio/`
+Os dois aparecem na home como prévia com selo "Case em breve". Para abrir o case
+completo, escreva `process`, `deliverables` e `learnings` em `content.js` e mude
+para `published: true`.
 
-| Campo | O que colocar |
-|---|---|
-| `PREENCHER_URL_IMAGEM_COMPARTILHAMENTO` (2 lugares) | O endereço da imagem de 1200×630 (ver `assets/imagens/README.md`) |
-
-**Datas — arquivo `script.js`, seção "02. TRADUÇÕES"** (lembre de editar em PT **e** EN)
-
-| Chave | O que colocar |
-|---|---|
-| `exp.betpass.period` | Período na Betpass (ex.: `Jan 2023 — atual`) |
-| `exp.coi.period` | Período no COI |
-| `edu.1.period` | Período da pós-graduação na FGV |
-| `edu.2.period` | Período da graduação na UFMG |
-
-**Métricas reais — arquivo `script.js`, seção "02. TRADUÇÕES"**
-
-| Chave | O que colocar |
-|---|---|
-| `exp.betpass.metric` | Um resultado real: tempo economizado, volume processado, melhoria |
-| `exp.coi.metric` | Um resultado real: leads, alcance, custo por lead, resultado de campanha |
-
-**Cases — arquivo `script.js`**, todas as chaves terminadas em `Ph`
-(de *placeholder*). Ver a [seção 8](#8-como-atualizar-os-cases).
-
-**Projetos — arquivo `script.js`**
-
-| Chave | O que colocar |
-|---|---|
-| `projects.2.ph` | Qual produto do COI, seu papel e o que foi entregue |
-| `projects.2.stackPh` | Ferramentas usadas nesse projeto |
-| `projects.3.ph` | Qual rotina você automatizou e o que mudou depois |
-| `projects.3.stackPh` | Outras ferramentas de automação |
-
-**Arquivos**
-
-| Arquivo | Onde |
-|---|---|
-| `curriculo-lais-barroso-pt.pdf` | `assets/curriculos/` |
-| `curriculo-lais-barroso-en.pdf` | `assets/curriculos/` |
-| `og-image.png` (opcional) | `assets/imagens/` |
-| Foto profissional (opcional) | `assets/imagens/` |
-
-> **Regra importante deste site:** nenhum número foi inventado. Todos os
-> resultados e métricas ficaram em branco de propósito, para serem
-> preenchidos apenas com informação real e verificável.
+### Fotos
+Ver a seção seguinte.
 
 ---
 
-## 4. Como trocar os links (LinkedIn e e-mail)
+## 5. Fotografias: quais são e onde entram
 
-Abra o **`script.js`**. Logo no começo do arquivo está o bloco abaixo —
-é o **único lugar** onde os links precisam ser mexidos:
+Coloque tudo em **`assets/imagens/`** com **exatamente** estes nomes
+(minúsculas, sem acento, sem espaço). Formato `.jpg`.
 
-```javascript
-var profileLinks = {
-  // PREENCHER: adicionar link real do LinkedIn
-  linkedin: "PREENCHER_LINK_LINKEDIN",
+| Arquivo | Onde aparece | Formato ideal | Sugestão |
+|---|---|---|---|
+| `lais-hero.jpg` | Foto principal do topo | Retrato **4:5**, mín. 900×1125 | Retrato em fundo neutro, luz natural, meio corpo. É a imagem que sustenta a colagem inteira — vale a melhor foto que você tiver. |
+| `lais-secundaria-01.jpg` | Polaroid do topo (esquerda) | **Quadrada 1:1**, mín. 700×700 | Algo mais solto: você trabalhando, num café, em viagem. Contraponto humano à foto principal. |
+| `lais-secundaria-02.jpg` | Polaroid do topo + seção "Quem é Laís" | **Quadrada 1:1**, mín. 700×700 | Outro ângulo, outro ambiente. Aparece em dois lugares, então escolha uma que funcione sozinha. |
+| `coi-mapa.jpg` | Projetos do COI | **16:9**, mín. 1200×675 | Print do Mapa de Oportunidades no desktop. |
+| `coi-conteudo.jpg` | Projeto de conteúdo | **3:4**, mín. 900×1200 | Print de conteúdos do Instagram, em grade ou celular. |
+| `betpass-dashboard.jpg` | Projeto Betpass | **16:9**, mín. 1200×675 | **Atenção: dados fictícios.** Monte uma planilha ou dashboard de demonstração. Nunca use tela com dado real, valor, nome de parceiro ou informação interna. |
+| `automacao-fluxo.jpg` | Projeto de automações | **4:3**, mín. 1000×750 | Diagrama "antes → automação → depois", desenhado por você. Dados fictícios. |
+| `og-image.jpg` | Pré-visualização no LinkedIn e WhatsApp | **1200×630 exatos** | Fundo creme, "Laís Barroso" grande e a linha "Marketing Operations, Growth & Business Operations". |
 
-  // PREENCHER: adicionar e-mail profissional
-  email: "PREENCHER_EMAIL",
+**Enquanto não existirem**, cada espaço mostra o nome do arquivo no seu
+computador e desaparece no site publicado. Nada quebra.
 
-  resumePT: "assets/curriculos/curriculo-lais-barroso-pt.pdf",
-  resumeEN: "assets/curriculos/curriculo-lais-barroso-en.pdf",
-
-  resumesAvailable: false
-};
-```
-
-Troque **apenas o texto entre aspas**. Exemplo depois de preenchido:
-
-```javascript
-  linkedin: "https://www.linkedin.com/in/lais-barroso/",
-  email: "lais.barroso@exemplo.com",
-```
-
-Salve e recarregue a página. A partir daí:
-
-- os botões de LinkedIn passam a abrir o perfil em uma nova aba;
-- os botões de e-mail abrem o programa de e-mail já com o endereço;
-- o e-mail passa a aparecer escrito na seção **Contato**.
-
-**Enquanto os links não forem preenchidos**, os botões continuam visíveis e,
-ao serem clicados, mostram um aviso educado dizendo que a informação ainda
-será adicionada. Nada quebra e nenhum link falso é exibido.
-
-> ⚠️ Mantenha as vírgulas e as aspas exatamente onde estão. Se apagar uma
-> vírgula por engano, o site pode parar de trocar de idioma. Se acontecer,
-> aperte `F12` no navegador, abra a aba **Console** e veja a linha do erro.
+**Cuidado com peso:** deixe cada foto abaixo de ~400 KB. Uma imagem de 5 MB
+deixa o site lento no celular.
 
 ---
 
-## 5. Como adicionar os currículos em PDF
+## 6. Como editar textos e traduções
 
-1. Coloque os dois PDFs na pasta `assets/curriculos/`.
-2. Renomeie exatamente para (minúsculas, sem acentos, sem espaços):
-   - `curriculo-lais-barroso-pt.pdf`
-   - `curriculo-lais-barroso-en.pdf`
-3. No `script.js`, mude `resumesAvailable: false` para `resumesAvailable: true`.
-4. Salve, recarregue o site e clique nos dois botões para conferir.
-5. Apague os arquivos `ADICIONAR-CURRICULO-*.txt` (já não são necessários).
+Todo o texto está em **`content.js`**, em dois blocos: `pt:` e `en:`.
+
+```javascript
+"hero.tagline": "Eu organizo ideias, processos e dados para fazer projetos avançarem.",
+```
+
+Troque só o que está entre aspas do lado direito — e **sempre edite a mesma
+chave nos dois idiomas**. Se você mudar só o português, o inglês continua
+mostrando o texto antigo.
+
+Para descobrir a chave de um texto: clique com o botão direito nele no
+navegador → **Inspecionar** → procure `data-i18n="..."`.
+
+O idioma escolhido fica salvo no navegador de quem visita.
+
+> ⚠️ Mantenha as vírgulas e aspas no lugar. Se o site parar de trocar de idioma,
+> aperte `F12`, abra a aba **Console** e veja qual linha está reclamando.
 
 ---
 
-## 6. Como editar os textos
+## 7. Como editar os projetos
 
-**Todos os textos visíveis do site ficam no `script.js`**, na seção
-"02. TRADUÇÕES PT / EN". O `index.html` guarda a estrutura; o texto vem
-das traduções.
-
-Cada trecho do site tem uma "chave". Exemplo:
+Cada projeto é um bloco na lista `PROJECTS`, no fim de **`content.js`**:
 
 ```javascript
-"goal.title": "Objetivo profissional",
-```
-
-Para mudar o título dessa seção, troque o texto do lado direito:
-
-```javascript
-"goal.title": "Meu próximo passo",
-```
-
-**Sempre edite a mesma chave nos dois blocos**: primeiro no bloco `pt:`,
-depois no bloco `en:`. Se esquecer o inglês, o site mostra a versão em
-português como reserva — não quebra, mas fica inconsistente.
-
-### Como achar a chave de um texto
-
-1. Abra o site no navegador.
-2. Clique com o botão direito sobre o texto → **Inspecionar**.
-3. Procure o atributo `data-i18n="..."` — o que está entre aspas é a chave.
-4. Procure essa mesma chave no `script.js` com `Ctrl + F`.
-
----
-
-## 7. Como editar as traduções
-
-O site inteiro existe em duas versões, guardadas lado a lado no `script.js`:
-
-```javascript
-var translations = {
-  pt: {
-    "nav.about": "Sobre",
-    ...
-  },
-  en: {
-    "nav.about": "About",
-    ...
-  }
-};
-```
-
-Regras práticas:
-
-- **Toda chave que existe em `pt` precisa existir em `en`** (e vice-versa).
-- Não traduza ao pé da letra. O texto em inglês foi escrito para soar
-  natural para recrutadores internacionais, não como tradução literal.
-- Nomes de instituições ficam como estão: `Fundação Getulio Vargas — FGV`.
-- Para trocar o idioma que abre por padrão, mude no `script.js`:
-  `var DEFAULT_LANG = "pt";`
-
-O idioma escolhido pela pessoa fica salvo no navegador (`localStorage`),
-então quem visita em inglês continua em inglês na próxima visita.
-
----
-
-## 8. Como atualizar os cases
-
-Os três cases seguem uma estrutura fixa e já têm textos profissionais
-escritos. O que falta são as informações e os números reais, marcados com
-chaves terminadas em `Ph`.
-
-| Case | Chaves no `script.js` |
-|---|---|
-| 1 — Estruturação operacional | `cases.1.contextPh`, `cases.1.problemPh`, `cases.1.toolsPh`, `cases.1.resultPh`, `cases.1.metricPh` |
-| 2 — Posicionamento e crescimento do COI | `cases.2.contextPh`, `cases.2.objectivePh`, `cases.2.strategyPh`, `cases.2.channelsPh`, `cases.2.productsPh`, `cases.2.resultPh`, `cases.2.learningPh` |
-| 3 — Automações e IA | `cases.3.previousPh`, `cases.3.problemPh`, `cases.3.solutionPh`, `cases.3.toolsPh`, `cases.3.timePh`, `cases.3.impactPh`, `cases.3.learningPh` |
-
-**Exemplo.** Antes:
-
-```javascript
-"cases.1.toolsPh": "[ADICIONAR FERRAMENTAS UTILIZADAS]",
-```
-
-Depois (versão `pt`):
-
-```javascript
-"cases.1.toolsPh": "Google Sheets, Google Apps Script e Notion.",
-```
-
-E a mesma chave no bloco `en`:
-
-```javascript
-"cases.1.toolsPh": "Google Sheets, Google Apps Script and Notion.",
-```
-
-### Como tirar a aparência de "campo pendente"
-
-Enquanto o texto está entre colchetes, ele aparece na caixinha vinho
-tracejada. Depois de preencher com informação real, remova o destaque:
-no `index.html`, ache aquela linha e troque
-
-```html
-<p class="placeholder-box" data-i18n="cases.1.toolsPh">
-```
-
-por
-
-```html
-<p data-i18n="cases.1.toolsPh">
-```
-
-### Como adicionar um projeto na seção "Projetos"
-
-No `index.html`, ache a seção `id="projetos"`. No fim da lista de cartões há
-um bloco comentado, pronto para copiar — basta remover as marcas `<!--` e
-`-->` e preencher. Diferente do resto do site, você pode escrever o texto
-direto no HTML (sem `data-i18n`) se não quiser criar a versão em inglês.
-
-### Como adicionar um quarto case
-
-No `index.html`, copie um bloco inteiro `<article class="case-card"> ... </article>`,
-cole logo abaixo, troque `case-3-title` por `case-4-title` e troque todas as
-chaves `cases.3.` por `cases.4.`. Depois crie essas chaves nos dois blocos de
-tradução do `script.js`.
-
----
-
-## 9. Como alterar as cores
-
-Abra o **`styles.css`**. Tudo está no começo do arquivo, no bloco `:root`:
-
-```css
-:root {
-  /* PERSONALIZAÇÃO: cor principal do site (vinho profundo). */
-  --wine:        #5E1A2E;   /* cor de destaque: botões, títulos, links */
-  --wine-dark:   #45111F;   /* versão mais escura, usada ao passar o mouse */
-  --wine-soft:   #F4EBED;   /* fundo bem claro das caixinhas de destaque */
-
-  --bg:          #FCFBFA;   /* fundo geral */
-  --bg-alt:      #F5F2EF;   /* fundo das seções alternadas */
-  --surface:     #FFFFFF;   /* fundo dos cartões */
-  --border:      #E4DEDA;   /* linhas e bordas */
-
-  --text:        #1B1719;   /* texto principal */
-  --text-muted:  #5F5754;   /* texto secundário */
+{
+  id: "coi-mapa",          // não repetir, é o endereço do case (#p/coi-mapa)
+  year: "2026",
+  size: "tall",            // wide | tall | regular | full  → tamanho na grade
+  image: "coi-mapa.jpg",   // imagem da prévia
+  gallery: ["coi-mapa.jpg"],
+  tools: ["Meta Ads", "Landing pages"],
+  pt: { category, title, challenge, role, context, process[], deliverables[], learnings[], note },
+  en: { ... }
 }
 ```
 
-Mudando `--wine` você muda o destaque do site inteiro de uma vez.
+- **`size`** controla a composição: `wide` ocupa 2/3, `tall` é vertical,
+  `regular` é 1/3 e `full` atravessa a página inteira.
+- **`note`** é a observação em itálico no fim do case — use para deixar claro
+  o que você **não** fez (ex.: "o desenvolvimento da plataforma é do time de
+  tecnologia") ou para avisar que os visuais são demonstrativos.
+- Para o projeto aparecer completo, ele precisa estar como `published: true`
+  em `content-status.js`.
 
-Se trocar a cor principal, atualize também dois outros lugares:
-
-1. `index.html` → `<meta name="theme-color" content="#5E1A2E">`
-2. `assets/favicon/favicon.svg` → `fill="#5E1A2E"` (e gere o `.ico` de novo,
-   ver [seção 11](#11-como-gerar-o-favicon-ico))
-
-> **Cuidado com o contraste.** Se escolher uma cor mais clara, o texto branco
-> em cima dela pode ficar difícil de ler. Confira em
-> <https://webaim.org/resources/contrastchecker/> — a relação precisa ser de
-> pelo menos **4,5:1**.
-
----
-
-## 10. Como adicionar uma foto profissional
-
-O passo a passo completo está em **`assets/imagens/README.md`**.
-
-Resumo: salve a foto quadrada na pasta `assets/imagens/`, cole a tag `<img>`
-indicada no Hero do `index.html` e cole o estilo `.hero-photo` no final do
-`styles.css`.
+Cada case abre num painel lateral e tem endereço próprio
+(`.../#p/coi-mapa`) — dá para mandar o link direto de um projeto numa
+candidatura.
 
 ---
 
-## 11. Como gerar o favicon `.ico`
+## 8. Como mudar cores e fontes
 
-O favicon principal é o **`favicon.svg`** — é ele que os navegadores modernos
-usam, e ele já está pronto e configurado. O `favicon.ico` serve apenas como
-reserva para navegadores antigos, e também já vem incluído.
+No começo de **`styles.css`**:
 
-Se você mudar a cor ou as iniciais e quiser gerar um `.ico` novo:
-
-**Opção A — site (mais simples)**
-Acesse <https://realfavicongenerator.net/> ou <https://favicon.io/>,
-envie o `favicon.svg`, baixe o resultado e substitua o `favicon.ico`
-dentro de `assets/favicon/`.
-
-**Opção B — sem sair do computador**
-Abra o `favicon.svg` no navegador, tire um print quadrado, salve como PNG
-de 32 × 32 pixels e converta em <https://convertio.co/pt/png-ico/>.
-
-O nome do arquivo precisa continuar sendo exatamente `favicon.ico`.
-
----
-
-## 12. Como testar antes de publicar
-
-Percorra esta lista com o site aberto no navegador:
-
-**Conteúdo**
-- [ ] Nenhuma caixinha vinho `[ADICIONAR ...]` sobrou nas partes que já
-      deveriam estar preenchidas
-- [ ] Datas de experiência e formação preenchidas
-- [ ] Nenhum número ou resultado que não seja real
-
-**Idiomas**
-- [ ] Clicar em **EN** troca *todos* os textos, sem recarregar a página
-- [ ] Clicar em **PT** volta tudo ao normal
-- [ ] Fechar e reabrir o navegador mantém o último idioma escolhido
-- [ ] Nenhum texto ficou em português dentro da versão em inglês
-
-**Botões e links**
-- [ ] "Ver cases" e "Entrar em contato" rolam para a seção certa
-- [ ] LinkedIn abre em uma aba nova
-- [ ] "Enviar e-mail" abre o programa de e-mail
-- [ ] Os dois botões de currículo baixam o PDF certo (ou mostram o aviso)
-
-**Celular** — aperte `F12`, clique no ícone de celular (`Ctrl + Shift + M`)
-e teste em pelo menos três larguras: 320px, 390px e 768px.
-- [ ] O menu de três traços abre e fecha
-- [ ] Clicar em um item do menu fecha o menu e vai para a seção
-- [ ] O seletor PT/EN continua clicável
-- [ ] Nenhum texto vaza para fora da tela e nada rola para o lado
-
-**Erros**
-- [ ] Aperte `F12` → aba **Console**. Não pode haver nenhuma linha vermelha.
-
-**Teclado e acessibilidade**
-- [ ] Aperte `Tab` várias vezes: aparece um contorno vinho em cada elemento
-- [ ] O primeiro `Tab` na página revela o atalho "Pular para o conteúdo principal"
-
----
-
-## 13. Como publicar no GitHub Pages
-
-O repositório já está criado e enviado. Para ligar (ou reconferir) a
-publicação:
-
-1. Acesse o repositório no GitHub.
-2. Clique em **Settings** (Configurações).
-3. No menu da esquerda, clique em **Pages**.
-4. Em **Source**, escolha **Deploy from a branch**.
-5. Em **Branch**, escolha `main` e a pasta `/ (root)`. Clique em **Save**.
-6. Espere de 1 a 3 minutos e recarregue a página. O endereço do site aparece
-   no topo, no formato:
-
-   ```
-   https://SEU-USUARIO.github.io/lais-barroso-portfolio/
-   ```
-
-7. A URL já está preenchida no `index.html` (`canonical` e `og:url`).
-   Só precisa mexer nela se um dia você usar um domínio próprio.
-
-Pelo terminal, o mesmo resultado sai com:
-
-```bash
-gh api -X POST repos/SEU-USUARIO/lais-barroso-portfolio/pages \
-  -f "source[branch]=main" -f "source[path]=/"
+```css
+--paper:     #F4F0E8;   /* fundo */
+--surface:   #E9E1D5;   /* superfícies e polaroids */
+--ink:       #211D1C;   /* texto */
+--wine:      #681F36;   /* cor principal */
+--wine-deep: #40101F;   /* hover */
+--clay:      #B86E6E;   /* SÓ decorativo: fitas, carimbos, filetes */
+--clay-text: #A14F4F;   /* quando o tom precisa virar texto */
 ```
 
+**Por que existem dois tons de rosa:** `--clay` tem contraste 3,4:1, abaixo do
+mínimo de acessibilidade (4,5:1). Ele serve para decoração. Quando a cor precisa
+virar palavra legível, use `--clay-text`. Se trocar as cores, confira em
+<https://webaim.org/resources/contrastchecker/>.
+
+Trocando `--wine` você muda o destaque do site inteiro. Atualize também a linha
+`<meta name="theme-color">` no `index.html` e a cor do `favicon.svg`.
+
+**Fontes:** Instrument Serif (títulos) e Manrope (texto), ambas dentro de
+`assets/fonts/`. São licenciadas em SIL OFL, o que permite distribuir junto com
+o site. Não apague essa pasta.
+
 ---
 
-## 14. Como atualizar o site depois de publicado
+## 9. Os adesivos
 
-Sempre que editar qualquer arquivo:
+Os elementos de colagem são feitos em CSS e SVG — **nenhum é imagem**, então
+não pesam e ficam nítidos em qualquer tela. Cada um mora numa seção específica:
+
+| Adesivo | Onde |
+|---|---|
+| Etiqueta de bagagem "BH, Brazil" | Hero |
+| Post-it "strategy → execution" | Hero |
+| Seta "sempre ligando os pontos" | Hero |
+| Selos marketing / operations / data / AI | Hero |
+| Pasta "ongoing projects" e funil | Projetos |
+| Bloquinho de checklist | Como eu trabalho |
+| Mini planilha e janela de dashboard | Skills |
+| Carimbo de passaporte "PT · EN · ES · FR" | Idiomas |
+| Mini mapa, "curious by nature", "from science to business" | Quem é Laís |
+| Fitas adesivas | Segurando as fotos |
+
+O título "QUEM É LAÍS" é montado letra por letra em CSS, cada uma com fundo,
+fonte e inclinação diferentes, com um balanço leve. Leitores de tela leem a
+frase inteira normalmente, não letra por letra.
+
+Todos param de se mexer se a pessoa tiver "reduzir movimento" ligado no sistema.
+
+---
+
+## 10. Como testar
+
+- [ ] Trocar PT/EN muda **tudo**, sem recarregar a página
+- [ ] Fechar e reabrir o navegador mantém o idioma escolhido
+- [ ] Clicar num projeto abre o painel; `Esc` fecha; o link `#p/...` funciona sozinho
+- [ ] Nenhum `[ADICIONAR]` visível quando aberto pelo endereço publicado
+- [ ] `F12` → aba **Console**: nenhuma linha vermelha
+- [ ] `F12` → ícone de celular (`Ctrl+Shift+M`): testar em 390, 768, 1280 e 1440
+- [ ] Nada corta nem rola para o lado em nenhuma largura
+- [ ] `Tab` percorre a página e mostra contorno vinho em tudo que é clicável
+
+---
+
+## 11. Como publicar
+
+O site fica em <https://lais-b.github.io/lais-barroso-portfolio/>, servido pela
+branch `main`.
 
 ```bash
-cd caminho/para/lais-barroso-portfolio
+cd ~/projetos/lais-barroso-portfolio
 git add .
-git commit -m "descreva em poucas palavras o que mudou"
+git commit -m "descreva o que mudou"
 git push
 ```
 
-O GitHub Pages republica sozinho em 1 a 3 minutos.
+Republica sozinho em 1 a 3 minutos. Se não mudar na hora, `Ctrl + F5`.
 
-> Se o site não mudar na hora, aperte `Ctrl + F5` para forçar o navegador a
-> baixar a versão nova em vez de usar a que ele guardou.
-
-Preferindo não usar o terminal: no GitHub, abra o arquivo, clique no lápis
-(**Edit this file**), edite, role até o fim e clique em **Commit changes**.
+> A identidade do git neste repositório já está configurada para a conta pessoal
+> `lais-b`. Não mexa nela: o git global desta máquina aponta para a conta do COI,
+> e os commits apareceriam como contribuição da empresa.
 
 ---
 
-## 15. Como usar um domínio próprio no futuro
+## 12. Domínio próprio
 
-Se um dia registrar um domínio (por exemplo `laisbarroso.com`):
+Se um dia registrar um domínio:
 
-1. No painel de quem vendeu o domínio, crie os registros DNS:
-
-   | Tipo | Nome | Valor |
-   |---|---|---|
-   | A | `@` | `185.199.108.153` |
-   | A | `@` | `185.199.109.153` |
-   | A | `@` | `185.199.110.153` |
-   | A | `@` | `185.199.111.153` |
-   | CNAME | `www` | `SEU-USUARIO.github.io` |
-
-2. No GitHub: **Settings → Pages → Custom domain**, digite o domínio e
-   salve. Isso cria automaticamente um arquivo `CNAME` no repositório.
-
-3. Espere o DNS propagar (de alguns minutos a 24 horas) e marque
-   **Enforce HTTPS**.
-
-4. Atualize `PREENCHER_URL_DO_SITE` no `index.html` para o novo endereço.
-
----
-
-## Tecnologia
-
-HTML semântico, CSS puro e JavaScript sem bibliotecas.
-Sem React, Vue, Tailwind, Bootstrap, build ou dependências externas.
-Nenhuma requisição a servidores de terceiros — nem fontes externas.
-
-Acessibilidade: estrutura semântica, hierarquia correta de títulos,
-link para pular ao conteúdo, foco visível, navegação por teclado,
-`aria-label` onde necessário e respeito a `prefers-reduced-motion`.
+1. No painel do domínio, crie quatro registros `A` para `@` apontando para
+   `185.199.108.153`, `185.199.109.153`, `185.199.110.153` e `185.199.111.153`,
+   e um `CNAME` de `www` para `lais-b.github.io`.
+2. No GitHub: **Settings → Pages → Custom domain**, digite o domínio e salve.
+3. Espere o DNS propagar e marque **Enforce HTTPS**.
+4. Troque o endereço em `index.html` (`canonical`, `og:url` e `og:image`).
