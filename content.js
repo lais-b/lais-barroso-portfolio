@@ -484,7 +484,7 @@ var SKILL_PILLARS = [
 
 var TOOLS = [
   "Google Sheets", "Google Apps Script", "Excel", "PowerPoint", "Google Workspace",
-  "Grafana", "Power BI", "Notion", "Meta Ads", "Google Ads",
+  "Notion", "Meta Ads", "Google Ads",
   "Claude", "Claude Code", "ChatGPT", "GitHub", "CRM & WhatsApp"
 ];
 
@@ -586,7 +586,7 @@ var PROJECTS = [
     size: "wide",
     image: "",
     gallery: [],
-    tools: ["Google Sheets", "Apps Script", "Excel", "Grafana", "Google Workspace"],
+    tools: ["Google Sheets", "Apps Script", "Excel", "Google Workspace"],
     pt: {
       category: "Business Operations",
       results: [
