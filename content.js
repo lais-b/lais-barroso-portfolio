@@ -71,7 +71,9 @@ var CONTENT = {
     "btn.linkedin": "LinkedIn",
     "btn.email": "Enviar e-mail",
     "btn.whatsapp": "WhatsApp",
-    "btn.viewProject": "Ver projeto",
+    /* mensagem que já vem escrita ao abrir a conversa */
+    "wa.text": "Oi, Laís, tudo bem? Vim pelo seu portfólio e gostaria de conversar.",
+    "btn.viewProject": "Abrir case completo",
     "btn.live": "Ver o produto no ar",
     "btn.close": "Fechar",
 
@@ -85,8 +87,9 @@ var CONTENT = {
     "manifesto.avail2": "Remoto para empresas internacionais",
     "manifesto.avail3": "Híbrido em Belo Horizonte",
     "manifesto.avail4": "Híbrido no Rio de Janeiro",
-    "manifesto.levelTitle": "Nível",
-    "manifesto.level": "Trainee · Analista júnior · Analista pleno",
+    /* a senioridade quem define é a empresa: aqui vai a área, não o nível */
+    "manifesto.levelTitle": "Oportunidades",
+    "manifesto.level": "Marketing Operations, Growth, CRM e Business Operations",
 
     /* Selected Work */
     "work.eyebrow": "selected work",
@@ -124,7 +127,7 @@ var CONTENT = {
     "exp.betpass.role": "Business & Administrative Operations",
     "exp.betpass.company": "Betpass",
     "exp.betpass.period": "Maio de 2024 até agora",
-    "exp.betpass.context": "Empresa de tecnologia e gestão de afiliados. Começei nas rotinas financeiras e fui abrindo frente: eventos, logística, contratos, indicadores e até recrutamento. É o tipo de operação em que quem resolve acaba herdando o próximo problema.",
+    "exp.betpass.context": "Empresa de tecnologia e gestão de afiliados. Comecei nas rotinas financeiras e fui abrindo frente: eventos, logística, contratos, indicadores e até recrutamento. É o tipo de operação em que quem resolve acaba herdando o próximo problema.",
     "exp.betpass.b1": "Rotinas administrativas, financeiras e operacionais do dia a dia",
     "exp.betpass.b2": "Contas a pagar e receber, conciliações entre contas e plataformas",
     "exp.betpass.b3": "Acompanhamento de entradas, saídas e repasses",
@@ -225,7 +228,7 @@ var CONTENT = {
 
     /* Footer */
     "footer.tag": "Marketing Operations, Growth & Business Operations",
-    "footer.built": "Feito à mão em HTML, CSS e JavaScript.",
+    "footer.built": "Dirigido por mim e construído com IA, em HTML, CSS e JavaScript.",
     "footer.top": "Voltar ao topo"
   },
 
@@ -292,7 +295,9 @@ var CONTENT = {
     "btn.linkedin": "LinkedIn",
     "btn.email": "Send an email",
     "btn.whatsapp": "WhatsApp",
-    "btn.viewProject": "View project",
+    /* message pre written when the chat opens */
+    "wa.text": "Hi Laís, how are you? I came from your portfolio and I would like to talk.",
+    "btn.viewProject": "Open full case",
     "btn.live": "See it live",
     "btn.close": "Close",
 
@@ -306,8 +311,8 @@ var CONTENT = {
     "manifesto.avail2": "Remote for international companies",
     "manifesto.avail3": "Hybrid in Belo Horizonte",
     "manifesto.avail4": "Hybrid in Rio de Janeiro",
-    "manifesto.levelTitle": "Level",
-    "manifesto.level": "Trainee · Junior analyst · Mid-level analyst",
+    "manifesto.levelTitle": "Opportunities",
+    "manifesto.level": "Marketing Operations, Growth, CRM and Business Operations",
 
     /* Selected Work */
     "work.eyebrow": "selected work",
@@ -446,7 +451,7 @@ var CONTENT = {
 
     /* Footer */
     "footer.tag": "Marketing Operations, Growth & Business Operations",
-    "footer.built": "Hand-built in HTML, CSS and JavaScript.",
+    "footer.built": "Directed by me and built with AI, in HTML, CSS and JavaScript.",
     "footer.top": "Back to top"
   }
 };
@@ -796,7 +801,7 @@ var PROJECTS = [
     pt: {
       category: "Automação · Eficiência operacional",
       results: [
-        "A conferência repetitiva saiu da mao",
+        "A conferência repetitiva saiu da mão",
         "Erro de digitação e de cópia praticamente sumiu das etapas automatizadas",
         "Inconsistência passou a aparecer sozinha, por alerta, em vez de ser descoberta depois"
       ],
