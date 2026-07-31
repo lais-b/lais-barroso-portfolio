@@ -43,7 +43,7 @@ var CONTENT_STATUS = {
      A Pluris Mídia entra na linha do tempo sem período enquanto
      este campo estiver vazio (o cargo e a atuação aparecem normalmente).
      ----------------------------------------------------------------- */
-  plurisPeriod: "Mai. 2023 a Mai. 2024",
+  plurisPeriod: "2023-2024",
 
   /* -----------------------------------------------------------------
      4. MÉTRICAS VALIDADAS
