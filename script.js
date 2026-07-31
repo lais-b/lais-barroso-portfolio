@@ -428,7 +428,7 @@
     for (var i = 0; i < text.length; i++) {
       var ch = text.charAt(i);
       if (ch === " ") { wrap.appendChild(el("span", "rl sp")); continue; }
-      var s = el("span", "rl " + variants[(i * 3 + 1) % variants.length], ch);
+      var s = el("span", "rl " + variants[(i * 5 + 2) % variants.length], ch);
       /* rotação e ritmo determinísticos: mesma composição em toda visita */
       var rot = (((i * 37) % 9) - 4) * 0.9;
       s.style.setProperty("--r", rot.toFixed(2) + "deg");
