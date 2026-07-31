@@ -748,10 +748,11 @@ a{color:inherit}
    em volta e ar dos dois lados. Assim ela lê como imagem escolhida,
    e não como foto pessoal encostada no texto.
    =================================================================== */
-.hero-photo{top:auto;right:var(--pad);transform:none;
-  bottom:calc(clamp(62px,9vh,106px) + clamp(20px,4vh,44px));
-  height:min(40vh,360px);aspect-ratio:3/4;width:auto;
+.hero-photo{top:50%;right:var(--pad);transform:translateY(-52%);bottom:auto;
+  height:min(62vh,560px);aspect-ratio:3/4;width:auto;
   clip-path:none;padding:13px;background:var(--cream);opacity:1}
+/* com a prancha grande ao lado, o nome ganha um teto para não invadi-la */
+@media (min-width:901px){ .hero-name{font-size:clamp(48px,10.4vw,152px)} }
 /* o topo cresce em vez de esconder a primeira linha atrás do cabeçalho */
 .hero{padding-top:clamp(88px,12vh,124px)}
 .hero-photo::before{content:"";position:absolute;inset:-18px;pointer-events:none;
