@@ -119,9 +119,7 @@ Cada projeto pode ter um botão "Ver o produto no ar". Enquanto o campo estiver
 vazio, o botão não aparece.
 
 ### Fotos
-- [ ] `og-image.jpg` (1200×630) para o link ficar bonito no LinkedIn e WhatsApp
-
-As três fotos pessoais já estão no site.
+Todas prontas. As três fotos pessoais e a imagem de compartilhamento já estão no site.
 
 ---
 
@@ -135,7 +133,7 @@ Coloque tudo em **`assets/imagens/`** com **exatamente** estes nomes
 | `lais-hero.jpg` | Retrato principal do topo | ✅ no site (Salvador, recortada 4:5) |
 | `lais-viagem.jpg` | Polaroid do topo | ✅ no site (Machu Picchu, quadrada) |
 | `lais-lagoa.jpg` | Polaroid da seção "Quem é Laís" | ✅ no site (recortada 4:5) |
-| `og-image.jpg` | Pré-visualização no LinkedIn e WhatsApp | ⬜ **falta**, 1200×630 exatos |
+| `og-image.jpg` | Pré-visualização no LinkedIn e WhatsApp | ✅ no site (1200×630) |
 
 Os projetos **não usam imagem**: cada um é um cartão tipográfico, com filete
 vinho, categoria, título em serifa e ferramentas. Foi decisão de projeto, não
