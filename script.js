@@ -551,6 +551,14 @@
     try { localStorage.setItem(KEY, lang); } catch (e) {}
   }
 
+  /* os botões PT / EN: sem isto o site fica preso no português */
+  var langBtns = document.querySelectorAll(".lang-b");
+  for (var lbi = 0; lbi < langBtns.length; lbi++) {
+    langBtns[lbi].addEventListener("click", function () {
+      applyLang(this.getAttribute("data-lang"));
+    });
+  }
+
   /* =================================================================
      MENU
      ================================================================= */
