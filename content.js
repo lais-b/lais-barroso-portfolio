@@ -124,7 +124,7 @@ var CONTENT = {
     "exp.betpass.role": "Business & Administrative Operations",
     "exp.betpass.company": "Betpass",
     "exp.betpass.period": "Maio de 2024 até agora",
-    "exp.betpass.context": "Empresa de tecnologia e gestão de afiliados, com muitos parceiros, fluxos financeiros paralelos, contratos e indicadores para acompanhar ao mesmo tempo.",
+    "exp.betpass.context": "Empresa de tecnologia e gestão de afiliados. Começei nas rotinas financeiras e fui abrindo frente: eventos, logística, contratos, indicadores e até recrutamento. É o tipo de operação em que quem resolve acaba herdando o próximo problema.",
     "exp.betpass.b1": "Rotinas administrativas, financeiras e operacionais do dia a dia",
     "exp.betpass.b2": "Contas a pagar e receber, conciliações entre contas e plataformas",
     "exp.betpass.b3": "Acompanhamento de entradas, saídas e repasses",
@@ -134,6 +134,9 @@ var CONTENT = {
     "exp.betpass.b7": "Gestão de contratos, renovações e documentação",
     "exp.betpass.b8": "Interface com lideranças, parceiros e outras áreas",
     "exp.betpass.b9": "Automações em Google Sheets e Apps Script",
+    "exp.betpass.b10": "Operação de eventos e torneios de pôquer, do planejamento à execução",
+    "exp.betpass.b11": "Montagem de estandes, logística, fornecedores e equipe em campo",
+    "exp.betpass.b12": "Apoio em recrutamento: triagem de currículos com IA e entrevistas",
 
     "exp.coi.role": "Growth & Marketing Lead",
     "exp.coi.roleNote": "Projeto paralelo",
@@ -342,7 +345,7 @@ var CONTENT = {
     "exp.betpass.role": "Business & Administrative Operations",
     "exp.betpass.company": "Betpass",
     "exp.betpass.period": "May 2024 to now",
-    "exp.betpass.context": "A technology and affiliate-management company, with many partners, parallel financial flows, contracts and indicators to keep track of at the same time.",
+    "exp.betpass.context": "A technology and affiliate-management company. I started in the financial routines and kept picking up new ground: events, logistics, contracts, indicators, even hiring. It is the kind of operation where whoever solves something inherits the next problem.",
     "exp.betpass.b1": "Day-to-day administrative, financial and operational routines",
     "exp.betpass.b2": "Accounts payable and receivable, reconciliation across accounts and platforms",
     "exp.betpass.b3": "Tracking of inflows, outflows and partner payouts",
@@ -352,6 +355,9 @@ var CONTENT = {
     "exp.betpass.b7": "Contract management, renewals and record keeping",
     "exp.betpass.b8": "Working directly with leadership, partners and other teams",
     "exp.betpass.b9": "Automation in Google Sheets and Apps Script",
+    "exp.betpass.b10": "Running events and poker tournaments, from planning through to the floor",
+    "exp.betpass.b11": "Booth build-out, logistics, suppliers and on-site crew",
+    "exp.betpass.b12": "Hiring support: AI-assisted CV screening and interviews",
 
     "exp.coi.role": "Growth & Marketing Lead",
     "exp.coi.roleNote": "Side project",
@@ -806,7 +812,7 @@ var PROJECTS = [
       ],
       title: "Estruturação operacional na Betpass",
       challenge: "Rotinas financeiras e administrativas que passavam por vários sistemas, várias pessoas e várias conferências, e viviam na memória de quem fazia.",
-      role: "Mapeamento das rotinas, POPs, padronização de relatórios, indicadores, dashboards e automações.",
+      role: "Mapeamento das rotinas, POPs, padronização de relatórios, indicadores, dashboards e automações. Com o tempo, também a operação de eventos e o apoio ao recrutamento.",
       context: "Empresa de tecnologia e gestão de afiliados, com muitos parceiros e fluxos financeiros acontecendo em paralelo. Cada fechamento dependia de alguém lembrar a ordem certa das conferências, o que tornava o trabalho difícil de prever e quase impossível de delegar.",
       process: [
         "Segui cada rotina de ponta a ponta, do jeito que ela realmente acontecia",
@@ -822,7 +828,9 @@ var PROJECTS = [
         "Indicadores e dashboards de acompanhamento",
         "Conciliações entre contas e plataformas",
         "Automações de planilha para conferência e consolidação",
-        "Apoio na construção de DRE, DFC e balanço patrimonial"
+        "Apoio na construção de DRE, DFC e balanço patrimonial",
+        "Operação de eventos e torneios: planejamento, logística, estandes, fornecedores e equipe",
+        "Triagem de currículos com apoio de IA e condução de entrevistas"
       ],
       learnings: [
         "Documentar não é burocracia: é o que permite alguém sair de férias",
@@ -840,7 +848,7 @@ var PROJECTS = [
       ],
       title: "Operational restructuring at Betpass",
       challenge: "Financial and administrative routines spread across several systems, several people and several manual checks, living in the memory of whoever ran them.",
-      role: "Mapping the routines, writing SOPs, standardising reports, defining indicators and dashboards, and automating the repetitive parts.",
+      role: "Mapping the routines, writing SOPs, standardising reports, defining indicators and dashboards, and automating the repetitive parts. Later, running events and supporting hiring as well.",
       context: "A technology and affiliate-management company with many partners and financial flows running in parallel. Every month-end depended on someone remembering the right order of checks, which made the work hard to predict and nearly impossible to hand over.",
       process: [
         "Followed each routine end to end, the way it actually ran",
@@ -856,11 +864,14 @@ var PROJECTS = [
         "Tracking indicators and dashboards",
         "Reconciliation across accounts and platforms",
         "Spreadsheet automation for checking and consolidation",
-        "Support on income statement, cash flow statement and balance sheet"
+        "Support on income statement, cash flow statement and balance sheet",
+        "Event and tournament operations: planning, logistics, booths, suppliers and crew",
+        "AI-assisted CV screening and interviewing"
       ],
       learnings: [
         "Documentation isn't bureaucracy. It is what lets someone take a holiday",
-        "Automating before understanding the real flow only makes the mistake faster"
+        "Automating before understanding the real flow only makes the mistake faster",
+        "An event is operations with a deadline you cannot move: either the checklist exists beforehand, or it never does"
       ],
       note: "No financial figures, partner names or internal information are shown. The visuals on this page are demonstrative, built with fictional data."
     }

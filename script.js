@@ -334,7 +334,7 @@
   }
 
   var XP = [
-    { key: "betpass", bullets: 9, period: true },
+    { key: "betpass", bullets: 12, period: true },
     { key: "coi",     bullets: 9, period: true, note: true },
     { key: "pluris",  bullets: 4, period: false }
   ];
