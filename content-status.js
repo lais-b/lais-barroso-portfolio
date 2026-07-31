@@ -20,7 +20,7 @@ var CONTENT_STATUS = {
      Enquanto vazio, os botões de e-mail e LinkedIn não são exibidos.
      ----------------------------------------------------------------- */
   professionalEmail: "lacrubarroso@gmail.com",
-  linkedin: "",                   // PREENCHER: ex.: "https://www.linkedin.com/in/lais-barroso/"
+  linkedin: "https://www.linkedin.com/in/lais-barroso-/",
 
   /* WhatsApp: só dígitos, com código do país (55) e DDD.
      Vazio = o botão não aparece. */
