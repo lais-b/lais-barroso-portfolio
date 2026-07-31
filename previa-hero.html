@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Prévia: três direções para a foto do topo</title>
+<link rel="stylesheet" href="styles.css">
+<style>
+/* ===================================================================
+   PÁGINA DE PRÉVIA — não faz parte do site.
+   Serve só para comparar três tratamentos da foto do topo.
+   =================================================================== */
+body{background:var(--cream)}
+.demo-head{padding:clamp(28px,5vw,64px) var(--pad) 10px;max-width:var(--max);margin-inline:auto}
+.demo-head h1{font-family:var(--display);font-weight:800;text-transform:uppercase;
+  font-size:clamp(28px,5vw,56px);letter-spacing:-.03em;line-height:.9;margin-bottom:14px}
+.demo-head p{font-family:var(--serif);font-size:clamp(19px,2.2vw,28px);max-width:52ch}
+.demo-label{position:sticky;top:0;z-index:20;background:var(--ink);color:var(--cream);
+  padding:14px var(--pad);display:flex;gap:18px;align-items:baseline;flex-wrap:wrap}
+.demo-label b{font-family:var(--display);font-weight:800;text-transform:uppercase;
+  letter-spacing:.2em;font-size:12px}
+.demo-label span{font-family:var(--serif);font-size:18px;opacity:.86}
+.demo .hero{min-height:86vh;padding-bottom:clamp(96px,14vh,150px)}
+
+/* -------------------------------------------------------------------
+   A. RECORTE EDITORIAL: a tipografia corta a foto
+   O nome atravessa o retrato e vira parte da imagem, não legenda dela.
+   ------------------------------------------------------------------- */
+.v-a .hero-photo{width:clamp(320px,54vw,860px);clip-path:polygon(8% 0,100% 0,100% 100%,0 100%)}
+.v-a .duo img{object-position:58% 10%;filter:grayscale(1) contrast(1.22) brightness(1.04)}
+.v-a .hero-inner{max-width:none;padding-right:0}
+.v-a .hero-name{font-size:clamp(54px,12.2vw,178px);letter-spacing:-.055em;
+  mix-blend-mode:difference;color:var(--warm-white);position:relative;z-index:6}
+.v-a .hero-n2{color:var(--warm-white);margin-left:clamp(30px,9vw,150px)}
+.v-a .hero-text{max-width:min(var(--max),100%)}
+.v-a .hero-tag{max-width:20ch}
+
+/* -------------------------------------------------------------------
+   B. A FOTO COMO PRANCHA: campo de cor e moldura de ponto cruz
+   O retrato ganha margem, passe-partout e costura em volta. Vira
+   prancha de revista, não foto de perfil.
+   ------------------------------------------------------------------- */
+.v-b{padding-bottom:clamp(120px,16vh,190px)}
+.v-b .hero-photo{top:50%;right:var(--pad);transform:translateY(-54%);
+  width:clamp(230px,27vw,390px);height:min(62vh,560px);
+  clip-path:none;padding:13px;background:var(--cream)}
+.v-b .hero-photo::before{content:"";position:absolute;inset:-18px;pointer-events:none;
+  background-image:var(--stitch);background-size:18px 18px;opacity:.9;
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;mask-composite:exclude;padding:18px}
+.v-b .hero-photo .duo{--duo-dark:var(--forest);--duo-light:var(--peach)}
+.v-b .duo img{object-position:center 14%}
+.v-b .hero-text{max-width:min(58ch,58vw)}
+.v-b .hero-name{font-size:clamp(52px,10vw,152px)}
+
+/* -------------------------------------------------------------------
+   C. SANGRIA TOTAL: a foto é a cor da seção
+   O retrato ocupa a tela inteira em duotone fechado e deixa de ser
+   retrato: vira o clima e o fundo do topo.
+   ------------------------------------------------------------------- */
+.v-c .hero-photo{inset:0;width:100%;height:100%;clip-path:none}
+.v-c .duo img{object-position:74% 4%;filter:grayscale(1) contrast(1.32) brightness(.88)}
+.v-c .hero-photo::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(96deg,rgba(6,61,39,.97) 0%,rgba(6,61,39,.88) 38%,rgba(6,61,39,.34) 78%,rgba(6,61,39,.12) 100%)}
+.v-c .hero-name{font-size:clamp(58px,14vw,212px)}
+.v-c .hero-tag{max-width:19ch}
+
+@media (max-width:900px){
+  .v-a .hero-n2{margin-left:0}
+  .v-b .hero-photo{position:relative;top:auto;right:auto;transform:none;
+    width:min(72vw,320px);height:min(46vh,380px);margin:0 var(--pad) 26px auto}
+  .v-b .hero-text{max-width:none}
+}
+</style>
+</head>
+<body class="demo">
+
+<div class="demo-head">
+  <h1>Três direções para a foto do topo</h1>
+  <p>Mesma foto, mesmo texto, mesma paleta. Muda só o que o desenho faz com ela. Role a página e me diga a letra.</p>
+</div>
+
+<!-- ============================ HOJE ============================ -->
+<div class="demo-label"><b>Hoje</b><span>o retrato sangra pela direita, cortado na diagonal</span></div>
+<section class="hero">
+  <div class="hero-photo" aria-hidden="true">
+    <div class="duo duo-forest"><img src="assets/imagens/lais-hero.jpg" alt=""></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="hero-avail"><span class="dot" aria-hidden="true"></span><span>Disponível para novas oportunidades</span></p>
+      <h1 class="hero-name"><span class="hero-n1">Laís</span><span class="hero-n2">Barroso</span></h1>
+      <p class="hero-tag">Eu organizo ideias, processos e dados para fazer projetos avançarem.</p>
+      <div class="hero-cta">
+        <a class="btn btn-fill" href="#">Ver projetos</a>
+        <a class="btn btn-line" href="#">Falar comigo</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-band" aria-hidden="true">
+    <span>marketing</span><i></i><span>operations</span><i></i><span>data</span><i></i><span>AI</span><i></i><span>BH, Brazil</span>
+  </div>
+</section>
+
+<!-- ============================== A ============================== -->
+<div class="demo-label"><b>A · recorte editorial</b><span>o nome atravessa o retrato e vira parte da imagem</span></div>
+<section class="hero v-a">
+  <div class="hero-photo" aria-hidden="true">
+    <div class="duo duo-forest"><img src="assets/imagens/lais-hero.jpg" alt=""></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="hero-avail"><span class="dot" aria-hidden="true"></span><span>Disponível para novas oportunidades</span></p>
+      <h1 class="hero-name"><span class="hero-n1">Laís</span><span class="hero-n2">Barroso</span></h1>
+      <p class="hero-tag">Eu organizo ideias, processos e dados para fazer projetos avançarem.</p>
+      <div class="hero-cta">
+        <a class="btn btn-fill" href="#">Ver projetos</a>
+        <a class="btn btn-line" href="#">Falar comigo</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-band" aria-hidden="true">
+    <span>marketing</span><i></i><span>operations</span><i></i><span>data</span><i></i><span>AI</span><i></i><span>BH, Brazil</span>
+  </div>
+</section>
+
+<!-- ============================== B ============================== -->
+<div class="demo-label"><b>B · prancha com moldura</b><span>o retrato dentro do campo verde, com passe-partout e costura em volta</span></div>
+<section class="hero v-b">
+  <div class="hero-photo" aria-hidden="true">
+    <div class="duo duo-forest"><img src="assets/imagens/lais-hero.jpg" alt=""></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="hero-avail"><span class="dot" aria-hidden="true"></span><span>Disponível para novas oportunidades</span></p>
+      <h1 class="hero-name"><span class="hero-n1">Laís</span><span class="hero-n2">Barroso</span></h1>
+      <p class="hero-tag">Eu organizo ideias, processos e dados para fazer projetos avançarem.</p>
+      <div class="hero-cta">
+        <a class="btn btn-fill" href="#">Ver projetos</a>
+        <a class="btn btn-line" href="#">Falar comigo</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-band" aria-hidden="true">
+    <span>marketing</span><i></i><span>operations</span><i></i><span>data</span><i></i><span>AI</span><i></i><span>BH, Brazil</span>
+  </div>
+</section>
+
+<!-- ============================== C ============================== -->
+<div class="demo-label"><b>C · sangria total</b><span>a foto vira a cor da seção, não um retrato</span></div>
+<section class="hero v-c">
+  <div class="hero-photo" aria-hidden="true">
+    <div class="duo duo-forest"><img src="assets/imagens/lais-hero.jpg" alt=""></div>
+  </div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="hero-avail"><span class="dot" aria-hidden="true"></span><span>Disponível para novas oportunidades</span></p>
+      <h1 class="hero-name"><span class="hero-n1">Laís</span><span class="hero-n2">Barroso</span></h1>
+      <p class="hero-tag">Eu organizo ideias, processos e dados para fazer projetos avançarem.</p>
+      <div class="hero-cta">
+        <a class="btn btn-fill" href="#">Ver projetos</a>
+        <a class="btn btn-line" href="#">Falar comigo</a>
+      </div>
+    </div>
+  </div>
+  <div class="hero-band" aria-hidden="true">
+    <span>marketing</span><i></i><span>operations</span><i></i><span>data</span><i></i><span>AI</span><i></i><span>BH, Brazil</span>
+  </div>
+</section>
+
+<script>
+/* ?v=hoje|a|b|c mostra uma direção sozinha, para comparar em tela cheia */
+(function () {
+  var only = new URLSearchParams(location.search).get("v");
+  if (!only) return;
+  document.querySelector(".demo-head").style.display = "none";
+  var blocks = document.querySelectorAll(".demo-label");
+  var keys = ["hoje", "a", "b", "c"];
+  blocks.forEach(function (lab, i) {
+    if (keys[i] === only) return;
+    lab.style.display = "none";
+    lab.nextElementSibling.style.display = "none";
+  });
+})();
+</script>
+</body>
+</html>
