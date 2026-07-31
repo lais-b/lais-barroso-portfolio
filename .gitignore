@@ -22,3 +22,6 @@ $RECYCLE.BIN/
 rascunhos/
 *.docx
 *.pages
+_shot_*.html
+_og.html
+_audit.html
