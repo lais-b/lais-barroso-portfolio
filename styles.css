@@ -740,3 +740,38 @@ a{color:inherit}
   .wk-go svg,.wk-go>span::after{transition:none}
   .wk-open:hover .wk-go svg{transform:none}
 }
+
+/* ===================================================================
+   29. O RETRATO COMO PRANCHA
+   A foto deixa de sangrar pela direita e passa a ser uma prancha
+   dentro do campo verde: passe-partout creme, costura em ponto cruz
+   em volta e ar dos dois lados. Assim ela lê como imagem escolhida,
+   e não como foto pessoal encostada no texto.
+   =================================================================== */
+.hero-photo{top:auto;right:var(--pad);transform:none;
+  bottom:calc(clamp(62px,9vh,106px) + clamp(20px,4vh,44px));
+  height:min(40vh,360px);aspect-ratio:3/4;width:auto;
+  clip-path:none;padding:13px;background:var(--cream);opacity:1}
+/* o topo cresce em vez de esconder a primeira linha atrás do cabeçalho */
+.hero{padding-top:clamp(88px,12vh,124px)}
+.hero-photo::before{content:"";position:absolute;inset:-18px;pointer-events:none;
+  background-image:var(--stitch);background-size:18px 18px;opacity:.9;
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;mask-composite:exclude;padding:18px}
+.hero-photo .duo img{object-position:center 14%}
+/* o texto para antes da prancha, sem passar por baixo dela */
+.hero-text{max-width:min(58ch,58vw)}
+
+/* daqui para baixo não cabem lado a lado: a prancha sobe para cima do texto */
+@media (max-width:900px){
+  .hero-photo{position:relative;top:auto;right:auto;bottom:auto;transform:none;
+    width:min(46vw,215px);height:auto;aspect-ratio:3/4;
+    margin:0 var(--pad) 24px auto;opacity:1}
+  .hero-photo::before{inset:-14px;padding:14px;background-size:14px 14px}
+  .hero-text{max-width:none}
+}
+@media (max-width:640px){
+  .hero-photo{width:min(52vw,190px);margin-bottom:20px}
+  /* no celular o sobrenome cabia cortado: agora ele cabe inteiro */
+  .hero-name{font-size:clamp(30px,10.6vw,58px)}
+}

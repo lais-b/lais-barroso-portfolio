@@ -39,7 +39,6 @@ var CONTENT = {
     "hero.headline": "Marketing Operations, Growth & Business Operations",
     "hero.first": "Laís",
     "hero.last": "Barroso",
-    "hero.available": "Disponível para novas oportunidades",
     "hero.locationTag": "BH, Brazil",
     "hero.note": "sempre ligando os pontos",
     "hero.scroll": "Role para ver os projetos",
@@ -223,7 +222,7 @@ var CONTENT = {
     "contact.locationLabel": "Base",
     "contact.location": "Belo Horizonte, Minas Gerais, Brasil",
     "contact.availLabel": "Disponibilidade",
-    "contact.avail": "Remoto no Brasil e internacional · Híbrido em BH e Rio",
+    "contact.avail": "Remoto e híbrido",
     "contact.soon": "Canais de contato em atualização.",
 
     /* Footer */
@@ -263,7 +262,6 @@ var CONTENT = {
     "hero.headline": "Marketing Operations, Growth & Business Operations",
     "hero.first": "Laís",
     "hero.last": "Barroso",
-    "hero.available": "Open to new opportunities",
     "hero.locationTag": "BH, Brazil",
     "hero.note": "always connecting the dots",
     "hero.scroll": "Scroll for the work",
@@ -446,7 +444,7 @@ var CONTENT = {
     "contact.locationLabel": "Based in",
     "contact.location": "Belo Horizonte, Minas Gerais, Brazil",
     "contact.availLabel": "Availability",
-    "contact.avail": "Remote in Brazil and international · Hybrid in BH and Rio",
+    "contact.avail": "Remote and hybrid",
     "contact.soon": "Contact channels are being updated.",
 
     /* Footer */
