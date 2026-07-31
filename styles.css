@@ -690,3 +690,20 @@ a{color:inherit}
     cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 9 9' shape-rendering='crispEdges'%3E%3Crect width='9' height='9' fill='%23B95437'/%3E%3Cg fill='%23FFF9F0'%3E%3Crect x='4' y='0' width='1' height='1'/%3E%3Crect x='3' y='1' width='3' height='1'/%3E%3Crect x='0' y='4' width='1' height='1'/%3E%3Crect x='1' y='3' width='1' height='3'/%3E%3Crect x='8' y='4' width='1' height='1'/%3E%3Crect x='7' y='3' width='1' height='3'/%3E%3Crect x='4' y='8' width='1' height='1'/%3E%3Crect x='3' y='7' width='3' height='1'/%3E%3Crect x='2' y='2' width='1' height='1'/%3E%3Crect x='6' y='2' width='1' height='1'/%3E%3Crect x='2' y='6' width='1' height='1'/%3E%3Crect x='6' y='6' width='1' height='1'/%3E%3C/g%3E%3Cg fill='%23E5A080'%3E%3Crect x='4' y='3' width='1' height='1'/%3E%3Crect x='3' y='4' width='3' height='1'/%3E%3Crect x='4' y='5' width='1' height='1'/%3E%3C/g%3E%3C/svg%3E") 16 16,pointer;
   }
 }
+
+/* ===================================================================
+   26. CORREÇÕES DE CELULAR
+   =================================================================== */
+@media (max-width:640px){
+  /* "BARROSO" e "VAMOS CONVERSAR" saíam pela borda direita */
+  .hero-name{font-size:clamp(38px,13.2vw,72px)}
+  .sec-title{font-size:clamp(30px,10vw,62px)}
+  .sec-title.big{font-size:clamp(32px,11.5vw,68px)}
+
+  /* a flor estava vazando no canto: vira elemento do fluxo */
+  .stitch-flower{width:clamp(88px,26vw,132px);margin:0 auto 24px 0}
+  .about-collage{display:flex;flex-direction:column}
+
+  /* letras recortadas com mais folga para não quebrar palavra */
+  .rl{font-size:clamp(26px,8.4vw,52px)}
+}
