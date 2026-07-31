@@ -7,7 +7,7 @@ dentro do próprio repositório, então o site abre até offline.
 
 **Posicionamento:** Marketing Operations, Growth & Business Operations
 **Oportunidades:** Marketing Operations, Growth, CRM e Business Operations
-**Disponibilidade:** remoto no Brasil, remoto internacional, híbrido em BH e Rio
+**Disponibilidade:** remoto no Brasil, remoto internacional, híbrido (presencial a combinar)
 
 ---
 

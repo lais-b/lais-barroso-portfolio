@@ -84,8 +84,7 @@ var CONTENT = {
     "manifesto.availTitle": "Onde eu trabalho",
     "manifesto.avail1": "Remoto no Brasil",
     "manifesto.avail2": "Remoto para empresas internacionais",
-    "manifesto.avail3": "Híbrido em Belo Horizonte",
-    "manifesto.avail4": "Híbrido no Rio de Janeiro",
+    "manifesto.avail3": "Híbrido, presencial a combinar",
     /* a senioridade quem define é a empresa: aqui vai a área, não o nível */
     "manifesto.levelTitle": "Oportunidades",
     "manifesto.level": "Marketing Operations, Growth, CRM e Business Operations",
@@ -307,8 +306,7 @@ var CONTENT = {
     "manifesto.availTitle": "Where I work",
     "manifesto.avail1": "Remote within Brazil",
     "manifesto.avail2": "Remote for international companies",
-    "manifesto.avail3": "Hybrid in Belo Horizonte",
-    "manifesto.avail4": "Hybrid in Rio de Janeiro",
+    "manifesto.avail3": "Hybrid, on site to be agreed",
     "manifesto.levelTitle": "Opportunities",
     "manifesto.level": "Marketing Operations, Growth, CRM and Business Operations",
 
