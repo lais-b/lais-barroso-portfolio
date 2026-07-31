@@ -70,6 +70,7 @@ var CONTENT_STATUS = {
   projects: {
     "coi-posicionamento":  { published: true,  link: "" },   // PREENCHER: site do COI
     "coi-mapa":            { published: true,  link: "" },   // PREENCHER: link do Mapa de Oportunidades
+    "ainda":               { published: true  },
     "coi-conteudo":        { published: true,  link: "" },   // PREENCHER: Instagram do COI, se quiser
     "coi-agentes":         { published: true,  link: "" },   // PREENCHER: se algum agente tiver painel publico
     "betpass-operacoes":   { published: true  },

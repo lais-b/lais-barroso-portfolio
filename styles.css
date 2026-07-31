@@ -617,3 +617,76 @@ a{color:inherit}
   /* flor de ponto cruz sobre os projetos */
   .wk-card{cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='54' height='54' viewBox='0 0 9 9' shape-rendering='crispEdges'%3E%3Crect width='9' height='9' fill='%23173BD5'/%3E%3Cg fill='%23F3EBDD'%3E%3Crect x='4' y='0' width='1' height='1'/%3E%3Crect x='3' y='1' width='3' height='1'/%3E%3Crect x='0' y='4' width='1' height='1'/%3E%3Crect x='1' y='3' width='1' height='3'/%3E%3Crect x='8' y='4' width='1' height='1'/%3E%3Crect x='7' y='3' width='1' height='3'/%3E%3Crect x='4' y='8' width='1' height='1'/%3E%3Crect x='3' y='7' width='3' height='1'/%3E%3C/g%3E%3Cg fill='%23E5A080'%3E%3Crect x='4' y='3' width='1' height='1'/%3E%3Crect x='3' y='4' width='3' height='1'/%3E%3Crect x='4' y='5' width='1' height='1'/%3E%3C/g%3E%3C/svg%3E") 27 27,pointer}
 }
+
+/* ===================================================================
+   22. AJUSTES FINAIS
+   =================================================================== */
+/* COI: nome curto monumental, sem invadir a coluna vizinha */
+.xp-co{overflow-wrap:break-word}
+.xp-item{grid-template-columns:minmax(0,.3fr) minmax(0,1fr)}
+
+/* flor de ponto cruz na seção pessoal */
+.stitch-flower{width:clamp(96px,13vw,168px);height:auto;color:var(--peach);
+  margin:0 0 26px auto;display:block;opacity:.95}
+
+/* o cabeçalho some ao descer e volta ao subir: para de competir com a leitura */
+.hdr{transition:transform 420ms cubic-bezier(.16,.84,.32,1)}
+.hdr.is-hidden{transform:translateY(-100%)}
+@media (prefers-reduced-motion:reduce){ .hdr{transition:none} .hdr.is-hidden{transform:none} }
+
+/* ===================================================================
+   23. TRAJETÓRIA COMO TRILHA
+   Deixa de ser linha reta com bolinhas: os marcos se alternam em
+   altura e a costura em ponto cruz liga um ao outro.
+   =================================================================== */
+.tl{border-top:0;position:relative;align-items:start;gap:0}
+.tl::before{content:"";position:absolute;left:0;right:0;top:34px;height:8px;
+  background-image:var(--stitch);background-size:8px 8px;background-repeat:repeat-x;opacity:.55}
+.tl li{padding:0 18px 0 0;position:relative}
+.tl li:nth-child(even){margin-top:clamp(52px,7vw,96px)}
+.tl li:nth-child(even)::after{content:"";position:absolute;left:5px;top:calc(-1*clamp(52px,7vw,96px) + 34px);
+  width:2px;height:clamp(52px,7vw,96px);background:currentColor;opacity:.35}
+.tl li::before{top:28px;left:0;width:20px;height:20px;border-radius:0;
+  background:var(--peach);border:0;
+  clip-path:polygon(30% 0,70% 0,70% 30%,100% 30%,100% 70%,70% 70%,70% 100%,30% 100%,30% 70%,0 70%,0 30%,30% 30%)}
+.tl li.is-now::before{background:var(--warm-white)}
+.tl-date{margin-top:60px}
+
+/* ===================================================================
+   24. MÉTODO COMO PERCURSO
+   Quatro degraus que descem, não quatro caixas iguais.
+   =================================================================== */
+.how-grid{gap:0;align-items:start}
+.how-step{position:relative}
+.how-step:nth-child(1){margin-top:0}
+.how-step:nth-child(2){margin-top:clamp(28px,4vw,64px)}
+.how-step:nth-child(3){margin-top:clamp(56px,8vw,128px)}
+.how-step:nth-child(4){margin-top:clamp(84px,12vw,192px)}
+.how-step:not(:last-child)::after{content:"";position:absolute;right:-1px;top:-18px;
+  width:36px;height:8px;background-image:var(--stitch);background-size:8px 8px;
+  background-repeat:repeat-x;opacity:.6;z-index:2}
+@media (max-width:900px){
+  .how-step:nth-child(2),.how-step:nth-child(3),.how-step:nth-child(4){margin-top:0}
+  .how-step:not(:last-child)::after{display:none}
+  .tl li:nth-child(even){margin-top:0}
+  .tl li:nth-child(even)::after{display:none}
+  .tl::before{display:none}
+  .tl-date{margin-top:0}
+  .tl li::before{top:-4px}
+  .tl li{padding-top:26px}
+}
+
+/* ===================================================================
+   25. CURSOR ÚNICO
+   A flor com fundo próprio é a única que sobrevive a todos os campos
+   de cor. Sem fundo, o cursor azul desaparecia sobre o ultramarino.
+   =================================================================== */
+@media (hover:hover) and (pointer:fine){
+  body,a,button,.lang-b,.wk-card{
+    cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 9 9' shape-rendering='crispEdges'%3E%3Crect width='9' height='9' fill='%23173BD5'/%3E%3Cg fill='%23F3EBDD'%3E%3Crect x='4' y='0' width='1' height='1'/%3E%3Crect x='3' y='1' width='3' height='1'/%3E%3Crect x='0' y='4' width='1' height='1'/%3E%3Crect x='1' y='3' width='1' height='3'/%3E%3Crect x='8' y='4' width='1' height='1'/%3E%3Crect x='7' y='3' width='1' height='3'/%3E%3Crect x='4' y='8' width='1' height='1'/%3E%3Crect x='3' y='7' width='3' height='1'/%3E%3C/g%3E%3Cg fill='%23E5A080'%3E%3Crect x='4' y='3' width='1' height='1'/%3E%3Crect x='3' y='4' width='3' height='1'/%3E%3Crect x='4' y='5' width='1' height='1'/%3E%3C/g%3E%3C/svg%3E") 20 20,auto;
+  }
+  /* sobre o que é clicável, a flor cresce e troca de cor */
+  a,button,.lang-b,.wk-card{
+    cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='54' height='54' viewBox='0 0 9 9' shape-rendering='crispEdges'%3E%3Crect width='9' height='9' fill='%23B95437'/%3E%3Cg fill='%23FFF9F0'%3E%3Crect x='4' y='0' width='1' height='1'/%3E%3Crect x='3' y='1' width='3' height='1'/%3E%3Crect x='0' y='4' width='1' height='1'/%3E%3Crect x='1' y='3' width='1' height='3'/%3E%3Crect x='8' y='4' width='1' height='1'/%3E%3Crect x='7' y='3' width='1' height='3'/%3E%3Crect x='4' y='8' width='1' height='1'/%3E%3Crect x='3' y='7' width='3' height='1'/%3E%3Crect x='2' y='2' width='1' height='1'/%3E%3Crect x='6' y='2' width='1' height='1'/%3E%3Crect x='2' y='6' width='1' height='1'/%3E%3Crect x='6' y='6' width='1' height='1'/%3E%3C/g%3E%3Cg fill='%23E5A080'%3E%3Crect x='4' y='3' width='1' height='1'/%3E%3Crect x='3' y='4' width='3' height='1'/%3E%3Crect x='4' y='5' width='1' height='1'/%3E%3C/g%3E%3C/svg%3E") 27 27,pointer;
+  }
+}

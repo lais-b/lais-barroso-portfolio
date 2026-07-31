@@ -140,7 +140,7 @@ var CONTENT = {
 
     "exp.coi.role": "Growth & Marketing Lead",
     "exp.coi.roleNote": "Projeto paralelo",
-    "exp.coi.company": "COI, Clube de Oportunidades Imobiliárias",
+    "exp.coi.company": "COI",
     "exp.coi.period": "Março de 2026 até agora",
     "exp.coi.context": "Inteligência imobiliária: anúncios, transações registradas, dados de mercado, análises comparativas e IA para ajudar compradores a encontrar boas oportunidades.",
     "exp.coi.b1": "Posicionamento de marca e estratégia de comunicação",
@@ -361,7 +361,7 @@ var CONTENT = {
 
     "exp.coi.role": "Growth & Marketing Lead",
     "exp.coi.roleNote": "Side project",
-    "exp.coi.company": "COI, Clube de Oportunidades Imobiliárias",
+    "exp.coi.company": "COI",
     "exp.coi.period": "March 2026 to now",
     "exp.coi.context": "Real estate intelligence: listings, registered transactions, market data, comparative analysis and AI to help buyers find genuinely good opportunities.",
     "exp.coi.b1": "Brand positioning and communication strategy",
@@ -579,222 +579,6 @@ var PROJECTS = [
       ]
     }
   },
-
-  {
-    id: "coi-mapa",
-    year: "2026",
-    size: "regular",
-    image: "",
-    gallery: [],
-    tools: ["Meta Ads", "Landing pages", "WhatsApp", "Google Sheets"],
-    pt: {
-      category: "Lançamento de produto · Growth Operations",
-      results: [
-        "A primeira tela deixou de precisar de explicação",
-        "O conteúdo educativo virou porta de entrada, e não material de reforço",
-        "O time de produto passou a receber, pela comunicação, sinais de como as pessoas usam a plataforma"
-      ],
-      title: "Mapa de Oportunidades",
-      challenge: "Lançar uma plataforma que coloca os imóveis de BH em um mapa e explicar, em poucos segundos, por que aquilo ajuda alguém a comprar melhor.",
-      role: "Narrativa e apresentação do produto, plano de lançamento, conteúdo educativo, jornada de descoberta e campanhas.",
-      context: "A plataforma organiza imóveis de Belo Horizonte em um mapa com informações de mercado que apoiam a análise de oportunidade. Minha parte foi a distância entre o que a ferramenta faz e o que a pessoa entende ao abrir a tela pela primeira vez.",
-      process: [
-        "Defini como o produto se apresenta e qual é a primeira frase que a pessoa lê",
-        "Montei o conteúdo educativo que explica o que o mapa mostra e o que não mostra",
-        "Desenhei a jornada de descoberta, do primeiro contato até o WhatsApp",
-        "Escrevi os CTAs e os materiais de apoio",
-        "Acompanhei aquisição e devolvi o feedback de comunicação e experiência para o time"
-      ],
-      deliverables: [
-        "Narrativa e apresentação pública do produto",
-        "Plano e materiais de lançamento",
-        "Conteúdo educativo sobre leitura do mapa",
-        "Jornada de descoberta e CTAs",
-        "Campanhas de aquisição e acompanhamento"
-      ],
-      learnings: [
-        "O ponto de maior perda não era o produto, era a primeira tela sem contexto",
-        "Conteúdo que ensina a ler o dado converte melhor do que conteúdo que elogia a ferramenta"
-      ],
-      note: "Atuei na apresentação, no lançamento e na aquisição do produto. O desenvolvimento técnico da plataforma é do time de tecnologia."
-    },
-    en: {
-      category: "Product launch · Growth Operations",
-      results: [
-        "The first screen stopped needing an explanation",
-        "Educational content became the entry point rather than a supporting asset",
-        "Product started receiving signals about real usage through communication"
-      ],
-      title: "Mapa de Oportunidades",
-      challenge: "Launch a platform that puts Belo Horizonte's property market on a map, and explain in seconds why that helps someone buy better.",
-      role: "Product narrative and presentation, launch plan, educational content, discovery journey and campaigns.",
-      context: "The platform organises properties across Belo Horizonte on a map, with market information that supports opportunity analysis. My part was the distance between what the tool does and what a person understands the first time the screen loads.",
-      process: [
-        "Defined how the product introduces itself and the first line a visitor reads",
-        "Built the educational content explaining what the map does, and does not, show",
-        "Designed the discovery journey, from first contact through to WhatsApp",
-        "Wrote the CTAs and supporting material",
-        "Tracked acquisition and fed communication and experience findings back to the team"
-      ],
-      deliverables: [
-        "Public product narrative and presentation",
-        "Launch plan and materials",
-        "Educational content on how to read the map",
-        "Discovery journey and CTAs",
-        "Acquisition campaigns and tracking"
-      ],
-      learnings: [
-        "The biggest drop-off wasn't the product. It was a first screen with no context",
-        "Content that teaches people to read the data converts better than content praising the tool"
-      ],
-      note: "I worked on presentation, launch and acquisition. The platform itself is built by the engineering team."
-    }
-  },
-
-  {
-    id: "coi-conteudo",
-    year: "2026",
-    size: "regular",
-    image: "",
-    gallery: [],
-    tools: ["Meta Ads", "Claude", "ChatGPT", "CRM", "WhatsApp", "Notion"],
-    pt: {
-      category: "Marketing Operations",
-      results: [
-        "A produção deixou de depender de ideia pontual: ganhou uma fila alimentada por dado de mercado e por dúvida real de comprador",
-        "Conteúdo, campanha e atendimento passaram a contar a mesma história",
-        "Ficou possível saber por qual porta cada lead entrou"
-      ],
-      title: "Sistema de conteúdo e aquisição",
-      challenge: "Parar de produzir post avulso e montar um sistema que transforma dado de mercado e dúvida de comprador em conteúdo, campanha e conversa.",
-      role: "Desenho do sistema, calendário editorial, campanhas, jornadas e uso de IA em pesquisa, redação e revisão.",
-      context: "Havia matéria-prima de sobra: dados imobiliários, funcionalidades da plataforma, perguntas recorrentes de quem compra. O que faltava era um caminho definido entre essa matéria-prima e o que ia para o ar.",
-      process: [
-        "Mapeei as dúvidas reais de compradores e liguei cada uma a um dado que o COI tem",
-        "Criei o calendário editorial e os formatos recorrentes",
-        "Liguei conteúdo, campanha de Meta Ads, landing page, WhatsApp e CRM em um fluxo só",
-        "Defini como um lead é qualificado e o que acontece em cada resposta",
-        "Passei a usar IA para pesquisa, primeira versão de copy e revisão de padrão",
-        "Testei criativos e ajustei a rota pelo que os números mostravam"
-      ],
-      deliverables: [
-        "Calendário editorial e formatos recorrentes",
-        "Conteúdos baseados em dados de mercado",
-        "Campanhas de Meta Ads e testes criativos",
-        "Landing pages e jornadas de WhatsApp",
-        "Critério de qualificação de leads e acompanhamento em CRM"
-      ],
-      learnings: [
-        "Caixinha de perguntas virou a melhor fonte de pauta que eu tinha",
-        "IA acelera muito a primeira versão, mas o padrão da marca só se mantém com revisão humana"
-      ]
-    },
-    en: {
-      category: "Marketing Operations",
-      results: [
-        "Production stopped depending on one-off ideas and gained a pipeline fed by market data and real buyer questions",
-        "Content, campaign and conversation started telling the same story",
-        "It became possible to see which door each lead came through"
-      ],
-      title: "Content and acquisition system",
-      challenge: "Stop producing one-off posts and build a system that turns market data and buyer questions into content, campaigns and conversations.",
-      role: "System design, editorial calendar, campaigns, journeys, and AI for research, drafting and review.",
-      context: "There was plenty of raw material: property data, platform features, the questions buyers keep asking. What was missing was a defined path between that material and what actually went live.",
-      process: [
-        "Mapped the questions buyers really ask and tied each one to data COI already holds",
-        "Built the editorial calendar and the recurring formats",
-        "Connected content, Meta Ads, landing page, WhatsApp and CRM into a single flow",
-        "Defined how a lead gets qualified and what happens on each reply",
-        "Brought AI into research, first-draft copy and consistency review",
-        "Tested creative and adjusted based on what the numbers showed"
-      ],
-      deliverables: [
-        "Editorial calendar and recurring formats",
-        "Content built on real market data",
-        "Meta Ads campaigns and creative testing",
-        "Landing pages and WhatsApp journeys",
-        "Lead qualification criteria and CRM tracking"
-      ],
-      learnings: [
-        "The audience question box became the best source of ideas I had",
-        "AI speeds up the first draft enormously, but brand consistency still needs a human pass"
-      ]
-    }
-  },
-
-  {
-    id: "coi-agentes",
-    year: "2026",
-    size: "wide",
-    image: "",
-    gallery: [],
-    tools: ["Claude", "Claude Code", "Meta Ads API", "Instagram API", "GitHub Actions", "Railway"],
-    pt: {
-      category: "Sistemas de IA \u00b7 Marketing Operations",
-      results: [
-        "A operação passou a manter frequência de publicação sem aumentar equipe",
-        "O tempo do time saiu da produção repetitiva e foi para decisão e análise",
-        "Nenhuma peça vai ao ar sem revisão humana"
-      ],
-      title: "Agentes de IA na opera\u00e7\u00e3o de marketing",
-      challenge: "Uma opera\u00e7\u00e3o de marketing pequena precisava manter ritmo de time grande: campanhas acompanhadas todo dia, conte\u00fado saindo toda semana e v\u00eddeo pronto sem virar gargalo.",
-      role: "Defini o que cada agente precisava fazer, escrevi as regras de decis\u00e3o, testei as sa\u00eddas e opero o sistema no dia a dia. A constru\u00e7\u00e3o t\u00e9cnica foi feita com Claude Code.",
-      context: "Em vez de contratar gente para cada frente, montamos tr\u00eas agentes que cuidam do trabalho repetitivo e devolvem decis\u00f5es prontas para uma pessoa aprovar. O ponto do projeto n\u00e3o \u00e9 a tecnologia: \u00e9 desenhar onde a m\u00e1quina decide sozinha, onde ela s\u00f3 sugere e onde ela precisa parar e perguntar.",
-      process: [
-        "Mapeei quais tarefas de marketing eram repeti\u00e7\u00e3o pura e quais exigiam julgamento",
-        "Especifiquei cada agente: o que observa, o que decide sozinho e quando aciona uma pessoa",
-        "Escrevi as regras de marca, tom e compliance que o agente precisa respeitar",
-        "Testei as sa\u00eddas at\u00e9 chegarem em qualidade public\u00e1vel sem retrabalho",
-        "Coloquei aprova\u00e7\u00e3o humana como etapa obrigat\u00f3ria antes de qualquer publica\u00e7\u00e3o",
-        "Acompanho o desempenho e ajusto as regras quando o resultado desanda"
-      ],
-      deliverables: [
-        "Agente de tr\u00e1fego: acompanha as campanhas de Meta Ads, cruza custo por lead com o hist\u00f3rico e avisa por e-mail quando algo sai da faixa esperada",
-        "Agente de social media: pesquisa tend\u00eancia, monta a pauta, escreve a copy, gera a arte e agenda o post, sempre com aprova\u00e7\u00e3o humana antes de ir para o Instagram",
-        "Editor de v\u00eddeo autom\u00e1tico: recebe o bruto, transcreve, corta as sobras e devolve o v\u00eddeo curto pronto para revis\u00e3o",
-        "Painel para acompanhar o que cada agente produziu e o que est\u00e1 esperando aprova\u00e7\u00e3o"
-      ],
-      learnings: [
-        "O valor n\u00e3o est\u00e1 em automatizar tudo, e sim em escolher com cuidado o que continua passando por uma pessoa",
-        "Agente sem regra de marca escrita produz volume, n\u00e3o produz qualidade",
-        "Manter uma etapa de aprova\u00e7\u00e3o \u00e9 o que deixa usar IA em canal p\u00fablico sem medo"
-      ],
-      note: "N\u00e3o me apresento como desenvolvedora. Meu papel foi especificar, dirigir, testar e operar os agentes; a implementa\u00e7\u00e3o foi feita com apoio de IA e do time de tecnologia."
-    },
-    en: {
-      category: "AI systems \u00b7 Marketing Operations",
-      results: [
-        "The operation kept a steady publishing rhythm without growing the team",
-        "The team's time moved out of repetitive production and into decisions and analysis",
-        "Nothing goes public without a human review"
-      ],
-      title: "AI agents running the marketing operation",
-      challenge: "A small marketing operation needed to keep the pace of a large team: campaigns reviewed daily, content shipping weekly, and video edited without becoming the bottleneck.",
-      role: "I defined what each agent had to do, wrote the decision rules, tested the output and run the system day to day. The technical build was done with Claude Code.",
-      context: "Instead of hiring for each front, we built three agents that absorb the repetitive work and hand back finished decisions for a person to approve. The project is not really about the technology: it is about deciding where the machine acts alone, where it only suggests, and where it has to stop and ask.",
-      process: [
-        "Mapped which marketing tasks were pure repetition and which needed judgement",
-        "Specified each agent: what it watches, what it decides alone, and when it escalates",
-        "Wrote the brand, tone and compliance rules the agent has to respect",
-        "Tested the output until it reached publishable quality without rework",
-        "Made human approval a required step before anything goes public",
-        "Track performance and adjust the rules when results drift"
-      ],
-      deliverables: [
-        "Traffic agent: watches Meta Ads campaigns, compares cost per lead against history and emails an alert when something moves out of range",
-        "Social media agent: researches trends, builds the calendar, drafts the copy, generates the artwork and schedules the post, always with human approval before Instagram",
-        "Automatic video editor: takes the raw footage, transcribes it, cuts the dead air and returns a short video ready for review",
-        "A panel to track what each agent produced and what is waiting for approval"
-      ],
-      learnings: [
-        "The value is not in automating everything, but in choosing carefully what still passes through a person",
-        "An agent without written brand rules produces volume, not quality",
-        "Keeping an approval step is what makes it safe to use AI on a public channel"
-      ],
-      note: "I don't present myself as a developer. My role was to specify, direct, test and operate the agents; the implementation was done with AI support and the engineering team."
-    }
-  },
-
   {
     id: "betpass-operacoes",
     year: "desde 2024",
@@ -876,7 +660,132 @@ var PROJECTS = [
       note: "No financial figures, partner names or internal information are shown. The visuals on this page are demonstrative, built with fictional data."
     }
   },
-
+  {
+    id: "ainda",
+    year: "2026",
+    size: "wide",
+    image: "",
+    gallery: [],
+    tools: ["Pesquisa", "Entrevista", "Roteiro", "Produ\u00e7\u00e3o audiovisual"],
+    pt: {
+      category: "Projeto autoral \u00b7 Mem\u00f3ria oral \u00b7 Produ\u00e7\u00e3o audiovisual",
+      title: "Ainda",
+      challenge: "Registrar hist\u00f3rias de pessoas idosas antes que elas fiquem s\u00f3 na lembran\u00e7a de quem as viveu.",
+      role: "Concep\u00e7\u00e3o, pesquisa, prepara\u00e7\u00e3o das conversas e condu\u00e7\u00e3o das entrevistas. Projeto autoral, em desenvolvimento.",
+      context: "Ainda \u00e9 um projeto dedicado ao registro e \u00e0 preserva\u00e7\u00e3o de hist\u00f3rias de pessoas idosas por meio de conversas e registros audiovisuais. A escuta \u00e9 o m\u00e9todo: reconhecer trajet\u00f3rias, afetos e conhecimentos que continuam vivos quando algu\u00e9m os compartilha. Come\u00e7a pela minha av\u00f3, n\u00e3o como teste, mas como ponto de partida.",
+      process: [
+        "Defini o conceito e o que o projeto quer preservar",
+        "Pesquisei refer\u00eancias de mem\u00f3ria oral e de registro documental",
+        "Preparei as conversas: o que perguntar, o que deixar acontecer",
+        "Conduzo as entrevistas e organizo o acervo aos poucos",
+        "Desenvolvo a linguagem do projeto conforme os registros aparecem"
+      ],
+      deliverables: [
+        "Conceito e territ\u00f3rio do projeto definidos",
+        "Roteiro de conversa e m\u00e9todo de escuta",
+        "Primeiros registros em andamento"
+      ],
+      learnings: [
+        "Pergunta boa \u00e9 a que abre espa\u00e7o, n\u00e3o a que j\u00e1 sabe a resposta",
+        "Registrar exige menos equipamento e mais paci\u00eancia do que eu imaginava"
+      ],
+      note: "Projeto em desenvolvimento. Concep\u00e7\u00e3o e primeiras conversas est\u00e3o em andamento; as demais etapas ainda n\u00e3o foram realizadas."
+    },
+    en: {
+      category: "Personal project \u00b7 Oral history \u00b7 Audiovisual production",
+      title: "Ainda",
+      challenge: "Record older people's stories before they exist only in the memory of whoever lived them.",
+      role: "Concept, research, conversation design and interviewing. A personal project, in development.",
+      context: "Ainda is a project dedicated to recording and preserving the stories of older people through conversation and audiovisual documentation. Listening is the method: recognising the paths, attachments and knowledge that stay alive when someone shares them. It begins with my grandmother, not as a test, but as the starting point.",
+      process: [
+        "Defined the concept and what the project sets out to preserve",
+        "Researched references in oral history and documentary recording",
+        "Designed the conversations: what to ask, what to let happen",
+        "Running the interviews and building the archive gradually",
+        "Developing the project's language as the recordings come in"
+      ],
+      deliverables: [
+        "Concept and territory defined",
+        "Conversation guide and listening method",
+        "First recordings under way"
+      ],
+      learnings: [
+        "A good question opens space; it does not already know the answer",
+        "Recording takes less equipment and far more patience than I expected"
+      ],
+      note: "Project in development. Concept and first conversations are under way; the remaining stages have not happened yet."
+    }
+  },
+  {
+    id: "coi-conteudo",
+    year: "2026",
+    size: "regular",
+    image: "",
+    gallery: [],
+    tools: ["Meta Ads", "Claude", "ChatGPT", "CRM", "WhatsApp", "Notion"],
+    pt: {
+      category: "Marketing Operations",
+      results: [
+        "A produção deixou de depender de ideia pontual: ganhou uma fila alimentada por dado de mercado e por dúvida real de comprador",
+        "Conteúdo, campanha e atendimento passaram a contar a mesma história",
+        "Ficou possível saber por qual porta cada lead entrou"
+      ],
+      title: "Sistema de conteúdo e aquisição",
+      challenge: "Parar de produzir post avulso e montar um sistema que transforma dado de mercado e dúvida de comprador em conteúdo, campanha e conversa.",
+      role: "Desenho do sistema, calendário editorial, campanhas, jornadas e uso de IA em pesquisa, redação e revisão.",
+      context: "Havia matéria-prima de sobra: dados imobiliários, funcionalidades da plataforma, perguntas recorrentes de quem compra. O que faltava era um caminho definido entre essa matéria-prima e o que ia para o ar.",
+      process: [
+        "Mapeei as dúvidas reais de compradores e liguei cada uma a um dado que o COI tem",
+        "Criei o calendário editorial e os formatos recorrentes",
+        "Liguei conteúdo, campanha de Meta Ads, landing page, WhatsApp e CRM em um fluxo só",
+        "Defini como um lead é qualificado e o que acontece em cada resposta",
+        "Passei a usar IA para pesquisa, primeira versão de copy e revisão de padrão",
+        "Testei criativos e ajustei a rota pelo que os números mostravam"
+      ],
+      deliverables: [
+        "Calendário editorial e formatos recorrentes",
+        "Conteúdos baseados em dados de mercado",
+        "Campanhas de Meta Ads e testes criativos",
+        "Landing pages e jornadas de WhatsApp",
+        "Critério de qualificação de leads e acompanhamento em CRM"
+      ],
+      learnings: [
+        "Caixinha de perguntas virou a melhor fonte de pauta que eu tinha",
+        "IA acelera muito a primeira versão, mas o padrão da marca só se mantém com revisão humana"
+      ]
+    },
+    en: {
+      category: "Marketing Operations",
+      results: [
+        "Production stopped depending on one-off ideas and gained a pipeline fed by market data and real buyer questions",
+        "Content, campaign and conversation started telling the same story",
+        "It became possible to see which door each lead came through"
+      ],
+      title: "Content and acquisition system",
+      challenge: "Stop producing one-off posts and build a system that turns market data and buyer questions into content, campaigns and conversations.",
+      role: "System design, editorial calendar, campaigns, journeys, and AI for research, drafting and review.",
+      context: "There was plenty of raw material: property data, platform features, the questions buyers keep asking. What was missing was a defined path between that material and what actually went live.",
+      process: [
+        "Mapped the questions buyers really ask and tied each one to data COI already holds",
+        "Built the editorial calendar and the recurring formats",
+        "Connected content, Meta Ads, landing page, WhatsApp and CRM into a single flow",
+        "Defined how a lead gets qualified and what happens on each reply",
+        "Brought AI into research, first-draft copy and consistency review",
+        "Tested creative and adjusted based on what the numbers showed"
+      ],
+      deliverables: [
+        "Editorial calendar and recurring formats",
+        "Content built on real market data",
+        "Meta Ads campaigns and creative testing",
+        "Landing pages and WhatsApp journeys",
+        "Lead qualification criteria and CRM tracking"
+      ],
+      learnings: [
+        "The audience question box became the best source of ideas I had",
+        "AI speeds up the first draft enormously, but brand consistency still needs a human pass"
+      ]
+    }
+  },
   {
     id: "automacoes",
     year: "desde 2024",
@@ -945,7 +854,148 @@ var PROJECTS = [
       note: "The diagram below is illustrative, uses fictional data, and only shows the shape of the flow."
     }
   },
-
+  {
+    id: "coi-mapa",
+    year: "2026",
+    size: "regular",
+    image: "",
+    gallery: [],
+    tools: ["Meta Ads", "Landing pages", "WhatsApp", "Google Sheets"],
+    pt: {
+      category: "Lançamento de produto · Growth Operations",
+      results: [
+        "A primeira tela deixou de precisar de explicação",
+        "O conteúdo educativo virou porta de entrada, e não material de reforço",
+        "O time de produto passou a receber, pela comunicação, sinais de como as pessoas usam a plataforma"
+      ],
+      title: "Mapa de Oportunidades",
+      challenge: "Lançar uma plataforma que coloca os imóveis de BH em um mapa e explicar, em poucos segundos, por que aquilo ajuda alguém a comprar melhor.",
+      role: "Narrativa e apresentação do produto, plano de lançamento, conteúdo educativo, jornada de descoberta e campanhas.",
+      context: "A plataforma organiza imóveis de Belo Horizonte em um mapa com informações de mercado que apoiam a análise de oportunidade. Minha parte foi a distância entre o que a ferramenta faz e o que a pessoa entende ao abrir a tela pela primeira vez.",
+      process: [
+        "Defini como o produto se apresenta e qual é a primeira frase que a pessoa lê",
+        "Montei o conteúdo educativo que explica o que o mapa mostra e o que não mostra",
+        "Desenhei a jornada de descoberta, do primeiro contato até o WhatsApp",
+        "Escrevi os CTAs e os materiais de apoio",
+        "Acompanhei aquisição e devolvi o feedback de comunicação e experiência para o time"
+      ],
+      deliverables: [
+        "Narrativa e apresentação pública do produto",
+        "Plano e materiais de lançamento",
+        "Conteúdo educativo sobre leitura do mapa",
+        "Jornada de descoberta e CTAs",
+        "Campanhas de aquisição e acompanhamento"
+      ],
+      learnings: [
+        "O ponto de maior perda não era o produto, era a primeira tela sem contexto",
+        "Conteúdo que ensina a ler o dado converte melhor do que conteúdo que elogia a ferramenta"
+      ],
+      note: "Atuei na apresentação, no lançamento e na aquisição do produto. O desenvolvimento técnico da plataforma é do time de tecnologia."
+    },
+    en: {
+      category: "Product launch · Growth Operations",
+      results: [
+        "The first screen stopped needing an explanation",
+        "Educational content became the entry point rather than a supporting asset",
+        "Product started receiving signals about real usage through communication"
+      ],
+      title: "Mapa de Oportunidades",
+      challenge: "Launch a platform that puts Belo Horizonte's property market on a map, and explain in seconds why that helps someone buy better.",
+      role: "Product narrative and presentation, launch plan, educational content, discovery journey and campaigns.",
+      context: "The platform organises properties across Belo Horizonte on a map, with market information that supports opportunity analysis. My part was the distance between what the tool does and what a person understands the first time the screen loads.",
+      process: [
+        "Defined how the product introduces itself and the first line a visitor reads",
+        "Built the educational content explaining what the map does, and does not, show",
+        "Designed the discovery journey, from first contact through to WhatsApp",
+        "Wrote the CTAs and supporting material",
+        "Tracked acquisition and fed communication and experience findings back to the team"
+      ],
+      deliverables: [
+        "Public product narrative and presentation",
+        "Launch plan and materials",
+        "Educational content on how to read the map",
+        "Discovery journey and CTAs",
+        "Acquisition campaigns and tracking"
+      ],
+      learnings: [
+        "The biggest drop-off wasn't the product. It was a first screen with no context",
+        "Content that teaches people to read the data converts better than content praising the tool"
+      ],
+      note: "I worked on presentation, launch and acquisition. The platform itself is built by the engineering team."
+    }
+  },
+  {
+    id: "coi-agentes",
+    year: "2026",
+    size: "wide",
+    image: "",
+    gallery: [],
+    tools: ["Claude", "Claude Code", "Meta Ads API", "Instagram API", "GitHub Actions", "Railway"],
+    pt: {
+      category: "Sistemas de IA \u00b7 Marketing Operations",
+      results: [
+        "A operação passou a manter frequência de publicação sem aumentar equipe",
+        "O tempo do time saiu da produção repetitiva e foi para decisão e análise",
+        "Nenhuma peça vai ao ar sem revisão humana"
+      ],
+      title: "Agentes de IA na opera\u00e7\u00e3o de marketing",
+      challenge: "Uma opera\u00e7\u00e3o de marketing pequena precisava manter ritmo de time grande: campanhas acompanhadas todo dia, conte\u00fado saindo toda semana e v\u00eddeo pronto sem virar gargalo.",
+      role: "Defini o que cada agente precisava fazer, escrevi as regras de decis\u00e3o, testei as sa\u00eddas e opero o sistema no dia a dia. A constru\u00e7\u00e3o t\u00e9cnica foi feita com Claude Code.",
+      context: "Em vez de contratar gente para cada frente, montamos tr\u00eas agentes que cuidam do trabalho repetitivo e devolvem decis\u00f5es prontas para uma pessoa aprovar. O ponto do projeto n\u00e3o \u00e9 a tecnologia: \u00e9 desenhar onde a m\u00e1quina decide sozinha, onde ela s\u00f3 sugere e onde ela precisa parar e perguntar.",
+      process: [
+        "Mapeei quais tarefas de marketing eram repeti\u00e7\u00e3o pura e quais exigiam julgamento",
+        "Especifiquei cada agente: o que observa, o que decide sozinho e quando aciona uma pessoa",
+        "Escrevi as regras de marca, tom e compliance que o agente precisa respeitar",
+        "Testei as sa\u00eddas at\u00e9 chegarem em qualidade public\u00e1vel sem retrabalho",
+        "Coloquei aprova\u00e7\u00e3o humana como etapa obrigat\u00f3ria antes de qualquer publica\u00e7\u00e3o",
+        "Acompanho o desempenho e ajusto as regras quando o resultado desanda"
+      ],
+      deliverables: [
+        "Agente de tr\u00e1fego: acompanha as campanhas de Meta Ads, cruza custo por lead com o hist\u00f3rico e avisa por e-mail quando algo sai da faixa esperada",
+        "Agente de social media: pesquisa tend\u00eancia, monta a pauta, escreve a copy, gera a arte e agenda o post, sempre com aprova\u00e7\u00e3o humana antes de ir para o Instagram",
+        "Editor de v\u00eddeo autom\u00e1tico: recebe o bruto, transcreve, corta as sobras e devolve o v\u00eddeo curto pronto para revis\u00e3o",
+        "Painel para acompanhar o que cada agente produziu e o que est\u00e1 esperando aprova\u00e7\u00e3o"
+      ],
+      learnings: [
+        "O valor n\u00e3o est\u00e1 em automatizar tudo, e sim em escolher com cuidado o que continua passando por uma pessoa",
+        "Agente sem regra de marca escrita produz volume, n\u00e3o produz qualidade",
+        "Manter uma etapa de aprova\u00e7\u00e3o \u00e9 o que deixa usar IA em canal p\u00fablico sem medo"
+      ],
+      note: "N\u00e3o me apresento como desenvolvedora. Meu papel foi especificar, dirigir, testar e operar os agentes; a implementa\u00e7\u00e3o foi feita com apoio de IA e do time de tecnologia."
+    },
+    en: {
+      category: "AI systems \u00b7 Marketing Operations",
+      results: [
+        "The operation kept a steady publishing rhythm without growing the team",
+        "The team's time moved out of repetitive production and into decisions and analysis",
+        "Nothing goes public without a human review"
+      ],
+      title: "AI agents running the marketing operation",
+      challenge: "A small marketing operation needed to keep the pace of a large team: campaigns reviewed daily, content shipping weekly, and video edited without becoming the bottleneck.",
+      role: "I defined what each agent had to do, wrote the decision rules, tested the output and run the system day to day. The technical build was done with Claude Code.",
+      context: "Instead of hiring for each front, we built three agents that absorb the repetitive work and hand back finished decisions for a person to approve. The project is not really about the technology: it is about deciding where the machine acts alone, where it only suggests, and where it has to stop and ask.",
+      process: [
+        "Mapped which marketing tasks were pure repetition and which needed judgement",
+        "Specified each agent: what it watches, what it decides alone, and when it escalates",
+        "Wrote the brand, tone and compliance rules the agent has to respect",
+        "Tested the output until it reached publishable quality without rework",
+        "Made human approval a required step before anything goes public",
+        "Track performance and adjust the rules when results drift"
+      ],
+      deliverables: [
+        "Traffic agent: watches Meta Ads campaigns, compares cost per lead against history and emails an alert when something moves out of range",
+        "Social media agent: researches trends, builds the calendar, drafts the copy, generates the artwork and schedules the post, always with human approval before Instagram",
+        "Automatic video editor: takes the raw footage, transcribes it, cuts the dead air and returns a short video ready for review",
+        "A panel to track what each agent produced and what is waiting for approval"
+      ],
+      learnings: [
+        "The value is not in automating everything, but in choosing carefully what still passes through a person",
+        "An agent without written brand rules produces volume, not quality",
+        "Keeping an approval step is what makes it safe to use AI on a public channel"
+      ],
+      note: "I don't present myself as a developer. My role was to specify, direct, test and operate the agents; the implementation was done with AI support and the engineering team."
+    }
+  },
   {
     id: "portfolio",
     year: "2026",

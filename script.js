@@ -586,6 +586,20 @@
     });
   }
 
+  /* Cabecalho recolhe ao descer e reaparece ao subir, para nao ficar
+     presente o tempo inteiro em cima da composicao. */
+  function hideOnScroll() {
+    var hdr = document.querySelector(".hdr");
+    if (!hdr) return;
+    var last = 0;
+    window.addEventListener("scroll", function () {
+      var y = window.scrollY || 0;
+      if (y > 140 && y > last) hdr.classList.add("is-hidden");
+      else hdr.classList.remove("is-hidden");
+      last = y;
+    }, { passive: true });
+  }
+
   function spy() {
     var links = document.querySelectorAll(".hdr-nav a");
     var pairs = [];
@@ -620,6 +634,7 @@
   observe(document.querySelectorAll(".rv"));
   heroIn();
   spy();
+  hideOnScroll();
 
   if (location.hash.indexOf("#p/") === 0) openProject(location.hash.slice(3));
 
