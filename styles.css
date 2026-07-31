@@ -556,3 +556,64 @@ a{color:inherit}
 .wk-title{overflow-wrap:normal;hyphens:none;max-width:none;font-size:clamp(21px,2.5vw,40px)}
 .wk-desc{align-self:start}
 @media (max-width:1180px){ .wk-title{max-width:none} }
+
+/* ===================================================================
+   19. CORREÇÕES DE COLUNA E TRANSBORDO
+   Mesma causa nos três casos: item de grade nasce com min-width:auto,
+   então uma palavra enorme em Syne não encolhe e vaza por cima do vizinho.
+   =================================================================== */
+.xp-item>*,.how-grid>*,.man-body>*,.about-grid>*,.edu-grid>*{min-width:0}
+
+/* trajetória: nome da empresa invadia o contexto */
+.xp-co{font-size:clamp(19px,2.1vw,30px);overflow-wrap:normal;hyphens:none}
+.xp-item{grid-template-columns:minmax(0,.34fr) minmax(0,1fr)}
+
+/* método: título estourava o bloco de cor */
+.how-step h3{font-size:clamp(19px,2vw,27px);overflow-wrap:normal;letter-spacing:-.02em}
+.how-step{overflow:hidden}
+
+/* títulos de seção não podem sair da tela */
+.sec-title{overflow-wrap:normal;max-width:100%}
+.sec-title.big{font-size:clamp(40px,7.6vw,116px)}
+
+
+/* ===================================================================
+   20. PONTO CRUZ
+   Planilha e gráfico de bordado são a mesma coisa: informação em
+   células. É daí que vem a linguagem gráfica deste site.
+   =================================================================== */
+:root{
+  --stitch-blue:%23173BD5;
+  /* um X de ponto cruz, desenhado em células */
+  --stitch:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 8 8' shape-rendering='crispEdges'%3E%3Cg fill='%23173BD5'%3E%3Crect x='1' y='1' width='1' height='1'/%3E%3Crect x='6' y='1' width='1' height='1'/%3E%3Crect x='2' y='2' width='1' height='1'/%3E%3Crect x='5' y='2' width='1' height='1'/%3E%3Crect x='3' y='3' width='2' height='2'/%3E%3Crect x='2' y='5' width='1' height='1'/%3E%3Crect x='5' y='5' width='1' height='1'/%3E%3Crect x='1' y='6' width='1' height='1'/%3E%3Crect x='6' y='6' width='1' height='1'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+/* faixa de pontos entre seções: a virada de página */
+.stitch-band{height:16px;background-image:var(--stitch);background-size:16px 16px;
+  background-repeat:repeat-x;opacity:.9}
+.f-forest+.stitch-band,.s-forest+.stitch-band{filter:hue-rotate(0deg)}
+
+/* grade de bordado atrás de um campo de cor */
+.stitch-grid{position:relative;isolation:isolate}
+.stitch-grid::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background-image:linear-gradient(currentColor 1px,transparent 1px),
+                   linear-gradient(90deg,currentColor 1px,transparent 1px);
+  background-size:22px 22px;opacity:.07}
+
+/* moldura de pontos, para números e selos */
+.stitched{position:relative}
+.stitched::before{content:"";position:absolute;inset:-6px;pointer-events:none;
+  background-image:var(--stitch);background-size:12px 12px;opacity:.5;
+  -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  -webkit-mask-composite:xor;mask-composite:exclude;padding:6px}
+
+
+/* ===================================================================
+   21. CURSOR EM PONTO CRUZ
+   =================================================================== */
+@media (hover:hover) and (pointer:fine){
+  body{cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 11 11' shape-rendering='crispEdges'%3E%3Cg fill='%23173BD5'%3E%3Crect x='2' y='2' width='2' height='2'/%3E%3Crect x='7' y='2' width='2' height='2'/%3E%3Crect x='4' y='4' width='3' height='3'/%3E%3Crect x='2' y='7' width='2' height='2'/%3E%3Crect x='7' y='7' width='2' height='2'/%3E%3C/g%3E%3C/svg%3E") 11 11,auto}
+  a,button,.lang-b{cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 11 11' shape-rendering='crispEdges'%3E%3Cg fill='%23B95437'%3E%3Crect x='2' y='2' width='2' height='2'/%3E%3Crect x='7' y='2' width='2' height='2'/%3E%3Crect x='4' y='4' width='3' height='3'/%3E%3Crect x='2' y='7' width='2' height='2'/%3E%3Crect x='7' y='7' width='2' height='2'/%3E%3Crect x='5' y='0' width='1' height='1'/%3E%3Crect x='5' y='10' width='1' height='1'/%3E%3Crect x='0' y='5' width='1' height='1'/%3E%3Crect x='10' y='5' width='1' height='1'/%3E%3C/g%3E%3C/svg%3E") 15 15,pointer}
+  /* flor de ponto cruz sobre os projetos */
+  .wk-card{cursor:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='54' height='54' viewBox='0 0 9 9' shape-rendering='crispEdges'%3E%3Crect width='9' height='9' fill='%23173BD5'/%3E%3Cg fill='%23F3EBDD'%3E%3Crect x='4' y='0' width='1' height='1'/%3E%3Crect x='3' y='1' width='3' height='1'/%3E%3Crect x='0' y='4' width='1' height='1'/%3E%3Crect x='1' y='3' width='1' height='3'/%3E%3Crect x='8' y='4' width='1' height='1'/%3E%3Crect x='7' y='3' width='1' height='3'/%3E%3Crect x='4' y='8' width='1' height='1'/%3E%3Crect x='3' y='7' width='3' height='1'/%3E%3C/g%3E%3Cg fill='%23E5A080'%3E%3Crect x='4' y='3' width='1' height='1'/%3E%3Crect x='3' y='4' width='3' height='1'/%3E%3Crect x='4' y='5' width='1' height='1'/%3E%3C/g%3E%3C/svg%3E") 27 27,pointer}
+}
