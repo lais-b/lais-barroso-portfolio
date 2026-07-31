@@ -546,3 +546,13 @@ a{color:inherit}
 .hdr-nav a,.lang-b{text-shadow:0 1px 3px rgba(6,26,18,.5)}
 
 @media (max-width:640px){ .hero-name{font-size:clamp(44px,15vw,80px)} }
+
+/* ===================================================================
+   18. CORREÇÃO: título de projeto invadindo a descrição
+   Item de grade nasce com min-width:auto, então uma palavra longa
+   não encolhe e vaza por cima da coluna vizinha.
+   =================================================================== */
+.wk-open>*{min-width:0}
+.wk-title{overflow-wrap:normal;hyphens:none;max-width:none;font-size:clamp(21px,2.5vw,40px)}
+.wk-desc{align-self:start}
+@media (max-width:1180px){ .wk-title{max-width:none} }
