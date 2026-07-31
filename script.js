@@ -269,6 +269,17 @@
     scanPhotos(pvBody);
   }
 
+  /* Cada case tem endereço próprio: vale tanto "#betpass-operacoes"
+     quanto "#p/betpass-operacoes", para poder mandar o link do case
+     certo para a vaga certa. */
+  function hashProjectId() {
+    var h = decodeURIComponent(location.hash || "").replace(/^#/, "");
+    if (h.indexOf("p/") === 0) h = h.slice(2);
+    if (!h) return "";
+    var ok = (window.PROJECTS || []).some(function (x) { return x.id === h; });
+    return ok ? h : "";
+  }
+
   function openProject(id) {
     var p = (window.PROJECTS || []).filter(function (x) { return x.id === id; })[0];
     if (!p || !projStatus(id) || !pv) return;
@@ -278,7 +289,7 @@
     pv.hidden = false;
     document.body.style.overflow = "hidden";
     if (pvPanel) pvPanel.focus();
-    if (location.hash !== "#p/" + id) history.pushState(null, "", "#p/" + id);
+    if (hashProjectId() !== id) history.pushState(null, "", "#" + id);
   }
 
   function closeProject(fromPop) {
@@ -287,7 +298,7 @@
     openId = null;
     document.body.style.overflow = "";
     if (lastFocus && lastFocus.focus) lastFocus.focus();
-    if (!fromPop && location.hash.indexOf("#p/") === 0) history.pushState(null, "", location.pathname + location.search);
+    if (!fromPop && hashProjectId()) history.pushState(null, "", location.pathname + location.search);
   }
 
   if (pv) {
@@ -307,7 +318,14 @@
       }
     });
     window.addEventListener("popstate", function () {
-      if (location.hash.indexOf("#p/") === 0) openProject(location.hash.slice(3));
+      var id = hashProjectId();
+      if (id) openProject(id);
+      else closeProject(true);
+    });
+    /* link de case colado com a página já aberta */
+    window.addEventListener("hashchange", function () {
+      var id = hashProjectId();
+      if (id) { if (id !== openId) openProject(id); }
       else closeProject(true);
     });
   }
@@ -457,7 +475,10 @@
       parts.push(link(t("btn.email"), "mailto:" + ST.professionalEmail, false));
     }
     if (has(ST.whatsapp) && opts && opts.email) {
-      parts.push(link(t("btn.whatsapp"), "https://wa.me/" + ST.whatsapp.replace(/\D/g, ""), false, true));
+      /* a conversa já abre com a mensagem escrita, no idioma da página */
+      parts.push(link(t("btn.whatsapp"),
+        "https://wa.me/" + ST.whatsapp.replace(/\D/g, "") +
+        "?text=" + encodeURIComponent(t("wa.text")), false, true));
     }
 
     if (!parts.length) {
@@ -636,7 +657,7 @@
   spy();
   hideOnScroll();
 
-  if (location.hash.indexOf("#p/") === 0) openProject(location.hash.slice(3));
+  if (hashProjectId()) openProject(hashProjectId());
 
   requestAnimationFrame(function () {
     requestAnimationFrame(function () { root.classList.remove("no-transition"); });

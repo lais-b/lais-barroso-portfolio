@@ -39,7 +39,6 @@ var CONTENT = {
     "hero.headline": "Marketing Operations, Growth & Business Operations",
     "hero.first": "Laís",
     "hero.last": "Barroso",
-    "hero.available": "Disponível para novas oportunidades",
     "hero.locationTag": "BH, Brazil",
     "hero.note": "sempre ligando os pontos",
     "hero.scroll": "Role para ver os projetos",
@@ -71,7 +70,9 @@ var CONTENT = {
     "btn.linkedin": "LinkedIn",
     "btn.email": "Enviar e-mail",
     "btn.whatsapp": "WhatsApp",
-    "btn.viewProject": "Ver projeto",
+    /* mensagem que já vem escrita ao abrir a conversa */
+    "wa.text": "Oi, Laís, tudo bem? Vim pelo seu portfólio e gostaria de conversar.",
+    "btn.viewProject": "Abrir case completo",
     "btn.live": "Ver o produto no ar",
     "btn.close": "Fechar",
 
@@ -83,10 +84,10 @@ var CONTENT = {
     "manifesto.availTitle": "Onde eu trabalho",
     "manifesto.avail1": "Remoto no Brasil",
     "manifesto.avail2": "Remoto para empresas internacionais",
-    "manifesto.avail3": "Híbrido em Belo Horizonte",
-    "manifesto.avail4": "Híbrido no Rio de Janeiro",
-    "manifesto.levelTitle": "Nível",
-    "manifesto.level": "Trainee · Analista júnior · Analista pleno",
+    "manifesto.avail3": "Híbrido, presencial a combinar",
+    /* a senioridade quem define é a empresa: aqui vai a área, não o nível */
+    "manifesto.levelTitle": "Oportunidades",
+    "manifesto.level": "Marketing Operations, Growth, CRM e Business Operations",
 
     /* Selected Work */
     "work.eyebrow": "selected work",
@@ -124,7 +125,7 @@ var CONTENT = {
     "exp.betpass.role": "Business & Administrative Operations",
     "exp.betpass.company": "Betpass",
     "exp.betpass.period": "Maio de 2024 até agora",
-    "exp.betpass.context": "Empresa de tecnologia e gestão de afiliados. Começei nas rotinas financeiras e fui abrindo frente: eventos, logística, contratos, indicadores e até recrutamento. É o tipo de operação em que quem resolve acaba herdando o próximo problema.",
+    "exp.betpass.context": "Empresa de tecnologia e gestão de afiliados. Comecei nas rotinas financeiras e fui abrindo frente: eventos, logística, contratos, indicadores e até recrutamento. É o tipo de operação em que quem resolve acaba herdando o próximo problema.",
     "exp.betpass.b1": "Rotinas administrativas, financeiras e operacionais do dia a dia",
     "exp.betpass.b2": "Contas a pagar e receber, conciliações entre contas e plataformas",
     "exp.betpass.b3": "Acompanhamento de entradas, saídas e repasses",
@@ -220,12 +221,12 @@ var CONTENT = {
     "contact.locationLabel": "Base",
     "contact.location": "Belo Horizonte, Minas Gerais, Brasil",
     "contact.availLabel": "Disponibilidade",
-    "contact.avail": "Remoto no Brasil e internacional · Híbrido em BH e Rio",
+    "contact.avail": "Remoto e híbrido",
     "contact.soon": "Canais de contato em atualização.",
 
     /* Footer */
     "footer.tag": "Marketing Operations, Growth & Business Operations",
-    "footer.built": "Feito à mão em HTML, CSS e JavaScript.",
+    "footer.built": "Dirigido por mim e construído com IA, em HTML, CSS e JavaScript.",
     "footer.top": "Voltar ao topo"
   },
 
@@ -260,7 +261,6 @@ var CONTENT = {
     "hero.headline": "Marketing Operations, Growth & Business Operations",
     "hero.first": "Laís",
     "hero.last": "Barroso",
-    "hero.available": "Open to new opportunities",
     "hero.locationTag": "BH, Brazil",
     "hero.note": "always connecting the dots",
     "hero.scroll": "Scroll for the work",
@@ -292,7 +292,9 @@ var CONTENT = {
     "btn.linkedin": "LinkedIn",
     "btn.email": "Send an email",
     "btn.whatsapp": "WhatsApp",
-    "btn.viewProject": "View project",
+    /* message pre written when the chat opens */
+    "wa.text": "Hi Laís, how are you? I came from your portfolio and I would like to talk.",
+    "btn.viewProject": "Open full case",
     "btn.live": "See it live",
     "btn.close": "Close",
 
@@ -304,10 +306,9 @@ var CONTENT = {
     "manifesto.availTitle": "Where I work",
     "manifesto.avail1": "Remote within Brazil",
     "manifesto.avail2": "Remote for international companies",
-    "manifesto.avail3": "Hybrid in Belo Horizonte",
-    "manifesto.avail4": "Hybrid in Rio de Janeiro",
-    "manifesto.levelTitle": "Level",
-    "manifesto.level": "Trainee · Junior analyst · Mid-level analyst",
+    "manifesto.avail3": "Hybrid, on site to be agreed",
+    "manifesto.levelTitle": "Opportunities",
+    "manifesto.level": "Marketing Operations, Growth, CRM and Business Operations",
 
     /* Selected Work */
     "work.eyebrow": "selected work",
@@ -441,12 +442,12 @@ var CONTENT = {
     "contact.locationLabel": "Based in",
     "contact.location": "Belo Horizonte, Minas Gerais, Brazil",
     "contact.availLabel": "Availability",
-    "contact.avail": "Remote in Brazil and international · Hybrid in BH and Rio",
+    "contact.avail": "Remote and hybrid",
     "contact.soon": "Contact channels are being updated.",
 
     /* Footer */
     "footer.tag": "Marketing Operations, Growth & Business Operations",
-    "footer.built": "Hand-built in HTML, CSS and JavaScript.",
+    "footer.built": "Directed by me and built with AI, in HTML, CSS and JavaScript.",
     "footer.top": "Back to top"
   }
 };
@@ -796,7 +797,7 @@ var PROJECTS = [
     pt: {
       category: "Automação · Eficiência operacional",
       results: [
-        "A conferência repetitiva saiu da mao",
+        "A conferência repetitiva saiu da mão",
         "Erro de digitação e de cópia praticamente sumiu das etapas automatizadas",
         "Inconsistência passou a aparecer sozinha, por alerta, em vez de ser descoberta depois"
       ],

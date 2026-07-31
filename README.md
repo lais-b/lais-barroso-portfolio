@@ -6,8 +6,8 @@ sem dependência externa e sem nenhuma requisição para fora**, as fontes ficam
 dentro do próprio repositório, então o site abre até offline.
 
 **Posicionamento:** Marketing Operations, Growth & Business Operations
-**Nível:** trainee · analista júnior · analista pleno
-**Disponibilidade:** remoto no Brasil, remoto internacional, híbrido em BH e Rio
+**Oportunidades:** Marketing Operations, Growth, CRM e Business Operations
+**Disponibilidade:** remoto no Brasil, remoto internacional, híbrido (presencial a combinar)
 
 ---
 
