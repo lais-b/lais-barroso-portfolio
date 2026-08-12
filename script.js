@@ -204,6 +204,41 @@
     return b;
   }
 
+  /* O título do case é enorme de propósito, mas palavra comprida
+     ("Estruturação", "Posicionamento") não cabia na largura do painel e
+     escapava para fora. Aqui medimos a palavra mais larga e, só quando ela
+     não cabe, diminuímos o título o suficiente para caber. */
+  function fitTitle() {
+    var h = pvBody ? pvBody.querySelector(".pv-title") : null;
+    if (!h) return;
+    h.style.fontSize = "";
+    var avail = h.clientWidth;
+    if (!avail) return;
+    var cs = window.getComputedStyle(h);
+    var base = parseFloat(cs.fontSize);
+    if (!base) return;
+
+    var probe = document.createElement("span");
+    probe.setAttribute("aria-hidden", "true");
+    probe.style.cssText = "position:absolute;left:-9999px;top:0;white-space:pre;visibility:hidden";
+    probe.style.fontFamily = cs.fontFamily;
+    probe.style.fontWeight = cs.fontWeight;
+    probe.style.fontSize = base + "px";
+    probe.style.letterSpacing = cs.letterSpacing;
+    probe.style.textTransform = cs.textTransform;
+    document.body.appendChild(probe);
+
+    var widest = 0;
+    h.textContent.split(/\s+/).forEach(function (w) {
+      if (!w) return;
+      probe.textContent = w;
+      widest = Math.max(widest, probe.getBoundingClientRect().width);
+    });
+    probe.parentNode.removeChild(probe);
+
+    if (widest > avail) h.style.fontSize = Math.max(18, Math.floor(base * avail / widest)) + "px";
+  }
+
   function buildProject(p) {
     var d = p[lang] || p[DEFAULT] || {};
     pvBody.textContent = "";
@@ -287,6 +322,7 @@
     openId = id;
     buildProject(p);
     pv.hidden = false;
+    fitTitle();
     document.body.style.overflow = "hidden";
     if (pvPanel) pvPanel.focus();
     if (hashProjectId() !== id) history.pushState(null, "", "#" + id);
@@ -328,6 +364,8 @@
       if (id) { if (id !== openId) openProject(id); }
       else closeProject(true);
     });
+    /* girar o celular ou mudar a janela muda a largura do painel */
+    window.addEventListener("resize", function () { if (!pv.hidden) fitTitle(); });
   }
 
   /* =================================================================

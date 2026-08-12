@@ -409,8 +409,12 @@ a{color:inherit}
 .pv-x svg{width:20px;height:20px}
 .pv-cat{font-family:var(--display);font-weight:800;font-size:10.5px;letter-spacing:.2em;
   text-transform:uppercase;color:var(--electric);margin-bottom:14px}
+/* O título desce para depois do X (clear) para nenhuma linha passar por baixo
+   do botão, e o tamanho é reduzido no script quando a palavra mais comprida
+   não cabe na largura do painel — sem isso "ESTRUTURAÇÃO" vazava para fora. */
 .pv-title{font-family:var(--display);font-weight:800;text-transform:uppercase;
-  font-size:clamp(30px,4.6vw,62px);line-height:.88;letter-spacing:-.04em;margin-bottom:10px}
+  font-size:clamp(28px,4.6vw,56px);line-height:.94;letter-spacing:-.035em;margin-bottom:10px;
+  clear:right;overflow-wrap:break-word}
 .pv-year{font-size:11px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;opacity:.62;margin-bottom:30px}
 .pv-lead{font-family:var(--serif);font-size:clamp(20px,2.4vw,30px);line-height:1.24;margin-bottom:30px}
 .pv-block{margin-bottom:30px}
