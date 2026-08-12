@@ -366,6 +366,11 @@
     });
     /* girar o celular ou mudar a janela muda a largura do painel */
     window.addEventListener("resize", function () { if (!pv.hidden) fitTitle(); });
+    /* abrir o link de um case direto pelo endereço mede o título antes de a
+       fonte de display chegar; quando ela chega, medimos de novo */
+    if (document.fonts && document.fonts.ready) {
+      document.fonts.ready.then(function () { if (!pv.hidden) fitTitle(); });
+    }
   }
 
   /* =================================================================
