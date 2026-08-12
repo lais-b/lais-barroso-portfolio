@@ -38,6 +38,13 @@
     return n;
   }
 
+  /* Trabalho que continua: o "desde" é traduzido, o ano fica como está —
+     senão em inglês saía "Year · desde 2024". */
+  function yearLabel(p) {
+    if (!has(p.year)) return "";
+    return (p.since ? t("work.since") + " " : "") + p.year;
+  }
+
   /* =================================================================
      ESPAÇOS DE IMAGEM
      Tenta carregar o arquivo. Se não existir:
@@ -145,7 +152,7 @@
 
       var meta = el("div", "wk-meta");
       meta.appendChild(el("span", "wk-cat", d.category || ""));
-      if (has(p.year)) meta.appendChild(el("span", "wk-year", p.year));
+      if (has(p.year)) meta.appendChild(el("span", "wk-year", yearLabel(p)));
       inner.appendChild(meta);
 
       inner.appendChild(el("h3", "wk-title", d.title || ""));
@@ -247,7 +254,7 @@
     var h = el("h2", "pv-title", d.title || "");
     h.id = "pv-title";
     pvBody.appendChild(h);
-    if (has(p.year)) pvBody.appendChild(el("p", "pv-year", t("work.labelYear") + " · " + p.year));
+    if (has(p.year)) pvBody.appendChild(el("p", "pv-year", t("work.labelYear") + " · " + yearLabel(p)));
 
     if (has(d.challenge)) pvBody.appendChild(el("p", "pv-lead", d.challenge));
 
