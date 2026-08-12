@@ -589,7 +589,11 @@
     renderTools();
     renderRansom();
     renderContact();
-    if (openId) { var p = (window.PROJECTS||[]).filter(function(x){return x.id===openId;})[0]; if (p) buildProject(p); }
+    if (openId) {
+      var p = (window.PROJECTS||[]).filter(function(x){return x.id===openId;})[0];
+      /* o título do outro idioma tem outro comprimento: mede de novo */
+      if (p) { buildProject(p); fitTitle(); }
+    }
 
     try { localStorage.setItem(KEY, lang); } catch (e) {}
   }
