@@ -1,10 +1,13 @@
 /* 2026-08-17 — Career positioning update
    Marketing & Innovation first; projects as a way of working, not the profession.
+   This file is loaded before content.js and patches its global data synchronously
+   so script.js renders the updated positioning on the first pass.
 */
 (function () {
-  function patchData() {
-    if (!window.CONTENT || !window.PROJECTS || !window.SKILL_PILLARS) return false;
+  "use strict";
 
+  function patchContent(CONTENT) {
+    if (!CONTENT || !CONTENT.pt || !CONTENT.en) return CONTENT;
     var pt = CONTENT.pt;
     var en = CONTENT.en;
 
@@ -81,9 +84,13 @@
       "about.p2": "Outside job titles, I run on curiosity, travel, languages, culture, brands, experiences and technology — and on the urge to turn a messy idea into something people can understand, use or experience.",
       "footer.tag": "Marketing & Innovation · Product · Launches · New Initiatives"
     });
+    return CONTENT;
+  }
 
-    SKILL_PILLARS.length = 0;
-    SKILL_PILLARS.push(
+  function patchSkills(skills) {
+    if (!Array.isArray(skills)) return skills;
+    skills.length = 0;
+    skills.push(
       {
         key: "p1",
         pt: ["Marketing Estratégico", "Marketing de Inovação", "Product Marketing", "Posicionamento", "Pesquisa de mercado", "Inteligência de mercado", "Jornada do cliente", "Go-to-Market", "Lançamentos"],
@@ -100,111 +107,102 @@
         en: ["KPIs", "Dashboards", "Performance analysis", "Google Sheets", "Google Apps Script", "Artificial intelligence", "AI agents", "Workflow automation", "Claude and ChatGPT"]
       }
     );
+    return skills;
+  }
 
+  function patchProjects(projects) {
+    if (!Array.isArray(projects)) return projects;
     var byId = {};
-    PROJECTS.forEach(function (p) { byId[p.id] = p; });
+    projects.forEach(function (p) { byId[p.id] = p; });
 
-    if (byId["coi-posicionamento"]) {
-      byId["coi-posicionamento"].pt.category = "Product Marketing · Posicionamento · Inteligência de mercado";
-      byId["coi-posicionamento"].en.category = "Product Marketing · Positioning · Market intelligence";
+    function setCategory(id, pt, en) {
+      if (!byId[id]) return;
+      if (byId[id].pt) byId[id].pt.category = pt;
+      if (byId[id].en) byId[id].en.category = en;
     }
-    if (byId["coi-mapa"]) {
-      byId["coi-mapa"].pt.category = "Lançamento de produto · Product Marketing";
-      byId["coi-mapa"].en.category = "Product launch · Product Marketing";
-    }
-    if (byId["coi-conteudo"]) {
-      byId["coi-conteudo"].pt.category = "Campanhas · Conteúdo · Aquisição";
-      byId["coi-conteudo"].en.category = "Campaigns · Content · Acquisition";
-    }
-    if (byId["coi-agentes"]) {
-      byId["coi-agentes"].pt.category = "IA aplicada ao Marketing · Inovação";
-      byId["coi-agentes"].en.category = "Applied AI for Marketing · Innovation";
-    }
-    if (byId["betpass-operacoes"]) {
-      byId["betpass-operacoes"].pt.category = "Operações · Eventos · Transformação";
-      byId["betpass-operacoes"].en.category = "Operations · Events · Transformation";
-    }
+    setCategory("coi-posicionamento", "Product Marketing · Posicionamento · Inteligência de mercado", "Product Marketing · Positioning · Market intelligence");
+    setCategory("coi-mapa", "Lançamento de produto · Product Marketing", "Product launch · Product Marketing");
+    setCategory("coi-conteudo", "Campanhas · Conteúdo · Aquisição", "Campaigns · Content · Acquisition");
+    setCategory("coi-agentes", "IA aplicada ao Marketing · Inovação", "Applied AI for Marketing · Innovation");
+    setCategory("betpass-operacoes", "Operações · Eventos · Transformação", "Operations · Events · Transformation");
 
-    var eventProject = {
-      id: "betpass-eventos",
-      year: "2025",
-      size: "regular",
-      image: "",
-      gallery: [],
-      tools: ["Planejamento", "Fornecedores", "Logística", "Execução em campo"],
-      pt: {
-        category: "Eventos · Experiências · Execução de Marketing",
-        results: [],
-        title: "Eventos, estandes e experiências na Betpass",
-        challenge: "Transformar demandas de eventos e torneios em uma operação executável, coordenando prazos, fornecedores, logística, materiais e equipe em campo.",
-        role: "Apoio ao planejamento e execução operacional de eventos, torneios e estandes, em interface com Marketing, fornecedores e equipe interna.",
-        context: "Além da rotina financeira e operacional, participei da organização de eventos presenciais da Betpass. O trabalho exigia transformar uma ideia e um prazo fixo em uma sequência clara de decisões, fornecedores, materiais e execução no local.",
-        process: ["Organização das demandas e prazos antes do evento", "Interface com fornecedores e acompanhamento de entregas", "Coordenação de logística, materiais e montagem de estandes", "Apoio à equipe durante a execução em campo", "Registro de aprendizados para melhorar a próxima operação"],
-        deliverables: ["Planejamento operacional", "Coordenação de fornecedores", "Logística e materiais", "Montagem de estandes", "Apoio à execução presencial"],
-        learnings: ["Em evento, execução e experiência estão totalmente conectadas", "Um prazo que não pode mudar obriga a priorizar rápido e resolver o que realmente importa"],
-        note: "Case apresentado sem dados financeiros, nomes de parceiros ou informações confidenciais."
-      },
-      en: {
-        category: "Events · Experiences · Marketing Execution",
-        results: [],
-        title: "Events, booths and experiences at Betpass",
-        challenge: "Turn event and tournament demands into an executable operation, coordinating deadlines, suppliers, logistics, materials and the on-site team.",
-        role: "Operational planning and execution support for events, tournaments and booths, working with Marketing, suppliers and internal teams.",
-        context: "Alongside my financial and operational responsibilities, I supported Betpass's in-person events. The work meant turning an idea and a fixed deadline into a clear sequence of decisions, suppliers, materials and on-site execution.",
-        process: ["Organized demands and deadlines before each event", "Worked with suppliers and tracked deliveries", "Coordinated logistics, materials and booth setup", "Supported the team during on-site execution", "Captured lessons to improve the next operation"],
-        deliverables: ["Operational planning", "Supplier coordination", "Logistics and materials", "Booth setup", "On-site execution support"],
-        learnings: ["In events, execution and experience are inseparable", "A deadline that cannot move forces fast prioritization around what actually matters"],
-        note: "Presented without financial figures, partner names or confidential information."
-      }
-    };
-
-    if (!byId[eventProject.id]) {
-      PROJECTS.push(eventProject);
-      if (window.CONTENT_STATUS && CONTENT_STATUS.projects) CONTENT_STATUS.projects[eventProject.id] = { published: true };
+    if (!byId["betpass-eventos"]) {
+      var eventProject = {
+        id: "betpass-eventos",
+        year: "2025",
+        size: "regular",
+        image: "",
+        gallery: [],
+        tools: ["Planejamento", "Fornecedores", "Logística", "Execução em campo"],
+        pt: {
+          category: "Eventos · Experiências · Execução de Marketing",
+          results: [],
+          title: "Eventos, estandes e experiências na Betpass",
+          challenge: "Transformar demandas de eventos e torneios em uma operação executável, coordenando prazos, fornecedores, logística, materiais e equipe em campo.",
+          role: "Apoio ao planejamento e execução operacional de eventos, torneios e estandes, em interface com Marketing, fornecedores e equipe interna.",
+          context: "Além da rotina financeira e operacional, participei da organização de eventos presenciais da Betpass. O trabalho exigia transformar uma ideia e um prazo fixo em uma sequência clara de decisões, fornecedores, materiais e execução no local.",
+          process: ["Organização das demandas e prazos antes do evento", "Interface com fornecedores e acompanhamento de entregas", "Coordenação de logística, materiais e montagem de estandes", "Apoio à equipe durante a execução em campo", "Registro de aprendizados para melhorar a próxima operação"],
+          deliverables: ["Planejamento operacional", "Coordenação de fornecedores", "Logística e materiais", "Montagem de estandes", "Apoio à execução presencial"],
+          learnings: ["Em evento, execução e experiência estão totalmente conectadas", "Um prazo que não pode mudar obriga a priorizar rápido e resolver o que realmente importa"],
+          note: "Case apresentado sem dados financeiros, nomes de parceiros ou informações confidenciais."
+        },
+        en: {
+          category: "Events · Experiences · Marketing Execution",
+          results: [],
+          title: "Events, booths and experiences at Betpass",
+          challenge: "Turn event and tournament demands into an executable operation, coordinating deadlines, suppliers, logistics, materials and the on-site team.",
+          role: "Operational planning and execution support for events, tournaments and booths, working with Marketing, suppliers and internal teams.",
+          context: "Alongside my financial and operational responsibilities, I supported Betpass's in-person events. The work meant turning an idea and a fixed deadline into a clear sequence of decisions, suppliers, materials and on-site execution.",
+          process: ["Organized demands and deadlines before each event", "Worked with suppliers and tracked deliveries", "Coordinated logistics, materials and booth setup", "Supported the team during on-site execution", "Captured lessons to improve the next operation"],
+          deliverables: ["Operational planning", "Supplier coordination", "Logistics and materials", "Booth setup", "On-site execution support"],
+          learnings: ["In events, execution and experience are inseparable", "A deadline that cannot move forces fast prioritization around what actually matters"],
+          note: "Presented without financial figures, partner names or confidential information."
+        }
+      };
+      projects.push(eventProject);
       byId[eventProject.id] = eventProject;
+      if (window.CONTENT_STATUS && CONTENT_STATUS.projects) CONTENT_STATUS.projects[eventProject.id] = { published: true };
     }
 
     var preferred = ["coi-posicionamento", "coi-mapa", "coi-agentes", "coi-conteudo", "betpass-eventos", "automacoes", "portfolio", "betpass-operacoes", "ainda"];
     var reordered = [];
     preferred.forEach(function (id) { if (byId[id]) reordered.push(byId[id]); });
-    PROJECTS.forEach(function (p) { if (reordered.indexOf(p) === -1) reordered.push(p); });
-    PROJECTS.splice.apply(PROJECTS, [0, PROJECTS.length].concat(reordered));
+    projects.forEach(function (p) { if (reordered.indexOf(p) === -1) reordered.push(p); });
+    projects.splice.apply(projects, [0, projects.length].concat(reordered));
+    return projects;
+  }
 
+  function intercept(name, patcher) {
+    var stored;
+    Object.defineProperty(window, name, {
+      configurable: true,
+      enumerable: true,
+      get: function () { return stored; },
+      set: function (value) { stored = patcher(value); }
+    });
+  }
+
+  intercept("CONTENT", patchContent);
+  intercept("SKILL_PILLARS", patchSkills);
+  intercept("PROJECTS", patchProjects);
+
+  function patchMetadata() {
+    var C = window.CONTENT;
+    if (!C || !C.pt) return;
+    var pt = C.pt;
     document.title = pt["doc.title"];
-    var desc = document.querySelector('meta[name="description"]');
-    if (desc) desc.setAttribute("content", pt["doc.description"]);
-    var ogTitle = document.querySelector('meta[property="og:title"]');
-    if (ogTitle) ogTitle.setAttribute("content", pt["doc.title"]);
-    var ogDesc = document.querySelector('meta[property="og:description"]');
-    if (ogDesc) ogDesc.setAttribute("content", pt["hero.tagline"]);
-    var twTitle = document.querySelector('meta[name="twitter:title"]');
-    if (twTitle) twTitle.setAttribute("content", pt["doc.title"]);
-    var twDesc = document.querySelector('meta[name="twitter:description"]');
-    if (twDesc) twDesc.setAttribute("content", pt["hero.tagline"]);
-
-    return true;
-  }
-
-  function refreshVisibleCopy() {
-    if (!window.CONTENT) return;
-    var lang = document.documentElement.lang && document.documentElement.lang.toLowerCase().indexOf("en") === 0 ? "en" : "pt";
-    var dict = CONTENT[lang] || CONTENT.pt;
-    document.querySelectorAll("[data-i18n]").forEach(function (el) {
-      var key = el.getAttribute("data-i18n");
-      if (dict[key] != null) el.textContent = dict[key];
+    var updates = [
+      ['meta[name="description"]', pt["doc.description"]],
+      ['meta[property="og:title"]', pt["doc.title"]],
+      ['meta[property="og:description"]', pt["hero.tagline"]],
+      ['meta[property="og:image:alt"]', pt["doc.title"]],
+      ['meta[name="twitter:title"]', pt["doc.title"]],
+      ['meta[name="twitter:description"]', pt["hero.tagline"]]
+    ];
+    updates.forEach(function (item) {
+      var node = document.querySelector(item[0]);
+      if (node) node.setAttribute("content", item[1]);
     });
-    document.title = dict["doc.title"] || document.title;
   }
-
-  window.addEventListener("DOMContentLoaded", function () {
-    patchData();
-  });
-
-  window.addEventListener("load", function () {
-    patchData();
-    refreshVisibleCopy();
-    document.querySelectorAll(".lang-b").forEach(function (button) {
-      button.addEventListener("click", function () { setTimeout(refreshVisibleCopy, 0); });
-    });
-  });
+  document.addEventListener("DOMContentLoaded", patchMetadata);
 })();
