@@ -3,14 +3,6 @@
    -------------------------------------------------------------------
    FONTE ÚNICA DA VERDADE sobre o que já está pronto para aparecer
    no site publicado.
-
-   REGRA: campo vazio ("" ou false) = o componente correspondente
-   NÃO é renderizado no site publicado. Nunca aparece "[ADICIONAR...]"
-   ou "PREENCHER" para quem visita.
-
-   Em ambiente local (localhost / 127.0.0.1 / abrir o arquivo direto),
-   o site mostra marcações discretas do que está faltando, para você
-   saber o que preencher. No ar, isso some automaticamente.
    =================================================================== */
 
 var CONTENT_STATUS = {
@@ -51,4 +43,5 @@ if (typeof window !== "undefined") { window.CONTENT_STATUS = CONTENT_STATUS; }
    intercept the content globals before the site is rendered. */
 if (typeof document !== "undefined") {
   document.write('<script src="positioning-overrides.js?v=20260817"></script>');
+  document.write('<script src="cv-links.js?v=20260817"></script>');
 }
