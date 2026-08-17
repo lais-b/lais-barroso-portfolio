@@ -68,14 +68,15 @@ var CONTENT_STATUS = {
      botão (nunca um link quebrado).
      ----------------------------------------------------------------- */
   projects: {
-    "coi-posicionamento":  { published: true,  link: "" },   // PREENCHER: site do COI
-    "coi-mapa":            { published: true,  link: "" },   // PREENCHER: link do Mapa de Oportunidades
+    "coi-posicionamento":  { published: true,  link: "" },
+    "coi-mapa":            { published: true,  link: "" },
     "ainda":               { published: true  },
-    "coi-conteudo":        { published: true,  link: "" },   // PREENCHER: Instagram do COI, se quiser
-    "coi-agentes":         { published: true,  link: "" },   // PREENCHER: se algum agente tiver painel publico
+    "coi-conteudo":        { published: true,  link: "" },
+    "coi-agentes":         { published: true,  link: "" },
     "betpass-operacoes":   { published: true  },
     "automacoes":          { published: true  },
-    "portfolio":           { published: true,  link: "https://github.com/lais-b/lais-barroso-portfolio" }
+    "portfolio":           { published: true,  link: "https://github.com/lais-b/lais-barroso-portfolio" },
+    "betpass-eventos":     { published: true }
   },
 
   /* -----------------------------------------------------------------
@@ -90,3 +91,9 @@ var CONTENT_STATUS = {
 };
 
 if (typeof window !== "undefined") { window.CONTENT_STATUS = CONTENT_STATUS; }
+
+/* Carregado antes de content.js/script.js para registrar os overrides de
+   posicionamento antes da inicialização visual do portfólio. */
+if (typeof document !== "undefined") {
+  document.write('<script src="positioning-overrides.js?v=20260817"><\\/script>');
+}
