@@ -164,7 +164,7 @@
       if (window.CONTENT_STATUS && CONTENT_STATUS.projects) CONTENT_STATUS.projects[eventProject.id] = { published: true };
     }
 
-    var preferred = ["coi-posicionamento", "coi-mapa", "coi-agentes", "coi-conteudo", "betpass-eventos", "automacoes", "portfolio", "betpass-operacoes", "ainda"];
+    var preferred = ["numa-conex", "coi-posicionamento", "coi-mapa", "coi-agentes", "coi-conteudo", "betpass-eventos", "automacoes", "portfolio", "betpass-operacoes", "ainda"];
     var reordered = [];
     preferred.forEach(function (id) { if (byId[id]) reordered.push(byId[id]); });
     projects.forEach(function (p) { if (reordered.indexOf(p) === -1) reordered.push(p); });

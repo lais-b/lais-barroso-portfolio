@@ -513,6 +513,80 @@ var TIMELINE = [
    =================================================================== */
 var PROJECTS = [
   {
+  "id": "numa-conex",
+  "year": "2026",
+  "size": "wide",
+  "image": "",
+  "gallery": [],
+  "tools": [
+    "ChatGPT",
+    "Claude",
+    "Codex",
+    "Canva",
+    "HTML / CSS / JavaScript"
+  ],
+  "pt": {
+    "category": "Estratégia de marca · Experiência digital · IA generativa",
+    "title": "Numa Conex: da ideia à presença digital",
+    "challenge": "Transformar uma ideia de consultoria de processos e logística em uma marca com identidade própria e uma presença digital que explique sua proposta.",
+    "role": "Cocriação do conceito do negócio, naming, direção visual, comunicação e construção do site com apoio de IA.",
+    "context": "A Numa Conex nasceu de um projeto em parceria para organizar processos e melhorar a gestão de operações logísticas. Na estruturação inicial, trabalhei na forma de apresentar a proposta: o que a empresa faz, como se diferencia e como traduzir isso em marca e experiência digital.",
+    "process": [
+      "Parti da proposta de organizar processos, controles e informações para construir a narrativa da marca.",
+      "Explorei nomes e direções visuais até chegar à Numa Conex, com símbolo N e paleta em teal e laranja.",
+      "Traduzi o conceito de conexão em layouts, componentes e experimentações com movimento e efeitos fluidos no site.",
+      "Usei IA generativa para explorar alternativas de texto e design e programação assistida por IA para construir e iterar a experiência digital.",
+      "Trabalhei a continuidade entre identidade, site e materiais de apresentação comercial."
+    ],
+    "deliverables": [
+      "Conceito e nome da marca",
+      "Direção visual, símbolo e paleta de cores",
+      "Narrativa e textos para a presença digital",
+      "Site e protótipos de efeitos interativos",
+      "Explorações de apresentação comercial"
+    ],
+    "learnings": [
+      "Definir a proposta antes de desenhar ajuda a escolher referências que fazem sentido para o negócio.",
+      "A IA amplia as possibilidades de experimentação; selecionar, revisar e manter coerência exige direção humana."
+    ],
+    "results": [
+      "Uma identidade inicial e um site para apresentar a Numa Conex.",
+      "Aplicação de estratégia, design e programação assistida por IA em um mesmo projeto."
+    ],
+    "note": "Projeto em estruturação. Este case apresenta minha contribuição à marca e à experiência digital; resultados comerciais ainda não foram mensurados."
+  },
+  "en": {
+    "category": "Brand strategy · Digital experience · Generative AI",
+    "title": "Numa Conex: from concept to digital presence",
+    "challenge": "Turn a process and logistics consulting concept into a distinctive brand and a digital presence that clearly explains its offer.",
+    "role": "Business concept co-creation, naming, visual direction, messaging and AI-assisted website development.",
+    "context": "Numa Conex began as a collaborative project to organize processes and improve logistics operations management. During its initial development, I worked on how to present the offer: what the business does, how it stands apart and how to express that through its brand and digital experience.",
+    "process": [
+      "Built the brand narrative around organizing processes, controls and operational information.",
+      "Explored names and visual directions before arriving at Numa Conex, an N symbol and a teal and orange palette.",
+      "Translated the idea of connection into layouts, components and experiments with motion and fluid effects on the website.",
+      "Used generative AI to explore copy and design alternatives, and AI-assisted coding to build and iterate the digital experience.",
+      "Worked on consistency across the identity, website and sales presentation materials."
+    ],
+    "deliverables": [
+      "Brand concept and name",
+      "Visual direction, symbol and color palette",
+      "Messaging and website copy",
+      "Website and interactive effect prototypes",
+      "Sales presentation explorations"
+    ],
+    "learnings": [
+      "Defining the offer before designing helps select references that serve the business.",
+      "AI opens up more room for experimentation; selecting, reviewing and maintaining consistency requires human direction."
+    ],
+    "results": [
+      "An initial brand identity and a website to introduce Numa Conex.",
+      "Strategy, design and AI-assisted coding brought together in one project."
+    ],
+    "note": "Early-stage project. This case covers my contribution to the brand and digital experience; commercial outcomes have not yet been measured."
+  }
+},
+  {
     id: "coi-posicionamento",
     year: "2026",
     size: "wide",

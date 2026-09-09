@@ -23,6 +23,7 @@ var CONTENT_STATUS = {
   },
 
   projects: {
+    "numa-conex":          { published: true, link: "https://numaconex.com.br/" },
     "coi-posicionamento":  { published: true,  link: "" },
     "coi-mapa":            { published: true,  link: "" },
     "ainda":               { published: true  },
