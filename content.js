@@ -182,7 +182,7 @@ var CONTENT = {
     "skills.p2.title": "Operations, Projects & Business",
     "skills.p3.title": "Data, Intelligence & Automation",
     "skills.toolsTitle": "Ferramentas do dia a dia",
-    "skills.toolsNote": "HTML, CSS e JavaScript aparecem aqui apenas no contexto deste portfólio.",
+    "skills.toolsNote": "HTML, CSS e JavaScript aplicados à construção deste portfólio e do site da Numa Conex, com programação assistida por IA.",
 
     /* Formação e idiomas */
     "edu.eyebrow": "Formação",
@@ -404,7 +404,7 @@ var CONTENT = {
     "skills.p2.title": "Operations, Projects & Business",
     "skills.p3.title": "Data, Intelligence & Automation",
     "skills.toolsTitle": "Tools I use",
-    "skills.toolsNote": "HTML, CSS and JavaScript appear here only in the context of this portfolio.",
+    "skills.toolsNote": "HTML, CSS and JavaScript used to build this portfolio and the Numa Conex website through AI-assisted coding.",
 
     /* Education */
     "edu.eyebrow": "Education",
@@ -487,7 +487,7 @@ var SKILL_PILLARS = [
 var TOOLS = [
   "Google Sheets", "Google Apps Script", "Excel", "PowerPoint", "Google Workspace",
   "Notion", "Meta Ads", "Google Ads",
-  "Claude", "Claude Code", "ChatGPT", "GitHub", "CRM & WhatsApp"
+  "Claude", "Claude Code", "ChatGPT", "Codex", "Canva", "GitHub", "CRM & WhatsApp"
 ];
 
 
@@ -517,7 +517,7 @@ var PROJECTS = [
   "year": "2026",
   "size": "wide",
   "image": "",
-  "gallery": [],
+  "gallery": ["numa-conex-brand.jpg"],
   "tools": [
     "ChatGPT",
     "Claude",

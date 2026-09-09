@@ -12,22 +12,22 @@
     var en = CONTENT.en;
 
     Object.assign(pt, {
-      "doc.title": "Laís Barroso · Marketing & Inovação | Produto, Lançamentos & Novas Iniciativas",
-      "doc.description": "Portfólio de Laís Barroso com cases em marketing, inovação, produto digital, posicionamento, lançamentos, inteligência de mercado e IA aplicada.",
-      "hero.headline": "Marketing & Inovação · Produto · Lançamentos · Novas Iniciativas",
-      "hero.tagline": "Conecto mercado, posicionamento e execução para transformar ideias em iniciativas que saem do papel.",
+      "doc.title": "Laís Barroso · Marketing, Estratégia Criativa & IA",
+      "doc.description": "Portfólio de Laís Barroso: estratégia de marketing, posicionamento de marca, conteúdo, experiências digitais e criação com inteligência artificial.",
+      "hero.headline": "Marketing, Estratégia Criativa & IA",
+      "hero.tagline": "Conecto pesquisa, posicionamento e criação para desenvolver marcas, campanhas e experiências digitais.",
       "hero.stamp1": "marketing",
-      "hero.stamp2": "innovation",
-      "hero.stamp3": "product",
+      "hero.stamp2": "creative",
+      "hero.stamp3": "digital",
       "hero.stamp4": "AI",
       "stk.check1": "entender mercado e problema",
       "stk.check2": "definir direção e proposta",
       "stk.check3": "lançar, medir e aprender",
-      "manifesto.lead": "Gosto do espaço entre entender uma oportunidade e colocar alguma coisa nova no mundo.",
+      "manifesto.lead": "Gosto de entender uma ideia, encontrar uma direção e construir algo que as pessoas possam ver, usar ou experimentar.",
       "manifesto.p1": "Minha trajetória passou por ciência, análise técnica, operações, dados, marketing e produtos digitais. Essa mistura me ensinou a entrar em problemas ainda pouco estruturados, pesquisar, conectar informações e conversar com áreas diferentes sem perder a visão do todo.",
-      "manifesto.p2": "Hoje direciono essa capacidade para Marketing e Inovação: novos produtos, lançamentos, experiências e iniciativas em que estratégia e execução caminham juntas. Projetos são a forma de fazer isso acontecer — não o fim em si.",
-      "manifesto.level": "Marketing & Inovação · Product Marketing · Novos Produtos · Lançamentos · Projetos de Marketing",
-      "work.lead": "Cases em posicionamento, produto digital, lançamentos, campanhas, experiências e IA aplicada ao negócio.",
+      "manifesto.p2": "Hoje aplico essa experiência ao marketing e à criação: do posicionamento e da mensagem à construção de conteúdo, sites e experiências digitais. Uso IA para explorar caminhos, prototipar e executar, com atenção à coerência da marca e ao objetivo de cada entrega.",
+      "manifesto.level": "Marketing · Estratégia Criativa · Conteúdo · Product Marketing · IA aplicada",
+      "work.lead": "Projetos que conectam estratégia e criação: marcas, conteúdo, produtos digitais e aplicações de IA.",
       "path.betpass": "Operações, eventos, processos e automação",
       "path.coi": "Marketing, produto digital e inteligência de mercado",
       "path.personal": "IA, inovação e projetos autorais",
@@ -40,31 +40,31 @@
       "how.3.text": "Tiro a ideia do abstrato e ajudo a transformar em campanha, produto, jornada, experiência ou piloto.",
       "how.4.title": "Lançar & aprender",
       "how.4.text": "Acompanho resposta do mercado, resultados e feedback para ajustar a próxima versão.",
-      "skills.p1.title": "Marketing, Produto & Inovação",
-      "skills.p2.title": "Iniciativas & Execução",
-      "skills.p3.title": "Dados, IA & Automação",
+      "skills.p1.title": "Estratégia & Marketing",
+      "skills.p2.title": "Criação & Experiência Digital",
+      "skills.p3.title": "IA, Dados & Automação",
       "about.p1": "Minha trajetória não foi construída em linha reta, e isso virou uma vantagem: passei pela ciência, por contextos técnicos e regulados, por operações, marketing e produtos digitais. Hoje uso essa visão multidisciplinar para entender oportunidades, conectar áreas e ajudar novas iniciativas a sair do papel.",
       "about.p2": "Fora dos cargos, sou movida por curiosidade, viagens, idiomas, cultura, marcas, experiências e tecnologia — e pela vontade de transformar uma ideia ainda confusa em algo que as pessoas consigam entender, usar ou viver.",
-      "footer.tag": "Marketing & Inovação · Produto · Lançamentos · Novas Iniciativas"
+      "footer.tag": "Marketing, Estratégia Criativa & IA"
     });
 
     Object.assign(en, {
-      "doc.title": "Laís Barroso · Marketing & Innovation | Product, Launches & New Initiatives",
-      "doc.description": "Laís Barroso's portfolio: marketing, innovation, digital product, positioning, launches, market intelligence and applied AI.",
-      "hero.headline": "Marketing & Innovation · Product · Launches · New Initiatives",
-      "hero.tagline": "I connect market insight, positioning and execution to turn ideas into initiatives that actually launch.",
+      "doc.title": "Laís Barroso · Marketing, Creative Strategy & AI",
+      "doc.description": "Laís Barroso's portfolio: marketing strategy, brand positioning, content, digital experiences and AI-assisted creative work.",
+      "hero.headline": "Marketing, Creative Strategy & AI",
+      "hero.tagline": "I connect research, positioning and creative work to develop brands, campaigns and digital experiences.",
       "hero.stamp1": "marketing",
-      "hero.stamp2": "innovation",
-      "hero.stamp3": "product",
+      "hero.stamp2": "creative",
+      "hero.stamp3": "digital",
       "hero.stamp4": "AI",
       "stk.check1": "understand market + problem",
       "stk.check2": "set direction + proposition",
       "stk.check3": "launch, measure, learn",
-      "manifesto.lead": "I like the space between understanding an opportunity and putting something new into the world.",
+      "manifesto.lead": "I like understanding an idea, finding a direction and building something people can see, use or experience.",
       "manifesto.p1": "My path has moved through science, technical analysis, operations, data, marketing and digital products. That mix taught me how to enter loosely defined problems, research them, connect information and work across teams without losing sight of the whole.",
-      "manifesto.p2": "I am now directing that ability toward Marketing and Innovation: new products, launches, experiences and initiatives where strategy and execution move together. Projects are how the work gets done — not the job itself.",
-      "manifesto.level": "Marketing & Innovation · Product Marketing · New Products · Launches · Marketing Projects",
-      "work.lead": "Selected work across positioning, digital products, launches, campaigns, experiences and applied AI.",
+      "manifesto.p2": "Today I apply that experience to marketing and creative work: from positioning and messaging to content, websites and digital experiences. I use AI to explore directions, prototype and execute, keeping brand consistency and the purpose of each deliverable in focus.",
+      "manifesto.level": "Marketing · Creative Strategy · Content · Product Marketing · Applied AI",
+      "work.lead": "Projects connecting strategy and creative work: brands, content, digital products and AI applications.",
       "path.betpass": "Operations, events, process and automation",
       "path.coi": "Marketing, digital product and market intelligence",
       "path.personal": "AI, innovation and personal projects",
@@ -77,12 +77,12 @@
       "how.3.text": "I turn the abstract idea into a campaign, product, journey, experience or pilot that can be executed.",
       "how.4.title": "Launch & learn",
       "how.4.text": "I follow market response, results and feedback, then use them to improve the next version.",
-      "skills.p1.title": "Marketing, Product & Innovation",
-      "skills.p2.title": "Initiatives & Execution",
-      "skills.p3.title": "Data, AI & Automation",
+      "skills.p1.title": "Strategy & Marketing",
+      "skills.p2.title": "Creative & Digital Experience",
+      "skills.p3.title": "AI, Data & Automation",
       "about.p1": "My path was never linear, and that became useful: I moved through science, technical and regulated environments, operations, marketing and digital products. Today I use that multidisciplinary perspective to understand opportunities, connect teams and help new initiatives get off the ground.",
       "about.p2": "Outside job titles, I run on curiosity, travel, languages, culture, brands, experiences and technology — and on the urge to turn a messy idea into something people can understand, use or experience.",
-      "footer.tag": "Marketing & Innovation · Product · Launches · New Initiatives"
+      "footer.tag": "Marketing, Creative Strategy & AI"
     });
     return CONTENT;
   }
@@ -91,21 +91,63 @@
     if (!Array.isArray(skills)) return skills;
     skills.length = 0;
     skills.push(
-      {
-        key: "p1",
-        pt: ["Marketing Estratégico", "Marketing de Inovação", "Product Marketing", "Posicionamento", "Pesquisa de mercado", "Inteligência de mercado", "Jornada do cliente", "Go-to-Market", "Lançamentos"],
-        en: ["Marketing Strategy", "Innovation Marketing", "Product Marketing", "Positioning", "Market research", "Market intelligence", "Customer journey", "Go-to-Market", "Launches"]
-      },
-      {
-        key: "p2",
-        pt: ["Projetos de Marketing", "Estruturação de iniciativas", "Priorização", "Interface entre áreas", "Validação de hipóteses", "Campanhas", "Eventos & experiências", "Implementação", "Melhoria contínua"],
-        en: ["Marketing projects", "Initiative structuring", "Prioritization", "Cross-functional work", "Hypothesis validation", "Campaigns", "Events & experiences", "Implementation", "Continuous improvement"]
-      },
-      {
-        key: "p3",
-        pt: ["KPIs", "Dashboards", "Análise de desempenho", "Google Sheets", "Google Apps Script", "Inteligência artificial", "Agentes de IA", "Automação de fluxos", "Claude e ChatGPT"],
-        en: ["KPIs", "Dashboards", "Performance analysis", "Google Sheets", "Google Apps Script", "Artificial intelligence", "AI agents", "Workflow automation", "Claude and ChatGPT"]
-      }
+{
+  "key": "p1",
+  "pt": [
+    "Posicionamento de marca",
+    "Pesquisa de mercado",
+    "Proposta de valor",
+    "Jornada do cliente",
+    "Product Marketing",
+    "Planejamento de campanhas"
+  ],
+  "en": [
+    "Brand positioning",
+    "Market research",
+    "Value proposition",
+    "Customer journey",
+    "Product Marketing",
+    "Campaign planning"
+  ]
+},
+{
+  "key": "p2",
+  "pt": [
+    "Naming",
+    "Copywriting",
+    "Direção visual",
+    "Criação de conteúdo",
+    "Landing pages",
+    "Prototipação digital"
+  ],
+  "en": [
+    "Naming",
+    "Copywriting",
+    "Visual direction",
+    "Content creation",
+    "Landing pages",
+    "Digital prototyping"
+  ]
+},
+{
+  "key": "p3",
+  "pt": [
+    "Criação com IA generativa",
+    "Programação assistida por IA",
+    "Agentes de IA",
+    "Automação de fluxos",
+    "Google Apps Script",
+    "Análise de desempenho"
+  ],
+  "en": [
+    "Generative AI for creative work",
+    "AI-assisted coding",
+    "AI agents",
+    "Workflow automation",
+    "Google Apps Script",
+    "Performance analysis"
+  ]
+}
     );
     return skills;
   }
@@ -164,7 +206,7 @@
       if (window.CONTENT_STATUS && CONTENT_STATUS.projects) CONTENT_STATUS.projects[eventProject.id] = { published: true };
     }
 
-    var preferred = ["numa-conex", "coi-posicionamento", "coi-mapa", "coi-agentes", "coi-conteudo", "betpass-eventos", "automacoes", "portfolio", "betpass-operacoes", "ainda"];
+    var preferred = ["numa-conex", "coi-posicionamento", "coi-conteudo", "coi-agentes", "coi-mapa", "betpass-eventos", "automacoes", "portfolio", "betpass-operacoes", "ainda"];
     var reordered = [];
     preferred.forEach(function (id) { if (byId[id]) reordered.push(byId[id]); });
     projects.forEach(function (p) { if (reordered.indexOf(p) === -1) reordered.push(p); });

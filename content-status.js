@@ -43,6 +43,6 @@ if (typeof window !== "undefined") { window.CONTENT_STATUS = CONTENT_STATUS; }
 /* Loaded before content.js/script.js so the career-positioning patch can
    intercept the content globals before the site is rendered. */
 if (typeof document !== "undefined") {
-  document.write('<script src="positioning-overrides.js?v=20260817"></script>');
+  document.write('<script src="positioning-overrides.js?v=20260909"></script>');
   document.write('<script src="cv-links.js?v=20260817"></script>');
 }
