@@ -554,9 +554,22 @@
     if (hero) fileLinks(hero, { email: false });
     var box = document.getElementById("contact-actions");
     if (box) {
-      fileLinks(box, { email: true, buttons: true, soon: true });
-      var first = box.querySelector(".btn");
-      if (first) { first.classList.remove("btn-line"); first.classList.add("btn-fill"); }
+      box.textContent = "";
+      var contacts = [
+        { label: "E-mail", value: ST.professionalEmail, url: "mailto:" + ST.professionalEmail, active: has(ST.professionalEmail) },
+        { label: "LinkedIn", value: "lais-barroso-", url: ST.linkedin, active: has(ST.linkedin), external: true },
+        { label: "WhatsApp", value: "+55 (31) 98221-2385", url: "https://wa.me/" + String(ST.whatsapp || "").replace(/\\D/g, ""), active: has(ST.whatsapp), external: true }
+      ];
+      contacts.forEach(function (item) {
+        if (!item.active) return;
+        var a = el("a", "contact-link");
+        a.href = item.url;
+        if (item.external) { a.target = "_blank"; a.rel = "noopener noreferrer"; }
+        a.appendChild(el("span", "contact-link-label", item.label));
+        a.appendChild(el("span", "contact-link-value", item.value));
+        a.appendChild(el("span", "contact-link-arrow", "↗"));
+        box.appendChild(a);
+      });
     }
   }
 
