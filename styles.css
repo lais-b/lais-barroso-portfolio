@@ -373,6 +373,12 @@ a{color:inherit}
    13. CONTATO E FOOTER
    =================================================================== */
 .contact-actions{display:flex;flex-wrap:wrap;gap:12px;margin:clamp(30px,4vw,50px) 0 clamp(40px,5vw,64px)}
+.contact-actions{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,250px),1fr));gap:0 30px}
+.contact-link{display:grid;grid-template-columns:1fr auto;gap:5px 12px;padding:20px 0;border-bottom:1px solid currentColor;text-decoration:none;color:inherit;transition:opacity .2s ease}
+.contact-link:hover{opacity:.7}
+.contact-link-label{grid-column:1;display:block;font-size:11px;letter-spacing:.13em;text-transform:uppercase;font-weight:800}
+.contact-link-value{grid-column:1;min-width:0;overflow-wrap:anywhere;font-family:var(--serif);font-size:clamp(20px,2.2vw,28px)}
+.contact-link-arrow{grid-column:2;grid-row:1 / span 2;align-self:center;font-size:24px}
 .contact-soon{font-family:var(--serif);font-style:italic;font-size:20px;opacity:.82}
 .contact-meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:26px;
   padding-top:32px;border-top:2px solid currentColor}
